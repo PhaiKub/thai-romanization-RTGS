@@ -1,0 +1,61 @@
+/**
+ * Common Thai given names (and name elements) whose reading the rules and combining forms cannot predict,
+ * usually because of a Pali/Sanskrit linking syllable or a silent final vowel.
+ */
+export const GIVEN_NAMES: Readonly<Record<string, string>> = {
+  เกษม: 'ka-sem',
+  เจษฎา: 'chet-sa-da',
+  จรัส: 'cha-rat',
+  นิตยา: 'nit-ta-ya',
+  วาสนา: 'wat-sa-na',
+  โชติ: 'chot',
+  พัชรี: 'phat-cha-ri',
+  ลภัสรดา: 'la-phat-sa-ra-da',
+  บุษบา: 'but-sa-ba',
+  บุสดี: 'but-sa-di',
+  อนุชา: 'a-nu-cha',
+  ปิยะ: 'pi-ya',
+  ปิยะวรรณ: 'pi-ya-wan',
+  ปิยวัฒน์: 'pi-ya-wat',
+  ประภาส: 'pra-phat',
+  สุนทร: 'sun-thon',
+  สมศักดิ์: 'som-sak',
+  เพ็ญศรี: 'phen-si',
+};
+
+/**
+ * Parts that build many Thai surnames and compound names. They are also matched inside longer words,
+ * so สุข|สวัสดิ์ and จง|อริย|ตระกูล read part by part.
+ */
+export const NAME_PARTS: Readonly<Record<string, string>> = {
+  สกุล: 'sa-kun',
+  ตระกูล: 'tra-kun',
+  สวัสดิ์: 'sa-wat',
+  ฉัตร: 'chat',
+  อุดม: 'u-dom',
+  วุฒิ: 'wut',
+  พรหม: 'phrom',
+  แสวง: 'sa-waeng',
+  เสวก: 'sa-wek',
+  เลข: 'lek',
+  จันทรา: 'chan-thra',
+  ชัชวาล: 'chat-cha-wan',
+  จรัล: 'cha-ran',
+  ภิรมย์: 'phi-rom',
+  มณี: 'ma-ni',
+  ศรี: 'si',
+  ดุษฎี: 'dut-sa-di',
+  กนก: 'ka-nok',
+  พงศ์: 'phong',
+  พงษ์: 'phong',
+  ขจร: 'kha-chon',
+  ชนก: 'cha-nok',
+  ชนม์: 'chon',
+  ยุทธ: 'yut',
+  ณรงค์: 'na-rong',
+  พิษณุ: 'phit-sa-nu',
+  สวรรค์: 'sa-wan',
+  เกตุ: 'ket',
+  เนรมิต: 'ne-ra-mit',
+  เนรมิตร: 'ne-ra-mit',
+};

@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { analyze, createRomanizer, Dictionary, normalizeThai, romanize, syllabify } from '../src/index';
 import { tokenize } from '../src/text/tokenize';
-import { DICTIONARY_WORDS, EVERYDAY_WORDS, PROVINCE_TITLES, RULE_WORDS, SENTENCES } from './fixtures/golden';
+import { DICTIONARY_WORDS, EVERYDAY_WORDS, GIVEN_NAME_WORDS, PROVINCE_TITLES, RULE_WORDS, SENTENCES } from './fixtures/golden';
 import { PROVINCES } from '../src/dictionary/data/provinces';
 import { BANGKOK_DISTRICTS } from '../src/dictionary/data/bangkok-districts';
 
@@ -13,6 +13,9 @@ describe('golden fixtures', () => {
   });
   it.each(Object.entries(EVERYDAY_WORDS))('everyday: %s → %s', (thai, expected) => {
     expect(strip(romanize(thai, { segmenter: 'none' }))).toBe(strip(expected));
+  });
+  it.each(Object.entries(GIVEN_NAME_WORDS))('given name: %s → %s', (thai, expected) => {
+    expect(strip(romanize(thai, { segmenter: 'none' }))).toBe(expected);
   });
   it.each(Object.entries(DICTIONARY_WORDS))('dictionary: %s → %s', (thai, expected) => {
     expect(strip(romanize(thai, { segmenter: 'none' }))).toBe(expected);
@@ -98,7 +101,8 @@ describe('dictionary', () => {
     expect(romanize('ราชบุรี')).toBe('ratchaburi'); // the shared instance is untouched
   });
   it('useBuiltinDictionary: false uses rules only', () => {
-    expect(romanize('ราชการ', { useBuiltinDictionary: false })).toBe('ratkan');
+    expect(romanize('ชาติ', { useBuiltinDictionary: false })).toBe('chati');
+    expect(romanize('ชาติ')).toBe('chat');
   });
   it('Dictionary parses syllables and words', () => {
     const d = new Dictionary({ กรุงเทพ: 'Krung Thep' });
@@ -127,6 +131,50 @@ describe('analyze', () => {
   it('handles empty and non-Thai input', () => {
     expect(romanize('')).toBe('');
     expect(romanize('Hello, world!')).toBe('Hello, world!');
+  });
+});
+
+describe('compound and name readings', () => {
+  const read = (w: string) => romanize(w, { segmenter: 'none' });
+  it('combining forms read a stem with its linking syllable only before more letters', () => {
+    expect(read('ธนกฤต')).toBe('thanakrit');
+    expect(read('ภัทรกมล')).toBe('phattharakamon');
+    expect(read('ราชวัตร')).toBe('ratchawat');
+    expect(read('วุฒิชัย')).toBe('wutthichai');
+    expect(read('วุฒิ')).toBe('wut');
+    expect(read('ราชา')).toBe('racha');
+    expect(read('วรรณ')).toBe('wan');
+  });
+  it('suffix and stem forms', () => {
+    expect(read('นรากร')).toBe('narakon');
+    expect(read('สุภาวดี')).toBe('suphawadi');
+    expect(read('รัตนา')).toBe('rattana');
+  });
+  it('อักษรนำ written behind a pre-vowel', () => {
+    expect(read('เจริญ')).toBe('charoen');
+    expect(read('เสนอ')).toBe('sanoe');
+    expect(read('เสด็จ')).toBe('sadet');
+    expect(read('โฉนด')).toBe('chanot');
+    expect(read('โสภณ')).toBe('sophon');
+    expect(read('เนติมา')).toBe('netima');
+    expect(read('เสริม')).toBe('soem');
+  });
+  it('false clusters split before ิ ุ ู, except จริง', () => {
+    expect(read('สรุป')).toBe('sarup');
+    expect(read('จริยา')).toBe('chariya');
+    expect(read('จริง')).toBe('ching');
+  });
+  it('silent final ิ ุ after a written vowel, ฤา, and น/ณ/ม + ฤ', () => {
+    expect(read('ปฏิวัติ')).toBe('patiwat');
+    expect(read('ฤาษี')).toBe('ruesi');
+    expect(read('นฤมล')).toBe('naruemon');
+    expect(read('อังกฤษ')).toBe('angkrit');
+    expect(read('เสนีย์')).toBe('seni');
+  });
+  it('dictionary words are read inside longer words', () => {
+    expect(read('มีสวัสดิ์')).toBe('misawat');
+    expect(read('จินดามณีพล')).toBe('chindamaniphon');
+    expect(romanize('มีสวัสดิ์', { segmenter: 'none', useBuiltinDictionary: false })).toBe('mitwat');
   });
 });
 

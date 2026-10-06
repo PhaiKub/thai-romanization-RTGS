@@ -182,16 +182,19 @@ export class Romanizer {
     if (entry) {
       return { thai, roman: this.format(entry.words, opts), source: 'dictionary', confidence: 'dictionary', syllables: dictionarySyllables(entry) };
     }
-    let rule = this.cache.get(thai);
+    // Built-in words are also read inside compounds; user words only as whole words (keeps the cache valid).
+    const lexicon = opts.useBuiltinDictionary ? getBuiltinDictionary() : undefined;
+    const key = lexicon ? thai : `\u0000${thai}`;
+    let rule = this.cache.get(key);
     if (!rule) {
-      const syllables = parseWord(thai);
+      const syllables = parseWord(thai, lexicon);
       rule = {
         syllables,
         confidence: confidenceOf(syllables),
         unparsed: syllables.filter((s) => s.rules.includes('fallback')).map((s) => s.thai),
       };
       if (this.cache.size >= CACHE_LIMIT) this.cache.clear();
-      this.cache.set(thai, rule);
+      this.cache.set(key, rule);
     }
     for (const ch of rule.unparsed) {
       warnings.push({ code: 'unparsed', word: thai, message: `"${ch}" in "${thai}" does not fit a Thai syllable and was read on its own` });

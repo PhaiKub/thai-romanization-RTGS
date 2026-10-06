@@ -95,8 +95,11 @@ export function withFinalWo(vowel: string): string {
   return vowel.endsWith('o') ? vowel : `${vowel}o`;
 }
 
-/** ค-ฤ / พ-ฤ / ม-ฤ / ห-ฤ / น-ฤ read `rue`; other consonants + ฤ read `ri` (กฤษ krit, ทฤษฎี thrit-). */
-export const RU_AS_RUE_AFTER: ReadonlySet<string> = new Set(['ค', 'พ', 'ม', 'ห', 'น']);
+/** ค-ฤ / พ-ฤ / ห-ฤ read `rue`; other consonants + ฤ read `ri` (กฤษ krit, ทฤษฎี thrit-). */
+export const RU_AS_RUE_AFTER: ReadonlySet<string> = new Set(['ค', 'พ', 'ห']);
+
+/** น-ฤ / ณ-ฤ / ม-ฤ take a vowel before the ฤ: นฤมล na-rue-mon, ณฤเบศ na-rue-bet. */
+export const RU_AS_ARUE_AFTER: ReadonlySet<string> = new Set(['น', 'ณ', 'ม']);
 
 export const RTGS_TABLES = {
   initial: INITIAL,

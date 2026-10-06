@@ -23,6 +23,8 @@ export const COMMON_WORDS: Readonly<Record<string, string>> = {
   สามารถ: 'sa-mat',
   ประโยชน์: 'pra-yot',
   ปรอท: 'pa-rot',
+  แสดง: 'sa-daeng',
+  เทวดา: 'the-wa-da',
   ทรมาน: 'tho-ra-man',
   ธรณี: 'tho-ra-ni',
   กรณี: 'ko-ra-ni',

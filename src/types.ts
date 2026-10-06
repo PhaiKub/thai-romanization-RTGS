@@ -57,7 +57,11 @@ export type SyllableRule =
   | 'karan'
   | 'silent-ror'
   | 'silent-yo'
+  | 'silent-vowel'
   | 'ru-lu'
+  | 'combining-form'
+  | 'dictionary'
+  | 'leading-consonant'
   | 'fallback';
 
 export interface SyllableResult {

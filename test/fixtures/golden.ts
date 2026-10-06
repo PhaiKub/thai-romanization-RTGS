@@ -241,6 +241,37 @@ export const EVERYDAY_WORDS: Readonly<Record<string, string>> = {
   ตลาดหลักทรัพย์:'talatlaksap',
 };
 
+/**
+ * Common Thai given names (first names only), with their RTGS. Many are Pali/Sanskrit compounds that need
+ * combining forms or the name dictionary. Read with the built-in dictionary on and no word segmentation.
+ */
+export const GIVEN_NAME_WORDS: Readonly<Record<string, string>> = {
+  จิรภา: 'chirapha', พชรวรรณ: 'phatcharawan', มัลลิกา: 'manlika', ศุภมาส: 'supphamat', ธนสิทธิ์: 'thanasit',
+  ธีรสิทธิ์: 'thirasit', ปฐมภิญญา: 'pathomphinya', พันธิชา: 'phanthicha', ริสา: 'risa', สรินัดดา: 'sarinatda',
+  เจษฎา: 'chetsada', พัชราพรรณ: 'phatcharaphan', อาภาพรรณี: 'aphaphanni', เกษม: 'kasem', เครือศิริ: 'khrueasiri',
+  เจนเนตร: 'chennet', เดือนจรัส: 'dueancharat', เนติมา: 'netima', เบญจพร: 'benchaphon', เมวิกา: 'mewika',
+  เอกชัย: 'ekkachai', เอนก: 'anek', แดนนภา: 'daennapha', แมน: 'maen', โกศล: 'koson', กฤตยา: 'krittaya',
+  กฤษณพล: 'kritsanaphon', กฤษณา: 'kritsana', กำธร: 'kamthon', กุลธิดา: 'kunthida', คมฉวี: 'khomchawi',
+  จงกล: 'chongkon', จริยา: 'chariya', จินนา: 'chinna', จิริยา: 'chiriya', จุฑาวดี: 'chuthawadi',
+  ชนิดา: 'chanida', ชลิดา: 'chalida', ชัยโชติ: 'chaichot', ชุติมา: 'chutima', ญานิศา: 'yanisa', ฐานิดา: 'thanida',
+  ณัฐกิตติ์: 'natthakit', ณัฐพล: 'natthaphon', ณัษฐพร: 'natthaphon', ดนัย: 'danai', ดวงพร: 'duangphon',
+  ทัศนวรรณ: 'thatsanawan', ธนกฤต: 'thanakrit', ธัญมน: 'thanmon', นรากร: 'narakon', นันทพร: 'nanthaphon',
+  วิชุดา: 'wichuda', นิตยา: 'nittaya', นิติยา: 'nitiya', นิธิศ: 'nithit', นิมิตร: 'nimit', นิรมล: 'niramon',
+  นิษฐา: 'nittha', บุญญิศา: 'bunyisa', บุญทวี: 'bunthawi', บุษยวรรณ: 'butsayawan', บุสดี: 'butsadi',
+  ประจวบ: 'prachuap', ปาริฉัตร: 'parichat', ปุณยนุช: 'punyanut', พงศกร: 'phongsakon', พรเพ็ญ: 'phonphen',
+  พัชรี: 'phatchari', พิมลวรรณ: 'phimonwan', ภัทรกมล: 'phattharakamon', ภัทรจิต: 'phattharachit',
+  ภัทราวุธ: 'phattharawut', มณฑา: 'montha', มาวิสา: 'mawisa', มินตรา: 'mintra', ยิ่งยง: 'yingyong', ยุพา: 'yupha',
+  รณิดา: 'ranida', รติมา: 'ratima', รวิพล: 'rawiphon', ระพีพรรณ: 'raphiphan', รัตนา: 'rattana',
+  ราชวัตร: 'ratchawat', ลภัสรดา: 'laphatsarada', วรรณวิศา: 'wanwisa', วรรณา: 'wanna', วรรณิภา: 'wannipha',
+  วรัญญา: 'waranya', วราพร: 'waraphon', วริษา: 'warisa', วัฒนา: 'watthana', วาสนา: 'watsana',
+  วิชชุดา: 'witchuda', วิภู: 'wiphu', วิมล: 'wimon', วิศณุ: 'witsanu', วิศรุต: 'witsarut', ศรีเรือน: 'siruean',
+  ศรุตา: 'saruta', ศิริวรรณ: 'siriwan', ศีลวัต: 'sinlawat', ศุภชัย: 'supphachai', ศุภพร: 'supphaphon',
+  ศุภศิริ: 'supphasiri', สมจิน: 'somchin', สมบัติ: 'sombat', สมยศ: 'somyot', สาวิตรี: 'sawitri', สำเรา: 'samrao',
+  สิทธิเดช: 'sitthidet', สิริมา: 'sirima', สุกัญญา: 'sukanya', สุพินดา: 'suphinda', สุภัค: 'suphak',
+  สุภาวดี: 'suphawadi', สุวนิดา: 'suwanida', สุวรรณ: 'suwan', สุวรรณา: 'suwanna', อรทัย: 'onthai',
+  อรวรรณ: 'onwan', อัมพิกา: 'amphika', อำพร: 'amphon', อุบลวรรณ: 'ubonwan',
+};
+
 /** Words that need the built-in dictionary. */
 export const DICTIONARY_WORDS: Readonly<Record<string, string>> = {
   ก็: 'ko', ณ: 'na', ราชการ: 'ratchakan', ผลไม้: 'phonlamai', คุณภาพ: 'khunnaphap', สุขภาพ: 'sukkhaphap',
