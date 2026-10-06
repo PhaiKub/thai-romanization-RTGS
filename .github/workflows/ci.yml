@@ -65,6 +65,19 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - name: ESM
-        run: node --input-type=module -e "import { romanize, romanizeName } from './dist/index.js'; const a = romanize('กรุงเทพมหานคร', { case: 'title' }); const b = romanizeName('ภัทรกมล ใจดี'); console.log(a, '|', b); if (a !== 'Krung Thep Maha Nakhon' || b !== 'Phattharakamon Chaidi') process.exit(1);"
+        run: |
+          node --input-type=module -e "
+            import { romanize, romanizeName } from './dist/index.js';
+            const a = romanize('กรุงเทพมหานคร', { case: 'title' });
+            const b = romanizeName('ภัทรกมล ใจดี');
+            console.log(a, '|', b);
+            if (a !== 'Krung Thep Maha Nakhon' || b !== 'Phattharakamon Chaidi') process.exit(1);
+          "
       - name: CommonJS
-        run: node -e "const { romanize } = require('./dist/index.cjs'); const a = romanize('สวัสดีครับ'); console.log(a); if (a !== 'sawatdi khrap') process.exit(1);"
+        run: |
+          node -e "
+            const { romanize } = require('./dist/index.cjs');
+            const a = romanize('สวัสดีครับ');
+            console.log(a);
+            if (a !== 'sawatdi khrap') process.exit(1);
+          "
