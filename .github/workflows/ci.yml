@@ -1,0 +1,70 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Test (Node ${{ matrix.node }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # The dev tools (vitest 5) need Node 22.12+; older runtimes are covered by the runtime job.
+        node: [22, 24]
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - name: Accuracy report
+        run: npm run eval
+      - run: npm run build
+      - name: Package contents
+        run: npm pack --dry-run
+      - if: matrix.node == 24
+        uses: actions/upload-artifact@v7
+        with:
+          name: dist
+          path: dist/
+          retention-days: 7
+
+  runtime:
+    name: Runtime (Node ${{ matrix.node }})
+    needs: test
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # package.json "engines": node >=18
+        node: [18, 20, 22, 24]
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          sparse-checkout: package.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/download-artifact@v8
+        with:
+          name: dist
+          path: dist/
+      - uses: actions/setup-node@v7
+        with:
+          node-version: ${{ matrix.node }}
+      - name: ESM
+        run: node --input-type=module -e "import { romanize, romanizeName } from './dist/index.js'; const a = romanize('กรุงเทพมหานคร', { case: 'title' }); const b = romanizeName('ภัทรกมล ใจดี'); console.log(a, '|', b); if (a !== 'Krung Thep Maha Nakhon' || b !== 'Phattharakamon Chaidi') process.exit(1);"
+      - name: CommonJS
+        run: node -e "const { romanize } = require('./dist/index.cjs'); const a = romanize('สวัสดีครับ'); console.log(a); if (a !== 'sawatdi khrap') process.exit(1);"
