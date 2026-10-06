@@ -14,7 +14,8 @@ import { applyCase, capitalize } from './format/casing';
 import { joinSyllables } from './format/join';
 import { resolveOptions } from './options';
 import { segmentThai } from './segment/segmenter';
-import { syllabify as parseWord } from './syllable/parse';
+import { COST } from './syllable/costs';
+import { parseWithCost, syllabify as parseWord } from './syllable/parse';
 import { thaiDigitToArabic } from './text/chars';
 import { normalizeThai } from './text/normalize';
 import { tokenize } from './text/tokenize';
@@ -26,6 +27,8 @@ interface RuleWord {
 }
 
 const CACHE_LIMIT = 20_000;
+/** Titles written in front of a name, longest first so นางสาว wins over นาง. */
+const NAME_TITLE = /(^|\s)(นางสาว|เด็กชาย|เด็กหญิง|นาย|นาง)(?=[ก-ฮเ-ไ])/gu;
 const SENTENCE_END = /[.!?…]\s*$/;
 
 function confidenceOf(syllables: SyllableResult[]): Confidence {
@@ -69,6 +72,15 @@ export class Romanizer {
     return this.analyze(text, options).output;
   }
 
+  /**
+   * Romanize a personal name: each space-separated part is one word, title-cased by default.
+   * A title written against the name (นางสาววิชุดา) is split off first.
+   */
+  romanizeName(name: string, options?: RomanizeOptions): string {
+    const spaced = normalizeThai(name).replace(NAME_TITLE, '$1$2 ');
+    return this.romanize(spaced, { case: 'title', ...options, segmenter: 'none' });
+  }
+
   /** Romanize text and return every token, word and syllable with how it was read. */
   analyze(text: string, options?: RomanizeOptions): AnalyzeResult {
     if (typeof text !== 'string') throw new TypeError('text must be a string');
@@ -89,12 +101,25 @@ export class Romanizer {
       return capitalize(lower);
     };
 
+    // Cost of reading a string as one word: lets the segmenter rejoin fragments of unknown words.
+    const lexicon = opts.useBuiltinDictionary ? getBuiltinDictionary() : undefined;
+    const costs = new Map<string, number>();
+    const wordCost = (w: string): number => {
+      let c = costs.get(w);
+      if (c === undefined) {
+        const entry = stack.get(w);
+        c = entry ? entry.words.flat().length * COST.syllable + COST.inWordDictionary : parseWithCost(w, lexicon).cost;
+        costs.set(w, c);
+      }
+      return c;
+    };
+
     for (const raw of tokenize(normalized)) {
       let output = '';
       let words: WordResult[] | undefined;
       switch (raw.type) {
         case 'thai': {
-          words = segmentThai(raw.text, opts.segmenter, stack).map((w) => {
+          words = segmentThai(raw.text, opts.segmenter, stack, wordCost).map((w) => {
             const word = this.word(w, stack, opts, warnings);
             return { ...word, roman: cased(word.roman) };
           });

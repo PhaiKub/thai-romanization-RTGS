@@ -71,8 +71,51 @@ function segmentByDictionary(run: string, dict: DictionaryStack): string[] {
   return out;
 }
 
-/** Split one run of Thai letters into words. */
-export function segmentThai(run: string, mode: SegmenterOption, dict: DictionaryStack): string[] {
+/** Most neighbouring segments rejoined into one word. */
+const MAX_GROUP = 4;
+/** Cost of rejoining two segments, so that a tie keeps the segmenter's boundary. */
+const JOIN_PENALTY = 1;
+/**
+ * A segment whose own reading costs this much cannot be a word by itself: it ends in an inferred a
+ * (น alone) or has a letter no syllable fits (า alone). See syllable/costs.ts.
+ */
+const FRAGMENT_COST = 40;
+
+/**
+ * ICU knows dictionary words but cuts unknown ones into fragments: จินนา → จิ|น|นา, ชนิดา → ชนิด|า.
+ * Rejoin a fragment with its neighbours when reading them as one word costs less. Segments that read
+ * fine alone are never rejoined, since joining real words lets a cheaper misreading win (ที่|สนาม).
+ */
+function rejoinFragments(segments: string[], wordCost: (word: string) => number): string[] {
+  const n = segments.length;
+  const fragment = segments.map((s) => wordCost(s) >= FRAGMENT_COST);
+  const best = new Array<number>(n + 1).fill(Infinity);
+  const from = new Array<number>(n + 1).fill(0);
+  best[0] = 0;
+  for (let i = 0; i < n; i++) {
+    let word = '';
+    let hasFragment = false;
+    for (let k = 1; k <= MAX_GROUP && i + k <= n; k++) {
+      word += segments[i + k - 1];
+      hasFragment ||= fragment[i + k - 1] as boolean;
+      if (k > 1 && !hasFragment) continue;
+      const total = (best[i] as number) + wordCost(word) + JOIN_PENALTY * (k - 1);
+      if (total < (best[i + k] as number)) {
+        best[i + k] = total;
+        from[i + k] = i;
+      }
+    }
+  }
+  const out: string[] = [];
+  for (let at = n; at > 0; at = from[at] as number) out.push(segments.slice(from[at], at).join(''));
+  return out.reverse();
+}
+
+/**
+ * Split one run of Thai letters into words.
+ * `wordCost` (the syllable parser's cost of reading a string as one word) lets `intl` mode rejoin fragments.
+ */
+export function segmentThai(run: string, mode: SegmenterOption, dict: DictionaryStack, wordCost?: (word: string) => number): string[] {
   if (typeof mode === 'function') {
     const parts = mode(run).filter((p) => p.length > 0);
     return parts.join('') === run ? parts : [run];
@@ -81,8 +124,8 @@ export function segmentThai(run: string, mode: SegmenterOption, dict: Dictionary
   if (mode === 'intl') {
     const seg = getIntlSegmenter();
     if (seg) {
-      const segments = [...seg.segment(run)].map((s) => s.segment);
-      return mergeWithDictionary(segments, dict);
+      const segments = mergeWithDictionary([...seg.segment(run)].map((s) => s.segment), dict);
+      return wordCost && segments.length > 1 ? rejoinFragments(segments, wordCost) : segments;
     }
   }
   return segmentByDictionary(run, dict);

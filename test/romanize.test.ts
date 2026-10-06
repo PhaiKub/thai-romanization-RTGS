@@ -1,5 +1,6 @@
+import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
-import { analyze, createRomanizer, Dictionary, normalizeThai, romanize, syllabify } from '../src/index';
+import { analyze, createRomanizer, Dictionary, normalizeThai, romanize, romanizeName, syllabify } from '../src/index';
 import { tokenize } from '../src/text/tokenize';
 import { DICTIONARY_WORDS, EVERYDAY_WORDS, GIVEN_NAME_WORDS, PROVINCE_TITLES, RULE_WORDS, SENTENCES } from './fixtures/golden';
 import { PROVINCES } from '../src/dictionary/data/provinces';
@@ -171,6 +172,16 @@ describe('compound and name readings', () => {
     expect(read('อังกฤษ')).toBe('angkrit');
     expect(read('เสนีย์')).toBe('seni');
   });
+  it('romanizeName reads each part as one word, splits a leading title and title-cases', () => {
+    expect(romanizeName('ธนกฤต สุขสวัสดิ์')).toBe('Thanakrit Suksawat');
+    expect(romanizeName('นางสาววิชุดา ใจดี')).toBe('Nangsao Wichuda Chaidi');
+    expect(romanizeName('ภัทรกมล', { case: 'upper' })).toBe('PHATTHARAKAMON');
+  });
+  it('rejoins fragments the word segmenter cuts off, but not real words', () => {
+    expect(romanize('ชนิดา')).toBe('chanida');
+    expect(romanize('เด็กๆ เล่นกันที่สนามหลวง')).toBe('dek dek len kan thi sanam luang');
+    expect(romanize('ถนนราชบุรี')).toBe('thanon ratchaburi');
+  });
   it('dictionary words are read inside longer words', () => {
     expect(read('มีสวัสดิ์')).toBe('misawat');
     expect(read('จินดามณีพล')).toBe('chindamaniphon');
@@ -193,5 +204,13 @@ describe('syllabify', () => {
     const [s] = syllabify('จันทร์');
     expect(s?.silent).toBe('ทร์');
     expect(s?.rules).toContain('karan');
+  });
+});
+
+describe('package', () => {
+  it('VERSION matches package.json', async () => {
+    const { VERSION } = await import('../src/index');
+    const pkg = JSON.parse(readFileSync(new URL('../package.json', import.meta.url), 'utf8')) as { version: string };
+    expect(VERSION).toBe(pkg.version);
   });
 });

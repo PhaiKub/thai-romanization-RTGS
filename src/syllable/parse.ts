@@ -57,7 +57,7 @@ function couldBeFinal(ch: string | undefined): boolean {
  * With a `lexicon`, its words are also candidates inside the word, so a known part of a compound is read
  * as the dictionary says.
  */
-export function parseSyllables(word: string, lexicon?: Dictionary): Candidate[] {
+export function parseWithCost(word: string, lexicon?: Dictionary): { syllables: Candidate[]; cost: number } {
   const n = word.length;
   // State of the path at a position: how the previous step ended.
   const CLOSED = 0;
@@ -102,6 +102,7 @@ export function parseSyllables(word: string, lexicon?: Dictionary): Candidate[] 
   for (let state = 1; state < STATES; state++) {
     if ((best[n * STATES + state] as number) < (best[at] as number)) at = n * STATES + state;
   }
+  const cost = best[at] as number;
   const out: Candidate[] = [];
   while (at >= STATES) {
     const step = via[at] as { cand: Candidate; from: number };
@@ -109,7 +110,12 @@ export function parseSyllables(word: string, lexicon?: Dictionary): Candidate[] 
     out.push(...[step.cand, ...(step.cand.next ?? [])].reverse());
     at = step.from;
   }
-  return out.reverse();
+  return { syllables: out.reverse(), cost };
+}
+
+/** Syllables of a word (see {@link parseWithCost}). */
+export function parseSyllables(word: string, lexicon?: Dictionary): Candidate[] {
+  return parseWithCost(word, lexicon).syllables;
 }
 
 export function toSyllableResult(word: string, c: Candidate): SyllableResult {

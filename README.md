@@ -45,7 +45,7 @@ npm install thai-rtgs
 ```
 
 ```ts
-import { romanize, analyze, syllabify, createRomanizer } from 'thai-rtgs';
+import { romanize, romanizeName, analyze, syllabify, createRomanizer } from 'thai-rtgs';
 
 // ตัวเลือก
 romanize('สะอาด');                                   // 'sa-at'
@@ -53,6 +53,9 @@ romanize('สะอาด', { hyphenateAmbiguous: false });    // 'saat'
 romanize('เด็กๆ เล่นกัน', { case: 'sentence' });     // 'Dek dek len kan'
 romanize('วันที่ ๑๒ มกราคม ๒๕๖๗');                    // 'wan thi 12 mokkarakhom 2567'
 romanize('ฉันชอบ iPhone 15', { keepNonThai: false }); // 'chan chop'
+
+// ชื่อคน: อ่านแต่ละส่วนที่คั่นด้วยเว้นวรรคเป็นหนึ่งคำ แยกคำนำหน้าออก และขึ้นต้นตัวใหญ่
+romanizeName('นางสาวภัทรกมล สุขสวัสดิ์'); // 'Nangsao Phattharakamon Suksawat'
 
 // คำเฉพาะสำหรับการเรียกครั้งเดียว (- คั่นพยางค์ เว้นวรรคคั่นคำ)
 romanize('สมชาย ใจดี', { case: 'title', dictionary: { สมชาย: 'som-chai', ใจดี: 'chai-di' } }); // 'Somchai Chaidi'
@@ -108,6 +111,7 @@ npm run build       # dist/ (ESM + CJS + .d.ts)
 
 - RTGS ไม่มีวรรณยุกต์และความยาวสระ จึงแปลงกลับเป็นอักษรไทยไม่ได้
 - คำบาลี-สันสกฤตที่มีพยางค์เชื่อม (ราชบุรี rat-cha-bu-ri, ผลไม้ phon-la-mai) ชื่อคน และคำทับศัพท์ ต้องพึ่งพจนานุกรม คำที่กฎอ่านผิดให้เพิ่มผ่าน `dictionary` หรือ `addWord`
+- ชื่อคนที่อยู่ในประโยคอาจถูกตัดเป็นหลายคำ (`Intl.Segmenter` ไม่รู้จักชื่อ) ให้ใช้ `romanizeName()` กับชื่อ ซึ่งอ่านแต่ละส่วนเป็นหนึ่งคำ
 - ผลการตัดคำของ `Intl.Segmenter` ขึ้นกับเวอร์ชัน ICU ของ runtime อาจต่างกันเล็กน้อย คำประสมที่ ICU ไม่แยก (เช่น รถไฟฟ้า) จะออกมาติดกัน (`rotfaifa`)
 - ชื่อจังหวัดและเขตเขียนตามแบบราชบัณฑิตยสถาน (เช่น Chon Buri, Buri Ram) ซึ่งอาจต่างจากตัวสะกดที่ใช้กันทั่วไป (Chonburi, Buriram) แก้ได้ผ่าน `dictionary`
 

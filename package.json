@@ -2,7 +2,25 @@
   "name": "thai-rtgs",
   "version": "0.1.0",
   "description": "Thai → Latin romanization using the Royal Thai General System of Transcription (RTGS). Rule-based syllable parser with an extensible dictionary. Zero dependencies.",
-  "keywords": ["thai", "rtgs", "romanization", "transliteration", "transcription", "ภาษาไทย", "ถอดอักษร"],
+  "keywords": [
+    "thai",
+    "rtgs",
+    "romanization",
+    "transliteration",
+    "transcription",
+    "ภาษาไทย",
+    "ถอดอักษร"
+  ],
+  "license": "MIT",
+  "author": "PhaiKub",
+  "homepage": "https://github.com/PhaiKub/thai-romanization-RTGS#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhaiKub/thai-romanization-RTGS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PhaiKub/thai-romanization-RTGS/issues"
+  },
   "type": "module",
   "sideEffects": false,
   "main": "./dist/index.cjs",
@@ -20,7 +38,12 @@
       }
     }
   },
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
   "scripts": {
     "build": "tsup",
     "test": "vitest run",
@@ -38,5 +61,8 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

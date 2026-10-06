@@ -32,6 +32,15 @@ export function romanize(text: string, options?: RomanizeOptions): string {
   return defaultRomanizer().romanize(text, options);
 }
 
+/**
+ * Romanize a personal name. Each space-separated part is read as one word (no word segmentation, which would
+ * cut an unknown name into fragments) and the result is title-cased.
+ * @example romanizeName('ธนกฤต สุขสวัสดิ์') // 'Thanakrit Suksawat'
+ */
+export function romanizeName(name: string, options?: RomanizeOptions): string {
+  return defaultRomanizer().romanizeName(name, options);
+}
+
 /** Romanize and return every token, word and syllable with how each was read. */
 export function analyze(text: string, options?: RomanizeOptions): AnalyzeResult {
   return defaultRomanizer().analyze(text, options);
