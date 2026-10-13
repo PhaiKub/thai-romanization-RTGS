@@ -4,6 +4,7 @@
  */
 import { romanize } from '../src/index';
 import type { RomanizeOptions } from '../src/types';
+import { scoreDistricts } from '../test/benchmark/districts';
 import { DICTIONARY_WORDS, EVERYDAY_WORDS, GIVEN_NAME_WORDS, PROVINCE_TITLES, RULE_WORDS, SENTENCES } from '../test/fixtures/golden';
 
 const strip = (s: string) => s.replace(/\s+/g, '');
@@ -34,3 +35,15 @@ for (const [name, cases, options, norm] of suites) {
   }
 }
 process.exitCode = failed ? 1 : 0;
+
+// Held-out benchmark: official RTGS district names (test/benchmark/districts.json).
+// Only dev misses may be inspected (`npm run eval -- --dev`); test misses are never printed.
+
+console.log('\nBenchmark — 872 district names with official RTGS (Wikipedia)');
+for (const split of ['dev', 'test'] as const) {
+  const s = scoreDistricts(split);
+  console.log(`  ${split.padEnd(4)}: ${s.correct}/${s.total} (${((100 * s.correct) / s.total).toFixed(1)}%)`);
+  if (split === 'dev' && process.argv.includes('--dev')) {
+    for (const m of s.misses) console.log(`    ${m.thai.padEnd(18)} expected ${m.expected.padEnd(26)} got ${m.got}`);
+  }
+}

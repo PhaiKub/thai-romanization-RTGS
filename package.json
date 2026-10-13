@@ -1,15 +1,11 @@
 {
   "name": "thai-rtgs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Thai → Latin romanization using the Royal Thai General System of Transcription (RTGS). Rule-based syllable parser with an extensible dictionary. Zero dependencies.",
   "keywords": [
     "thai",
     "rtgs",
-    "romanization",
-    "transliteration",
-    "transcription",
-    "ภาษาไทย",
-    "ถอดอักษร"
+    "romanization"
   ],
   "license": "MIT",
   "author": "PhaiKub",

@@ -55,7 +55,16 @@ function karanTail(w: string, r: number, afterFinal: boolean): number {
 function withTail(w: string, coda: Coda): Coda {
   const len = karanTail(w, coda.end, coda.final !== '');
   if (!len) return coda;
-  return { ...coda, silent: coda.silent + w.slice(coda.end, coda.end + len), end: coda.end + len, rules: [...coda.rules, 'karan'] };
+  // Two silent consonants (ศาสตร์, จันทร์) are rarer than one: when the first could start its own
+  // syllable instead (มโน|รมย์ manorom, not มโนร|มย์), that reading should be able to win.
+  const twoSilent = isConsonant(w[coda.end + 1]);
+  return {
+    ...coda,
+    silent: coda.silent + w.slice(coda.end, coda.end + len),
+    end: coda.end + len,
+    cost: coda.cost + (twoSilent ? COST.twoSilentKaran : 0),
+    rules: [...coda.rules, 'karan'],
+  };
 }
 
 /**

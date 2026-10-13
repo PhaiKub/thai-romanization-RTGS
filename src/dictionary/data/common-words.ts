@@ -124,6 +124,17 @@ export const COMMON_WORDS: Readonly<Record<string, string>> = {
   ห้างสรรพสินค้า: 'hang sap-pha-sin-kha',
   สหรัฐอเมริกา: 'sa-ha-rat a-me-ri-ka',
 
+  // words that often start or end a compound place name; also matched inside longer words
+  นคร: 'na-khon',
+  ปทุม: 'pa-thum',
+  นิคม: 'ni-khom',
+  สาคร: 'sa-khon',
+  พนม: 'pha-nom',
+  ชมพู: 'chom-phu',
+  ชนะ: 'cha-na',
+  อารมณ์: 'a-rom',
+  รมย์: 'rom',
+
   // compounds written as separate words
   กรุงเทพ: 'krung thep',
   มหานคร: 'ma-ha na-khon',

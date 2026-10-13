@@ -1,0 +1,5281 @@
+{
+ "source": "https://en.wikipedia.org/wiki/List_of_districts_of_Thailand",
+ "revision": 1343307025,
+ "license": "Derived from Wikipedia, CC BY-SA 4.0",
+ "districts": [
+  {
+   "thai": "อากาศอำนวย",
+   "rtgs": "Akat Amnuai",
+   "province": "สกลนคร",
+   "split": "dev"
+  },
+  {
+   "thai": "อัมพวา",
+   "rtgs": "Amphawa",
+   "province": "สมุทรสงคราม",
+   "split": "test"
+  },
+  {
+   "thai": "อ่าวลึก",
+   "rtgs": "Ao Luek",
+   "province": "กระบี่",
+   "split": "test"
+  },
+  {
+   "thai": "อรัญประเทศ",
+   "rtgs": "Aranyaprathet",
+   "province": "สระแก้ว",
+   "split": "test"
+  },
+  {
+   "thai": "อาจสามารถ",
+   "rtgs": "At Samat",
+   "province": "ร้อยเอ็ด",
+   "split": "test"
+  },
+  {
+   "thai": "บาเจาะ",
+   "rtgs": "Bacho",
+   "province": "นราธิวาส",
+   "split": "test"
+  },
+  {
+   "thai": "บำเหน็จณรงค์",
+   "rtgs": "Bamnet Narong",
+   "province": "ชัยภูมิ",
+   "split": "test"
+  },
+  {
+   "thai": "บ้านบึง",
+   "rtgs": "Ban Bueng",
+   "province": "ชลบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "บ้านฉาง",
+   "rtgs": "Ban Chang",
+   "province": "ระยอง",
+   "split": "test"
+  },
+  {
+   "thai": "บ้านด่าน",
+   "rtgs": "Ban Dan",
+   "province": "บุรีรัมย์",
+   "split": "dev"
+  },
+  {
+   "thai": "บ้านด่านลานหอย",
+   "rtgs": "Ban Dan Lan Hoi",
+   "province": "สุโขทัย",
+   "split": "dev"
+  },
+  {
+   "thai": "บ้านดุง",
+   "rtgs": "Ban Dung",
+   "province": "อุดรธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "บ้านฝาง",
+   "rtgs": "Ban Fang",
+   "province": "ขอนแก่น",
+   "split": "test"
+  },
+  {
+   "thai": "บ้านแฮด",
+   "rtgs": "Ban Haet",
+   "province": "ขอนแก่น",
+   "split": "test"
+  },
+  {
+   "thai": "บ้านโฮ่ง",
+   "rtgs": "Ban Hong",
+   "province": "ลำพูน",
+   "split": "dev"
+  },
+  {
+   "thai": "บ้านคา",
+   "rtgs": "Ban Kha",
+   "province": "ราชบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "บ้านค่าย",
+   "rtgs": "Ban Khai",
+   "province": "ระยอง",
+   "split": "dev"
+  },
+  {
+   "thai": "บ้านโคก",
+   "rtgs": "Ban Khok",
+   "province": "อุตรดิตถ์",
+   "split": "dev"
+  },
+  {
+   "thai": "บ้านเขว้า",
+   "rtgs": "Ban Khwao",
+   "province": "ชัยภูมิ",
+   "split": "dev"
+  },
+  {
+   "thai": "บ้านกรวด",
+   "rtgs": "Ban Kruat",
+   "province": "บุรีรัมย์",
+   "split": "dev"
+  },
+  {
+   "thai": "บ้านแหลม",
+   "rtgs": "Ban Laem",
+   "province": "เพชรบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "บ้านลาด",
+   "rtgs": "Ban Lat",
+   "province": "เพชรบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "บ้านหลวง",
+   "rtgs": "Ban Luang",
+   "province": "น่าน",
+   "split": "test"
+  },
+  {
+   "thai": "บ้านเหลื่อม",
+   "rtgs": "Ban Lueam",
+   "province": "นครราชสีมา",
+   "split": "test"
+  },
+  {
+   "thai": "บ้านใหม่ไชยพจน์",
+   "rtgs": "Ban Mai Chaiyaphot",
+   "province": "บุรีรัมย์",
+   "split": "test"
+  },
+  {
+   "thai": "บ้านหมี่",
+   "rtgs": "Ban Mi",
+   "province": "ลพบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "บ้านหมอ",
+   "rtgs": "Ban Mo",
+   "province": "สระบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "บ้านม่วง",
+   "rtgs": "Ban Muang",
+   "province": "สกลนคร",
+   "split": "test"
+  },
+  {
+   "thai": "บ้านนา",
+   "rtgs": "Ban Na",
+   "province": "นครนายก",
+   "split": "dev"
+  },
+  {
+   "thai": "บ้านนาเดิม",
+   "rtgs": "Ban Na Doem",
+   "province": "สุราษฎร์ธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "บ้านนาสาร",
+   "rtgs": "Ban Na San",
+   "province": "สุราษฎร์ธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "บ้านแพง",
+   "rtgs": "Ban Phaeng",
+   "province": "นครพนม",
+   "split": "test"
+  },
+  {
+   "thai": "บ้านแพ้ว",
+   "rtgs": "Ban Phaeo",
+   "province": "สมุทรสาคร",
+   "split": "dev"
+  },
+  {
+   "thai": "บ้านไผ่",
+   "rtgs": "Ban Phai",
+   "province": "ขอนแก่น",
+   "split": "dev"
+  },
+  {
+   "thai": "บ้านโพธิ์",
+   "rtgs": "Ban Pho",
+   "province": "ฉะเชิงเทรา",
+   "split": "test"
+  },
+  {
+   "thai": "บ้านแพรก",
+   "rtgs": "Ban Phraek",
+   "province": "พระนครศรีอยุธยา",
+   "split": "test"
+  },
+  {
+   "thai": "บ้านผือ",
+   "rtgs": "Ban Phue",
+   "province": "อุดรธานี",
+   "split": "test"
+  },
+  {
+   "thai": "บ้านโป่ง",
+   "rtgs": "Ban Pong",
+   "province": "ราชบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "บ้านไร่",
+   "rtgs": "Ban Rai",
+   "province": "อุทัยธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "บ้านสร้าง",
+   "rtgs": "Ban Sang",
+   "province": "ปราจีนบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "บ้านตาขุน",
+   "rtgs": "Ban Ta Khun",
+   "province": "สุราษฎร์ธานี",
+   "split": "test"
+  },
+  {
+   "thai": "บ้านตาก",
+   "rtgs": "Ban Tak",
+   "province": "ตาก",
+   "split": "dev"
+  },
+  {
+   "thai": "บ้านแท่น",
+   "rtgs": "Ban Thaen",
+   "province": "ชัยภูมิ",
+   "split": "dev"
+  },
+  {
+   "thai": "บ้านธิ",
+   "rtgs": "Ban Thi",
+   "province": "ลำพูน",
+   "split": "test"
+  },
+  {
+   "thai": "บางบาล",
+   "rtgs": "Bang Ban",
+   "province": "พระนครศรีอยุธยา",
+   "split": "dev"
+  },
+  {
+   "thai": "บางบ่อ",
+   "rtgs": "Bang Bo",
+   "province": "สมุทรปราการ",
+   "split": "test"
+  },
+  {
+   "thai": "บางบัวทอง",
+   "rtgs": "Bang Bua Thong",
+   "province": "นนทบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "บางแก้ว",
+   "rtgs": "Bang Kaeo",
+   "province": "พัทลุง",
+   "split": "dev"
+  },
+  {
+   "thai": "บางขัน",
+   "rtgs": "Bang Khan",
+   "province": "นครศรีธรรมราช",
+   "split": "test"
+  },
+  {
+   "thai": "บางคล้า",
+   "rtgs": "Bang Khla",
+   "province": "ฉะเชิงเทรา",
+   "split": "test"
+  },
+  {
+   "thai": "บางคนที",
+   "rtgs": "Bang Khonthi",
+   "province": "สมุทรสงคราม",
+   "split": "test"
+  },
+  {
+   "thai": "บางกล่ำ",
+   "rtgs": "Bang Klam",
+   "province": "สงขลา",
+   "split": "test"
+  },
+  {
+   "thai": "บางกระทุ่ม",
+   "rtgs": "Bang Krathum",
+   "province": "พิษณุโลก",
+   "split": "test"
+  },
+  {
+   "thai": "บางกรวย",
+   "rtgs": "Bang Kruai",
+   "province": "นนทบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "บางละมุง",
+   "rtgs": "Bang Lamung",
+   "province": "ชลบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "บางเลน",
+   "rtgs": "Bang Len",
+   "province": "นครปฐม",
+   "split": "test"
+  },
+  {
+   "thai": "บางมูลนาก",
+   "rtgs": "Bang Mun Nak",
+   "province": "พิจิตร",
+   "split": "dev"
+  },
+  {
+   "thai": "บางน้ำเปรี้ยว",
+   "rtgs": "Bang Nam Priao",
+   "province": "ฉะเชิงเทรา",
+   "split": "dev"
+  },
+  {
+   "thai": "บางปะอิน",
+   "rtgs": "Bang Pa-in",
+   "province": "พระนครศรีอยุธยา",
+   "split": "dev"
+  },
+  {
+   "thai": "บางปะหัน",
+   "rtgs": "Bang Pahan",
+   "province": "พระนครศรีอยุธยา",
+   "split": "test"
+  },
+  {
+   "thai": "บางปะกง",
+   "rtgs": "Bang Pakong",
+   "province": "ฉะเชิงเทรา",
+   "split": "test"
+  },
+  {
+   "thai": "บางแพ",
+   "rtgs": "Bang Phae",
+   "province": "ราชบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "บางพลี",
+   "rtgs": "Bang Phli",
+   "province": "สมุทรปราการ",
+   "split": "dev"
+  },
+  {
+   "thai": "บางปลาม้า",
+   "rtgs": "Bang Pla Ma",
+   "province": "สุพรรณบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "บางระจัน",
+   "rtgs": "Bang Rachan",
+   "province": "สิงห์บุรี",
+   "split": "test"
+  },
+  {
+   "thai": "บางระกำ",
+   "rtgs": "Bang Rakam",
+   "province": "พิษณุโลก",
+   "split": "dev"
+  },
+  {
+   "thai": "บางไทร",
+   "rtgs": "Bang Sai",
+   "province": "พระนครศรีอยุธยา",
+   "split": "test"
+  },
+  {
+   "thai": "บางซ้าย",
+   "rtgs": "Bang Sai",
+   "province": "พระนครศรีอยุธยา",
+   "split": "test"
+  },
+  {
+   "thai": "บางเสาธง",
+   "rtgs": "Bang Sao Thong",
+   "province": "สมุทรปราการ",
+   "split": "test"
+  },
+  {
+   "thai": "บางสะพาน",
+   "rtgs": "Bang Saphan",
+   "province": "ประจวบคีรีขันธ์",
+   "split": "test"
+  },
+  {
+   "thai": "บางสะพานน้อย",
+   "rtgs": "Bang Saphan Noi",
+   "province": "ประจวบคีรีขันธ์",
+   "split": "test"
+  },
+  {
+   "thai": "บางใหญ่",
+   "rtgs": "Bang Yai",
+   "province": "นนทบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "บันนังสตา",
+   "rtgs": "Bannang Sata",
+   "province": "ยะลา",
+   "split": "test"
+  },
+  {
+   "thai": "บรรพตพิสัย",
+   "rtgs": "Banphot Phisai",
+   "province": "นครสวรรค์",
+   "split": "test"
+  },
+  {
+   "thai": "เบญจลักษ์",
+   "rtgs": "Benchalak",
+   "province": "ศรีสะเกษ",
+   "split": "dev"
+  },
+  {
+   "thai": "เบตง",
+   "rtgs": "Betong",
+   "province": "ยะลา",
+   "split": "dev"
+  },
+  {
+   "thai": "บ่อเกลือ",
+   "rtgs": "Bo Kluea",
+   "province": "น่าน",
+   "split": "test"
+  },
+  {
+   "thai": "บ่อพลอย",
+   "rtgs": "Bo Phloi",
+   "province": "กาญจนบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "บ่อไร่",
+   "rtgs": "Bo Rai",
+   "province": "ตราด",
+   "split": "test"
+  },
+  {
+   "thai": "บ่อทอง",
+   "rtgs": "Bo Thong",
+   "province": "ชลบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "บรบือ",
+   "rtgs": "Borabue",
+   "province": "มหาสารคาม",
+   "split": "test"
+  },
+  {
+   "thai": "บัวลาย",
+   "rtgs": "Bua Lai",
+   "province": "นครราชสีมา",
+   "split": "dev"
+  },
+  {
+   "thai": "บัวใหญ่",
+   "rtgs": "Bua Yai",
+   "province": "นครราชสีมา",
+   "split": "dev"
+  },
+  {
+   "thai": "บัวเชด",
+   "rtgs": "Buachet",
+   "province": "สุรินทร์",
+   "split": "test"
+  },
+  {
+   "thai": "บึงบูรพ์",
+   "rtgs": "Bueng Bun",
+   "province": "ศรีสะเกษ",
+   "split": "dev"
+  },
+  {
+   "thai": "บึงโขงหลง",
+   "rtgs": "Bueng Khong Long",
+   "province": "บึงกาฬ",
+   "split": "dev"
+  },
+  {
+   "thai": "บึงนาราง",
+   "rtgs": "Bueng Na Rang",
+   "province": "พิจิตร",
+   "split": "dev"
+  },
+  {
+   "thai": "บึงสามพัน",
+   "rtgs": "Bueng Sam Phan",
+   "province": "เพชรบูรณ์",
+   "split": "dev"
+  },
+  {
+   "thai": "บึงสามัคคี",
+   "rtgs": "Bueng Samakkhi",
+   "province": "กำแพงเพชร",
+   "split": "test"
+  },
+  {
+   "thai": "บุ่งคล้า",
+   "rtgs": "Bung Khla",
+   "province": "บึงกาฬ",
+   "split": "test"
+  },
+  {
+   "thai": "บุณฑริก",
+   "rtgs": "Buntharik",
+   "province": "อุบลราชธานี",
+   "split": "test"
+  },
+  {
+   "thai": "ชะอำ",
+   "rtgs": "Cha-am",
+   "province": "เพชรบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "ชะอวด",
+   "rtgs": "Cha-uat",
+   "province": "นครศรีธรรมราช",
+   "split": "test"
+  },
+  {
+   "thai": "แจ้ห่ม",
+   "rtgs": "Chae Hom",
+   "province": "ลำปาง",
+   "split": "dev"
+  },
+  {
+   "thai": "ชัยบาดาล",
+   "rtgs": "Chai Badan",
+   "province": "ลพบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "ไชโย",
+   "rtgs": "Chaiyo",
+   "province": "อ่างทอง",
+   "split": "test"
+  },
+  {
+   "thai": "ชัยบุรี",
+   "rtgs": "Chai Buri",
+   "province": "สุราษฎร์ธานี",
+   "split": "test"
+  },
+  {
+   "thai": "ไชยปราการ",
+   "rtgs": "Chai Prakan",
+   "province": "เชียงใหม่",
+   "split": "test"
+  },
+  {
+   "thai": "ไชยวาน",
+   "rtgs": "Chai Wan",
+   "province": "อุดรธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "ไชยา",
+   "rtgs": "Chaiya",
+   "province": "สุราษฎร์ธานี",
+   "split": "test"
+  },
+  {
+   "thai": "เฉลิมพระเกียรติ",
+   "rtgs": "Chaloem Phra Kiat",
+   "province": "นครราชสีมา",
+   "split": "test"
+  },
+  {
+   "thai": "เฉลิมพระเกียรติ",
+   "rtgs": "Chaloem Phra Kiat",
+   "province": "บุรีรัมย์",
+   "split": "test"
+  },
+  {
+   "thai": "เฉลิมพระเกียรติ",
+   "rtgs": "Chaloem Phra Kiat",
+   "province": "นครศรีธรรมราช",
+   "split": "test"
+  },
+  {
+   "thai": "เฉลิมพระเกียรติ",
+   "rtgs": "Chaloem Phra Kiat",
+   "province": "สระบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "เฉลิมพระเกียรติ",
+   "rtgs": "Chaloem Phra Kiat",
+   "province": "น่าน",
+   "split": "test"
+  },
+  {
+   "thai": "จักราช",
+   "rtgs": "Chakkarat",
+   "province": "นครราชสีมา",
+   "split": "test"
+  },
+  {
+   "thai": "ชำนิ",
+   "rtgs": "Chamni",
+   "province": "บุรีรัมย์",
+   "split": "test"
+  },
+  {
+   "thai": "จะนะ",
+   "rtgs": "Chana",
+   "province": "สงขลา",
+   "split": "dev"
+  },
+  {
+   "thai": "จะแนะ",
+   "rtgs": "Chanae",
+   "province": "นราธิวาส",
+   "split": "test"
+  },
+  {
+   "thai": "จังหาร",
+   "rtgs": "Changhan",
+   "province": "ร้อยเอ็ด",
+   "split": "test"
+  },
+  {
+   "thai": "ช้างกลาง",
+   "rtgs": "Chang Klang",
+   "province": "นครศรีธรรมราช",
+   "split": "dev"
+  },
+  {
+   "thai": "ชานุมาน",
+   "rtgs": "Chanuman",
+   "province": "อำนาจเจริญ",
+   "split": "test"
+  },
+  {
+   "thai": "เจริญศิลป์",
+   "rtgs": "Charoen Sin",
+   "province": "สกลนคร",
+   "split": "dev"
+  },
+  {
+   "thai": "ชาติตระการ",
+   "rtgs": "Chat Trakan",
+   "province": "พิษณุโลก",
+   "split": "dev"
+  },
+  {
+   "thai": "จัตุรัส",
+   "rtgs": "Chatturat",
+   "province": "ชัยภูมิ",
+   "split": "test"
+  },
+  {
+   "thai": "จตุรพักตรพิมาน",
+   "rtgs": "Chaturaphak Phiman",
+   "province": "ร้อยเอ็ด",
+   "split": "dev"
+  },
+  {
+   "thai": "ฉวาง",
+   "rtgs": "Chawang",
+   "province": "นครศรีธรรมราช",
+   "split": "dev"
+  },
+  {
+   "thai": "เชียรใหญ่",
+   "rtgs": "Chian Yai",
+   "province": "นครศรีธรรมราช",
+   "split": "test"
+  },
+  {
+   "thai": "เชียงดาว",
+   "rtgs": "Chiang Dao",
+   "province": "เชียงใหม่",
+   "split": "test"
+  },
+  {
+   "thai": "เชียงคำ",
+   "rtgs": "Chiang Kham",
+   "province": "พะเยา",
+   "split": "test"
+  },
+  {
+   "thai": "เชียงคาน",
+   "rtgs": "Chiang Khan",
+   "province": "เลย",
+   "split": "test"
+  },
+  {
+   "thai": "เชียงของ",
+   "rtgs": "Chiang Khong",
+   "province": "เชียงราย",
+   "split": "dev"
+  },
+  {
+   "thai": "เชียงขวัญ",
+   "rtgs": "Chiang Khwan",
+   "province": "ร้อยเอ็ด",
+   "split": "dev"
+  },
+  {
+   "thai": "เชียงกลาง",
+   "rtgs": "Chiang Klang",
+   "province": "น่าน",
+   "split": "dev"
+  },
+  {
+   "thai": "เชียงม่วน",
+   "rtgs": "Chiang Muan",
+   "province": "พะเยา",
+   "split": "test"
+  },
+  {
+   "thai": "เชียงแสน",
+   "rtgs": "Chiang Saen",
+   "province": "เชียงราย",
+   "split": "dev"
+  },
+  {
+   "thai": "เชียงยืน",
+   "rtgs": "Chiang Yuen",
+   "province": "มหาสารคาม",
+   "split": "test"
+  },
+  {
+   "thai": "เจาะไอร้อง",
+   "rtgs": "Cho-airong",
+   "province": "นราธิวาส",
+   "split": "test"
+  },
+  {
+   "thai": "โชคชัย",
+   "rtgs": "Chok Chai",
+   "province": "นครราชสีมา",
+   "split": "dev"
+  },
+  {
+   "thai": "จอมบึง",
+   "rtgs": "Chom Bueng",
+   "province": "ราชบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "จอมพระ",
+   "rtgs": "Chom Phra",
+   "province": "สุรินทร์",
+   "split": "dev"
+  },
+  {
+   "thai": "จอมทอง",
+   "rtgs": "Chom Thong",
+   "province": "เชียงใหม่",
+   "split": "test"
+  },
+  {
+   "thai": "ชนแดน",
+   "rtgs": "Chon Daen",
+   "province": "เพชรบูรณ์",
+   "split": "dev"
+  },
+  {
+   "thai": "ชนบท",
+   "rtgs": "Chonnabot",
+   "province": "ขอนแก่น",
+   "split": "dev"
+  },
+  {
+   "thai": "ชื่นชม",
+   "rtgs": "Chuen Chom",
+   "province": "มหาสารคาม",
+   "split": "test"
+  },
+  {
+   "thai": "จุฬาภรณ์",
+   "rtgs": "Chulabhorn",
+   "province": "นครศรีธรรมราช",
+   "split": "test",
+   "exclude": "official spelling is not RTGS"
+  },
+  {
+   "thai": "ชุมแพ",
+   "rtgs": "Chum Phae",
+   "province": "ขอนแก่น",
+   "split": "dev"
+  },
+  {
+   "thai": "ชุมพวง",
+   "rtgs": "Chum Phuang",
+   "province": "นครราชสีมา",
+   "split": "test"
+  },
+  {
+   "thai": "ชุมแสง",
+   "rtgs": "Chum Saeng",
+   "province": "นครสวรรค์",
+   "split": "dev"
+  },
+  {
+   "thai": "ชุมตาบง",
+   "rtgs": "Chum Ta Bong",
+   "province": "นครสวรรค์",
+   "split": "dev"
+  },
+  {
+   "thai": "ชุมพลบุรี",
+   "rtgs": "Chumphon Buri",
+   "province": "สุรินทร์",
+   "split": "test"
+  },
+  {
+   "thai": "จุน",
+   "rtgs": "Chun",
+   "province": "พะเยา",
+   "split": "test"
+  },
+  {
+   "thai": "ดำเนินสะดวก",
+   "rtgs": "Damnoen Saduak",
+   "province": "ราชบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "ด่านช้าง",
+   "rtgs": "Dan Chang",
+   "province": "สุพรรณบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "ด่านขุนทด",
+   "rtgs": "Dan Khun Thot",
+   "province": "นครราชสีมา",
+   "split": "test"
+  },
+  {
+   "thai": "ด่านมะขามเตี้ย",
+   "rtgs": "Dan Makham Tia",
+   "province": "กาญจนบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "ด่านซ้าย",
+   "rtgs": "Dan Sai",
+   "province": "เลย",
+   "split": "test"
+  },
+  {
+   "thai": "เด่นชัย",
+   "rtgs": "Den Chai",
+   "province": "แพร่",
+   "split": "test"
+  },
+  {
+   "thai": "เดชอุดม",
+   "rtgs": "Det Udom",
+   "province": "อุบลราชธานี",
+   "split": "test"
+  },
+  {
+   "thai": "เดิมบางนางบวช",
+   "rtgs": "Doem Bang Nang Buat",
+   "province": "สุพรรณบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "ดอยหล่อ",
+   "rtgs": "Doi Lo",
+   "province": "เชียงใหม่",
+   "split": "test"
+  },
+  {
+   "thai": "ดอยหลวง",
+   "rtgs": "Doi Luang",
+   "province": "เชียงราย",
+   "split": "dev"
+  },
+  {
+   "thai": "ดอยสะเก็ด",
+   "rtgs": "Doi Saket",
+   "province": "เชียงใหม่",
+   "split": "dev"
+  },
+  {
+   "thai": "ดอยเต่า",
+   "rtgs": "Doi Tao",
+   "province": "เชียงใหม่",
+   "split": "test"
+  },
+  {
+   "thai": "ดอกคำใต้",
+   "rtgs": "Dok Khamtai",
+   "province": "พะเยา",
+   "split": "test"
+  },
+  {
+   "thai": "ดอนจาน",
+   "rtgs": "Don Chan",
+   "province": "กาฬสินธุ์",
+   "split": "test"
+  },
+  {
+   "thai": "ดอนเจดีย์",
+   "rtgs": "Don Chedi",
+   "province": "สุพรรณบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "ดอนมดแดง",
+   "rtgs": "Don Mot Daeng",
+   "province": "อุบลราชธานี",
+   "split": "test"
+  },
+  {
+   "thai": "ดอนพุด",
+   "rtgs": "Don Phut",
+   "province": "สระบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "ดอนสัก",
+   "rtgs": "Don Sak",
+   "province": "สุราษฎร์ธานี",
+   "split": "test"
+  },
+  {
+   "thai": "ดอนตาล",
+   "rtgs": "Don Tan",
+   "province": "มุกดาหาร",
+   "split": "test"
+  },
+  {
+   "thai": "ดอนตูม",
+   "rtgs": "Don Tum",
+   "province": "นครปฐม",
+   "split": "test"
+  },
+  {
+   "thai": "ดงเจริญ",
+   "rtgs": "Dong Charoen",
+   "province": "พิจิตร",
+   "split": "dev"
+  },
+  {
+   "thai": "ดงหลวง",
+   "rtgs": "Dong Luang",
+   "province": "มุกดาหาร",
+   "split": "test"
+  },
+  {
+   "thai": "เอราวัณ",
+   "rtgs": "Erawan",
+   "province": "เลย",
+   "split": "test"
+  },
+  {
+   "thai": "ฟากท่า",
+   "rtgs": "Fak Tha",
+   "province": "อุตรดิตถ์",
+   "split": "dev"
+  },
+  {
+   "thai": "ฝาง",
+   "rtgs": "Fang",
+   "province": "เชียงใหม่",
+   "split": "dev"
+  },
+  {
+   "thai": "เฝ้าไร่",
+   "rtgs": "Fao Rai",
+   "province": "หนองคาย",
+   "split": "dev"
+  },
+  {
+   "thai": "กัลยาณิวัฒนา",
+   "rtgs": "Galyani Vadhana",
+   "province": "เชียงใหม่",
+   "split": "dev",
+   "exclude": "official spelling is not RTGS"
+  },
+  {
+   "thai": "ห้างฉัตร",
+   "rtgs": "Hang Chat",
+   "province": "ลำปาง",
+   "split": "dev"
+  },
+  {
+   "thai": "หางดง",
+   "rtgs": "Hang Dong",
+   "province": "เชียงใหม่",
+   "split": "test"
+  },
+  {
+   "thai": "หันคา",
+   "rtgs": "Hankha",
+   "province": "ชัยนาท",
+   "split": "test"
+  },
+  {
+   "thai": "หาดสำราญ",
+   "rtgs": "Hat Samran",
+   "province": "ตรัง",
+   "split": "test"
+  },
+  {
+   "thai": "หาดใหญ่",
+   "rtgs": "Hat Yai",
+   "province": "สงขลา",
+   "split": "test"
+  },
+  {
+   "thai": "ฮอด",
+   "rtgs": "Hot",
+   "province": "เชียงใหม่",
+   "split": "test"
+  },
+  {
+   "thai": "หัวหิน",
+   "rtgs": "Hua Hin",
+   "province": "ประจวบคีรีขันธ์",
+   "split": "test"
+  },
+  {
+   "thai": "หัวไทร",
+   "rtgs": "Hua Sai",
+   "province": "นครศรีธรรมราช",
+   "split": "dev"
+  },
+  {
+   "thai": "หัวตะพาน",
+   "rtgs": "Hua Taphan",
+   "province": "อำนาจเจริญ",
+   "split": "test"
+  },
+  {
+   "thai": "ห้วยคต",
+   "rtgs": "Huai Khot",
+   "province": "อุทัยธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "ห้วยกระเจา",
+   "rtgs": "Huai Krachao",
+   "province": "กาญจนบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "ห้วยเม็ก",
+   "rtgs": "Huai Mek",
+   "province": "กาฬสินธุ์",
+   "split": "test"
+  },
+  {
+   "thai": "ห้วยผึ้ง",
+   "rtgs": "Huai Phueng",
+   "province": "กาฬสินธุ์",
+   "split": "dev"
+  },
+  {
+   "thai": "ห้วยราช",
+   "rtgs": "Huai Rat",
+   "province": "บุรีรัมย์",
+   "split": "test"
+  },
+  {
+   "thai": "ห้วยแถลง",
+   "rtgs": "Huai Thalaeng",
+   "province": "นครราชสีมา",
+   "split": "test"
+  },
+  {
+   "thai": "ห้วยทับทัน",
+   "rtgs": "Huai Thap Than",
+   "province": "ศรีสะเกษ",
+   "split": "dev"
+  },
+  {
+   "thai": "ห้วยยอด",
+   "rtgs": "Huai Yot",
+   "province": "ตรัง",
+   "split": "test"
+  },
+  {
+   "thai": "อินทร์บุรี",
+   "rtgs": "In Buri",
+   "province": "สิงห์บุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "กาบัง",
+   "rtgs": "Kabang",
+   "province": "ยะลา",
+   "split": "dev"
+  },
+  {
+   "thai": "กบินทร์บุรี",
+   "rtgs": "Kabin Buri",
+   "province": "ปราจีนบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "แกดำ",
+   "rtgs": "Kae Dam",
+   "province": "มหาสารคาม",
+   "split": "dev"
+  },
+  {
+   "thai": "แก่งหางแมว",
+   "rtgs": "Kaeng Hang Maeo",
+   "province": "จันทบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "แก่งคอย",
+   "rtgs": "Kaeng Khoi",
+   "province": "สระบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "แก้งคร้อ",
+   "rtgs": "Kaeng Khro",
+   "province": "ชัยภูมิ",
+   "split": "test"
+  },
+  {
+   "thai": "แก่งกระจาน",
+   "rtgs": "Kaeng Krachan",
+   "province": "เพชรบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "แก้งสนามนาง",
+   "rtgs": "Kaeng Sanam Nang",
+   "province": "นครราชสีมา",
+   "split": "dev"
+  },
+  {
+   "thai": "กมลาไสย",
+   "rtgs": "Kamalasai",
+   "province": "กาฬสินธุ์",
+   "split": "dev"
+  },
+  {
+   "thai": "กำแพงแสน",
+   "rtgs": "Kamphaeng Saen",
+   "province": "นครปฐม",
+   "split": "test"
+  },
+  {
+   "thai": "กาญจนดิษฐ์",
+   "rtgs": "Kanchanadit",
+   "province": "สุราษฎร์ธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "กันตัง",
+   "rtgs": "Kantang",
+   "province": "ตรัง",
+   "split": "test"
+  },
+  {
+   "thai": "กันทรลักษ์",
+   "rtgs": "Kantharalak",
+   "province": "ศรีสะเกษ",
+   "split": "test"
+  },
+  {
+   "thai": "กันทรารมย์",
+   "rtgs": "Kanthararom",
+   "province": "ศรีสะเกษ",
+   "split": "test"
+  },
+  {
+   "thai": "กันทรวิชัย",
+   "rtgs": "Kantharawichai",
+   "province": "มหาสารคาม",
+   "split": "dev"
+  },
+  {
+   "thai": "เก้าเลี้ยว",
+   "rtgs": "Kao Liao",
+   "province": "นครสวรรค์",
+   "split": "test"
+  },
+  {
+   "thai": "กาบเชิง",
+   "rtgs": "Kap Choeng",
+   "province": "สุรินทร์",
+   "split": "test"
+  },
+  {
+   "thai": "กะพ้อ",
+   "rtgs": "Kapho",
+   "province": "ปัตตานี",
+   "split": "dev"
+  },
+  {
+   "thai": "กะเปอร์",
+   "rtgs": "Kapoe",
+   "province": "ระนอง",
+   "split": "dev"
+  },
+  {
+   "thai": "กะปง",
+   "rtgs": "Kapong",
+   "province": "พังงา",
+   "split": "dev"
+  },
+  {
+   "thai": "เกษตรสมบูรณ์",
+   "rtgs": "Kaset Sombun",
+   "province": "ชัยภูมิ",
+   "split": "dev"
+  },
+  {
+   "thai": "เกษตรวิสัย",
+   "rtgs": "Kaset Wisai",
+   "province": "ร้อยเอ็ด",
+   "split": "dev"
+  },
+  {
+   "thai": "กะทู้",
+   "rtgs": "Kathu",
+   "province": "ภูเก็ต",
+   "split": "test"
+  },
+  {
+   "thai": "แคนดง",
+   "rtgs": "Khaen Dong",
+   "province": "บุรีรัมย์",
+   "split": "test"
+  },
+  {
+   "thai": "ค่ายบางระจัน",
+   "rtgs": "Khai Bang Rachan",
+   "province": "สิงห์บุรี",
+   "split": "test"
+  },
+  {
+   "thai": "คำเขื่อนแก้ว",
+   "rtgs": "Kham Khuean Kaeo",
+   "province": "ยโสธร",
+   "split": "test"
+  },
+  {
+   "thai": "คำม่วง",
+   "rtgs": "Kham Muang",
+   "province": "กาฬสินธุ์",
+   "split": "test"
+  },
+  {
+   "thai": "ขามสะแกแสง",
+   "rtgs": "Kham Sakaesaeng",
+   "province": "นครราชสีมา",
+   "split": "test"
+  },
+  {
+   "thai": "คำตากล้า",
+   "rtgs": "Kham Ta Kla",
+   "province": "สกลนคร",
+   "split": "test"
+  },
+  {
+   "thai": "ขามทะเลสอ",
+   "rtgs": "Kham Thale So",
+   "province": "นครราชสีมา",
+   "split": "test"
+  },
+  {
+   "thai": "คำชะอี",
+   "rtgs": "Khamcha-i",
+   "province": "มุกดาหาร",
+   "split": "dev"
+  },
+  {
+   "thai": "ขนอม",
+   "rtgs": "Khanom",
+   "province": "นครศรีธรรมราช",
+   "split": "dev"
+  },
+  {
+   "thai": "ขาณุวรลักษบุรี",
+   "rtgs": "Khanu Woralaksaburi",
+   "province": "กำแพงเพชร",
+   "split": "test"
+  },
+  {
+   "thai": "เขาชัยสน",
+   "rtgs": "Khao Chaison",
+   "province": "พัทลุง",
+   "split": "dev"
+  },
+  {
+   "thai": "เขาฉกรรจ์",
+   "rtgs": "Khao Chakan",
+   "province": "สระแก้ว",
+   "split": "dev"
+  },
+  {
+   "thai": "เขาชะเมา",
+   "rtgs": "Khao Chamao",
+   "province": "ระยอง",
+   "split": "test"
+  },
+  {
+   "thai": "เขาคิชฌกูฏ",
+   "rtgs": "Khao Khitchakut",
+   "province": "จันทบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "เขาค้อ",
+   "rtgs": "Khao Kho",
+   "province": "เพชรบูรณ์",
+   "split": "test"
+  },
+  {
+   "thai": "เขาพนม",
+   "rtgs": "Khao Phanom",
+   "province": "กระบี่",
+   "split": "test"
+  },
+  {
+   "thai": "เขาสมิง",
+   "rtgs": "Khao Saming",
+   "province": "ตราด",
+   "split": "test"
+  },
+  {
+   "thai": "เขาสวนกวาง",
+   "rtgs": "Khao Suan Kwang",
+   "province": "ขอนแก่น",
+   "split": "test"
+  },
+  {
+   "thai": "เขาวง",
+   "rtgs": "Khao Wong",
+   "province": "กาฬสินธุ์",
+   "split": "test"
+  },
+  {
+   "thai": "เขาย้อย",
+   "rtgs": "Khao Yoi",
+   "province": "เพชรบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "เขมราฐ",
+   "rtgs": "Khemarat",
+   "province": "อุบลราชธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "เคียนซา",
+   "rtgs": "Khian Sa",
+   "province": "สุราษฎร์ธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "คีรีมาศ",
+   "rtgs": "Khiri Mat",
+   "province": "สุโขทัย",
+   "split": "dev"
+  },
+  {
+   "thai": "คีรีรัฐนิคม",
+   "rtgs": "Khiri Rat Nikhom",
+   "province": "สุราษฎร์ธานี",
+   "split": "test"
+  },
+  {
+   "thai": "คลองหาด",
+   "rtgs": "Khlong Hat",
+   "province": "สระแก้ว",
+   "split": "test"
+  },
+  {
+   "thai": "คลองหอยโข่ง",
+   "rtgs": "Khlong Hoi Khong",
+   "province": "สงขลา",
+   "split": "test"
+  },
+  {
+   "thai": "คลองขลุง",
+   "rtgs": "Khlong Khlung",
+   "province": "กำแพงเพชร",
+   "split": "dev"
+  },
+  {
+   "thai": "คลองเขื่อน",
+   "rtgs": "Khlong Khuean",
+   "province": "ฉะเชิงเทรา",
+   "split": "test"
+  },
+  {
+   "thai": "คลองลาน",
+   "rtgs": "Khlong Lan",
+   "province": "กำแพงเพชร",
+   "split": "test"
+  },
+  {
+   "thai": "คลองหลวง",
+   "rtgs": "Khlong Luang",
+   "province": "ปทุมธานี",
+   "split": "test"
+  },
+  {
+   "thai": "คลองท่อม",
+   "rtgs": "Khlong Thom",
+   "province": "กระบี่",
+   "split": "dev"
+  },
+  {
+   "thai": "คลองใหญ่",
+   "rtgs": "Khlong Yai",
+   "province": "ตราด",
+   "split": "dev"
+  },
+  {
+   "thai": "ขลุง",
+   "rtgs": "Khlung",
+   "province": "จันทบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "ค้อวัง",
+   "rtgs": "Kho Wang",
+   "province": "ยโสธร",
+   "split": "dev"
+  },
+  {
+   "thai": "โคกเจริญ",
+   "rtgs": "Khok Charoen",
+   "province": "ลพบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "โคกโพธิ์",
+   "rtgs": "Khok Pho",
+   "province": "ปัตตานี",
+   "split": "dev"
+  },
+  {
+   "thai": "โคกโพธิ์ไชย",
+   "rtgs": "Khok Pho Chai",
+   "province": "ขอนแก่น",
+   "split": "dev"
+  },
+  {
+   "thai": "โคกสำโรง",
+   "rtgs": "Khok Samrong",
+   "province": "ลพบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "โคกศรีสุพรรณ",
+   "rtgs": "Khok Si Suphan",
+   "province": "สกลนคร",
+   "split": "dev"
+  },
+  {
+   "thai": "โคกสูง",
+   "rtgs": "Khok Sung",
+   "province": "สระแก้ว",
+   "split": "dev"
+  },
+  {
+   "thai": "ครบุรี",
+   "rtgs": "Khon Buri",
+   "province": "นครราชสีมา",
+   "split": "dev"
+  },
+  {
+   "thai": "คอนสาร",
+   "rtgs": "Khon San",
+   "province": "ชัยภูมิ",
+   "split": "dev"
+  },
+  {
+   "thai": "คอนสวรรค์",
+   "rtgs": "Khon Sawan",
+   "province": "ชัยภูมิ",
+   "split": "dev"
+  },
+  {
+   "thai": "คง",
+   "rtgs": "Khong",
+   "province": "นครราชสีมา",
+   "split": "test"
+  },
+  {
+   "thai": "ฆ้องชัย",
+   "rtgs": "Khong Chai",
+   "province": "กาฬสินธุ์",
+   "split": "dev"
+  },
+  {
+   "thai": "โขงเจียม",
+   "rtgs": "Khong Chiam",
+   "province": "อุบลราชธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "คูเมือง",
+   "rtgs": "Khu Mueang",
+   "province": "บุรีรัมย์",
+   "split": "dev"
+  },
+  {
+   "thai": "ควนโดน",
+   "rtgs": "Khuan Don",
+   "province": "สตูล",
+   "split": "dev"
+  },
+  {
+   "thai": "ควนกาหลง",
+   "rtgs": "Khuan Kalong",
+   "province": "สตูล",
+   "split": "test"
+  },
+  {
+   "thai": "ควนขนุน",
+   "rtgs": "Khuan Khanun",
+   "province": "พัทลุง",
+   "split": "test"
+  },
+  {
+   "thai": "ควนเนียง",
+   "rtgs": "Khuan Niang",
+   "province": "สงขลา",
+   "split": "test"
+  },
+  {
+   "thai": "เขื่องใน",
+   "rtgs": "Khueang Nai",
+   "province": "อุบลราชธานี",
+   "split": "test"
+  },
+  {
+   "thai": "ขุขันธ์",
+   "rtgs": "Khukhan",
+   "province": "ศรีสะเกษ",
+   "split": "dev"
+  },
+  {
+   "thai": "ขุนหาญ",
+   "rtgs": "Khun Han",
+   "province": "ศรีสะเกษ",
+   "split": "test"
+  },
+  {
+   "thai": "ขุนตาล",
+   "rtgs": "Khun Tan",
+   "province": "เชียงราย",
+   "split": "test"
+  },
+  {
+   "thai": "ขุนยวม",
+   "rtgs": "Khun Yuam",
+   "province": "แม่ฮ่องสอน",
+   "split": "test"
+  },
+  {
+   "thai": "คุระบุรี",
+   "rtgs": "Khura Buri",
+   "province": "พังงา",
+   "split": "test"
+  },
+  {
+   "thai": "เขวาสินรินทร์",
+   "rtgs": "Khwao Sinarin",
+   "province": "สุรินทร์",
+   "split": "dev"
+  },
+  {
+   "thai": "แกลง",
+   "rtgs": "Klaeng",
+   "province": "ระยอง",
+   "split": "dev"
+  },
+  {
+   "thai": "เกาะจันทร์",
+   "rtgs": "Ko Chan",
+   "province": "ชลบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "เกาะช้าง",
+   "rtgs": "Ko Chang",
+   "province": "ตราด",
+   "split": "test"
+  },
+  {
+   "thai": "เกาะคา",
+   "rtgs": "Ko Kha",
+   "province": "ลำปาง",
+   "split": "test"
+  },
+  {
+   "thai": "เกาะกูด",
+   "rtgs": "Ko Kut",
+   "province": "ตราด",
+   "split": "test"
+  },
+  {
+   "thai": "เกาะลันตา",
+   "rtgs": "Ko Lanta",
+   "province": "กระบี่",
+   "split": "test"
+  },
+  {
+   "thai": "เกาะพะงัน",
+   "rtgs": "Ko Pha-ngan",
+   "province": "สุราษฎร์ธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "เกาะสมุย",
+   "rtgs": "Ko Samui",
+   "province": "สุราษฎร์ธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "เกาะสีชัง",
+   "rtgs": "Ko Sichang",
+   "province": "ชลบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "เกาะยาว",
+   "rtgs": "Ko Yao",
+   "province": "พังงา",
+   "split": "dev"
+  },
+  {
+   "thai": "กงไกรลาศ",
+   "rtgs": "Kong Krailat",
+   "province": "สุโขทัย",
+   "split": "dev"
+  },
+  {
+   "thai": "กงหรา",
+   "rtgs": "Kong Ra",
+   "province": "พัทลุง",
+   "split": "dev"
+  },
+  {
+   "thai": "โกสัมพีนคร",
+   "rtgs": "Kosamphi Nakhon",
+   "province": "กำแพงเพชร",
+   "split": "dev"
+  },
+  {
+   "thai": "โกสุมพิสัย",
+   "rtgs": "Kosum Phisai",
+   "province": "มหาสารคาม",
+   "split": "test"
+  },
+  {
+   "thai": "กระบุรี",
+   "rtgs": "Kra Buri",
+   "province": "ระนอง",
+   "split": "dev"
+  },
+  {
+   "thai": "กระนวน",
+   "rtgs": "Kranuan",
+   "province": "ขอนแก่น",
+   "split": "test"
+  },
+  {
+   "thai": "กระแสสินธุ์",
+   "rtgs": "Krasae Sin",
+   "province": "สงขลา",
+   "split": "test"
+  },
+  {
+   "thai": "กระสัง",
+   "rtgs": "Krasang",
+   "province": "บุรีรัมย์",
+   "split": "dev"
+  },
+  {
+   "thai": "กระทุ่มแบน",
+   "rtgs": "Krathum Baen",
+   "province": "สมุทรสาคร",
+   "split": "dev"
+  },
+  {
+   "thai": "โกรกพระ",
+   "rtgs": "Krok Phra",
+   "province": "นครสวรรค์",
+   "split": "dev"
+  },
+  {
+   "thai": "กรงปินัง",
+   "rtgs": "Krong Pinang",
+   "province": "ยะลา",
+   "split": "test"
+  },
+  {
+   "thai": "กู่แก้ว",
+   "rtgs": "Ku Kaeo",
+   "province": "อุดรธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "กุฉินารายณ์",
+   "rtgs": "Kuchinarai",
+   "province": "กาฬสินธุ์",
+   "split": "dev"
+  },
+  {
+   "thai": "กุยบุรี",
+   "rtgs": "Kui Buri",
+   "province": "ประจวบคีรีขันธ์",
+   "split": "test"
+  },
+  {
+   "thai": "กุมภวาปี",
+   "rtgs": "Kumphawapi",
+   "province": "อุดรธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "กุสุมาลย์",
+   "rtgs": "Kusuman",
+   "province": "สกลนคร",
+   "split": "dev"
+  },
+  {
+   "thai": "กุดบาก",
+   "rtgs": "Kut Bak",
+   "province": "สกลนคร",
+   "split": "dev"
+  },
+  {
+   "thai": "กุดจับ",
+   "rtgs": "Kut Chap",
+   "province": "อุดรธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "กุดชุม",
+   "rtgs": "Kut Chum",
+   "province": "ยโสธร",
+   "split": "test"
+  },
+  {
+   "thai": "กุดข้าวปุ้น",
+   "rtgs": "Kut Khaopun",
+   "province": "อุบลราชธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "กุดรัง",
+   "rtgs": "Kut Rang",
+   "province": "มหาสารคาม",
+   "split": "test"
+  },
+  {
+   "thai": "ละงู",
+   "rtgs": "La-ngu",
+   "province": "สตูล",
+   "split": "test"
+  },
+  {
+   "thai": "ละอุ่น",
+   "rtgs": "La-un",
+   "province": "ระนอง",
+   "split": "dev"
+  },
+  {
+   "thai": "แหลมงอบ",
+   "rtgs": "Laem Ngop",
+   "province": "ตราด",
+   "split": "test"
+  },
+  {
+   "thai": "แหลมสิงห์",
+   "rtgs": "Laem Sing",
+   "province": "จันทบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "ละหานทราย",
+   "rtgs": "Lahan Sai",
+   "province": "บุรีรัมย์",
+   "split": "test"
+  },
+  {
+   "thai": "ลำลูกกา",
+   "rtgs": "Lam Luk Ka",
+   "province": "ปทุมธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "ลำปลายมาศ",
+   "rtgs": "Lam Plai Mat",
+   "province": "บุรีรัมย์",
+   "split": "dev"
+  },
+  {
+   "thai": "ลำสนธิ",
+   "rtgs": "Lam Sonthi",
+   "province": "ลพบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "ลำทะเมนชัย",
+   "rtgs": "Lam Thamenchai",
+   "province": "นครราชสีมา",
+   "split": "dev"
+  },
+  {
+   "thai": "ลำทับ",
+   "rtgs": "Lam Thap",
+   "province": "กระบี่",
+   "split": "dev"
+  },
+  {
+   "thai": "ละแม",
+   "rtgs": "Lamae",
+   "province": "ชุมพร",
+   "split": "test"
+  },
+  {
+   "thai": "ลำดวน",
+   "rtgs": "Lamduan",
+   "province": "สุรินทร์",
+   "split": "dev"
+  },
+  {
+   "thai": "ลานกระบือ",
+   "rtgs": "Lan Krabue",
+   "province": "กำแพงเพชร",
+   "split": "dev"
+  },
+  {
+   "thai": "ลานสัก",
+   "rtgs": "Lan Sak",
+   "province": "อุทัยธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "ลานสกา",
+   "rtgs": "Lan Saka",
+   "province": "นครศรีธรรมราช",
+   "split": "test"
+  },
+  {
+   "thai": "หลังสวน",
+   "rtgs": "Lang Suan",
+   "province": "ชุมพร",
+   "split": "test"
+  },
+  {
+   "thai": "เลาขวัญ",
+   "rtgs": "Lao Khwan",
+   "province": "กาญจนบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "เหล่าเสือโก้ก",
+   "rtgs": "Lao Suea Kok",
+   "province": "อุบลราชธานี",
+   "split": "test"
+  },
+  {
+   "thai": "ลับแล",
+   "rtgs": "Laplae",
+   "province": "อุตรดิตถ์",
+   "split": "dev"
+  },
+  {
+   "thai": "ลาดบัวหลวง",
+   "rtgs": "Lat Bua Luang",
+   "province": "พระนครศรีอยุธยา",
+   "split": "dev"
+  },
+  {
+   "thai": "ลาดหลุมแก้ว",
+   "rtgs": "Lat Lum Kaeo",
+   "province": "ปทุมธานี",
+   "split": "test"
+  },
+  {
+   "thai": "ลาดยาว",
+   "rtgs": "Lat Yao",
+   "province": "นครสวรรค์",
+   "split": "test"
+  },
+  {
+   "thai": "ลี้",
+   "rtgs": "Li",
+   "province": "ลำพูน",
+   "split": "test"
+  },
+  {
+   "thai": "เลิงนกทา",
+   "rtgs": "Loeng Nok Tha",
+   "province": "ยโสธร",
+   "split": "dev"
+  },
+  {
+   "thai": "หล่มเก่า",
+   "rtgs": "Lom Kao",
+   "province": "เพชรบูรณ์",
+   "split": "dev"
+  },
+  {
+   "thai": "หล่มสัก",
+   "rtgs": "Lom Sak",
+   "province": "เพชรบูรณ์",
+   "split": "dev"
+  },
+  {
+   "thai": "ลอง",
+   "rtgs": "Long",
+   "province": "แพร่",
+   "split": "test"
+  },
+  {
+   "thai": "ลืออำนาจ",
+   "rtgs": "Lue Amnat",
+   "province": "อำนาจเจริญ",
+   "split": "test"
+  },
+  {
+   "thai": "แม่อาย",
+   "rtgs": "Mae Ai",
+   "province": "เชียงใหม่",
+   "split": "dev"
+  },
+  {
+   "thai": "แม่จริม",
+   "rtgs": "Mae Charim",
+   "province": "น่าน",
+   "split": "dev"
+  },
+  {
+   "thai": "แม่แจ่ม",
+   "rtgs": "Mae Chaem",
+   "province": "เชียงใหม่",
+   "split": "test"
+  },
+  {
+   "thai": "แม่ใจ",
+   "rtgs": "Mae Chai",
+   "province": "พะเยา",
+   "split": "dev"
+  },
+  {
+   "thai": "แม่จัน",
+   "rtgs": "Mae Chan",
+   "province": "เชียงราย",
+   "split": "test"
+  },
+  {
+   "thai": "แม่ฟ้าหลวง",
+   "rtgs": "Mae Fa Luang",
+   "province": "เชียงราย",
+   "split": "dev"
+  },
+  {
+   "thai": "แม่ลาน้อย",
+   "rtgs": "Mae La Noi",
+   "province": "แม่ฮ่องสอน",
+   "split": "test"
+  },
+  {
+   "thai": "แม่ลาน",
+   "rtgs": "Mae Lan",
+   "province": "ปัตตานี",
+   "split": "test"
+  },
+  {
+   "thai": "แม่ลาว",
+   "rtgs": "Mae Lao",
+   "province": "เชียงราย",
+   "split": "dev"
+  },
+  {
+   "thai": "แม่เมาะ",
+   "rtgs": "Mae Mo",
+   "province": "ลำปาง",
+   "split": "dev"
+  },
+  {
+   "thai": "แม่ออน",
+   "rtgs": "Mae On",
+   "province": "เชียงใหม่",
+   "split": "dev"
+  },
+  {
+   "thai": "แม่พริก",
+   "rtgs": "Mae Phrik",
+   "province": "ลำปาง",
+   "split": "dev"
+  },
+  {
+   "thai": "แม่เปิน",
+   "rtgs": "Mae Poen",
+   "province": "นครสวรรค์",
+   "split": "dev"
+  },
+  {
+   "thai": "แม่ระมาด",
+   "rtgs": "Mae Ramat",
+   "province": "ตาก",
+   "split": "test"
+  },
+  {
+   "thai": "แม่ริม",
+   "rtgs": "Mae Rim",
+   "province": "เชียงใหม่",
+   "split": "dev"
+  },
+  {
+   "thai": "แม่สาย",
+   "rtgs": "Mae Sai",
+   "province": "เชียงราย",
+   "split": "dev"
+  },
+  {
+   "thai": "แม่สะเรียง",
+   "rtgs": "Mae Sariang",
+   "province": "แม่ฮ่องสอน",
+   "split": "dev"
+  },
+  {
+   "thai": "แม่สอด",
+   "rtgs": "Mae Sot",
+   "province": "ตาก",
+   "split": "test"
+  },
+  {
+   "thai": "แม่สรวย",
+   "rtgs": "Mae Suai",
+   "province": "เชียงราย",
+   "split": "test"
+  },
+  {
+   "thai": "แม่แตง",
+   "rtgs": "Mae Taeng",
+   "province": "เชียงใหม่",
+   "split": "test"
+  },
+  {
+   "thai": "แม่ทะ",
+   "rtgs": "Mae Tha",
+   "province": "ลำปาง",
+   "split": "dev"
+  },
+  {
+   "thai": "แม่ทา",
+   "rtgs": "Mae Tha",
+   "province": "ลำพูน",
+   "split": "dev"
+  },
+  {
+   "thai": "แม่วาง",
+   "rtgs": "Mae Wang",
+   "province": "เชียงใหม่",
+   "split": "test"
+  },
+  {
+   "thai": "แม่วงก์",
+   "rtgs": "Mae Wong",
+   "province": "นครสวรรค์",
+   "split": "test"
+  },
+  {
+   "thai": "มหาชนะชัย",
+   "rtgs": "Maha Chana Chai",
+   "province": "ยโสธร",
+   "split": "dev"
+  },
+  {
+   "thai": "มหาราช",
+   "rtgs": "Maha Rat",
+   "province": "พระนครศรีอยุธยา",
+   "split": "test"
+  },
+  {
+   "thai": "ไม้แก่น",
+   "rtgs": "Mai Kaen",
+   "province": "ปัตตานี",
+   "split": "dev"
+  },
+  {
+   "thai": "มะขาม",
+   "rtgs": "Makham",
+   "province": "จันทบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "มะนัง",
+   "rtgs": "Manang",
+   "province": "สตูล",
+   "split": "test"
+  },
+  {
+   "thai": "มัญจาคีรี",
+   "rtgs": "Mancha Khiri",
+   "province": "ขอนแก่น",
+   "split": "dev"
+  },
+  {
+   "thai": "มโนรมย์",
+   "rtgs": "Manorom",
+   "province": "ชัยนาท",
+   "split": "dev"
+  },
+  {
+   "thai": "มายอ",
+   "rtgs": "Mayo",
+   "province": "ปัตตานี",
+   "split": "dev"
+  },
+  {
+   "thai": "เมยวดี",
+   "rtgs": "Moei Wadi",
+   "province": "ร้อยเอ็ด",
+   "split": "dev"
+  },
+  {
+   "thai": "มวกเหล็ก",
+   "rtgs": "Muak Lek",
+   "province": "สระบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "ม่วงสามสิบ",
+   "rtgs": "Muang Sam Sip",
+   "province": "อุบลราชธานี",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองอำนาจเจริญ",
+   "rtgs": "Mueang Amnat Charoen",
+   "province": "อำนาจเจริญ",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองอ่างทอง",
+   "rtgs": "Mueang Ang Thong",
+   "province": "อ่างทอง",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองบึงกาฬ",
+   "rtgs": "Mueang Bueng Kan",
+   "province": "บึงกาฬ",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองบุรีรัมย์",
+   "rtgs": "Mueang Buriram",
+   "province": "บุรีรัมย์",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองฉะเชิงเทรา",
+   "rtgs": "Mueang Chachoengsao",
+   "province": "ฉะเชิงเทรา",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองชัยนาท",
+   "rtgs": "Mueang Chai Nat",
+   "province": "ชัยนาท",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองชัยภูมิ",
+   "rtgs": "Mueang Chaiyaphum",
+   "province": "ชัยภูมิ",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองจันทร์",
+   "rtgs": "Mueang Chan",
+   "province": "ศรีสะเกษ",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองจันทบุรี",
+   "rtgs": "Mueang Chanthaburi",
+   "province": "จันทบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองเชียงใหม่",
+   "rtgs": "Mueang Chiang Mai",
+   "province": "เชียงใหม่",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองเชียงราย",
+   "rtgs": "Mueang Chiang Rai",
+   "province": "เชียงราย",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองชลบุรี",
+   "rtgs": "Mueang Chonburi",
+   "province": "ชลบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองชุมพร",
+   "rtgs": "Mueang Chumphon",
+   "province": "ชุมพร",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองกาฬสินธุ์",
+   "rtgs": "Mueang Kalasin",
+   "province": "กาฬสินธุ์",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองกำแพงเพชร",
+   "rtgs": "Mueang Kamphaeng Phet",
+   "province": "กำแพงเพชร",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองกาญจนบุรี",
+   "rtgs": "Mueang Kanchanaburi",
+   "province": "กาญจนบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองขอนแก่น",
+   "rtgs": "Mueang Khon Kaen",
+   "province": "ขอนแก่น",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองกระบี่",
+   "rtgs": "Mueang Krabi",
+   "province": "กระบี่",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองลำปาง",
+   "rtgs": "Mueang Lampang",
+   "province": "ลำปาง",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองลำพูน",
+   "rtgs": "Mueang Lamphun",
+   "province": "ลำพูน",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองเลย",
+   "rtgs": "Mueang Loei",
+   "province": "เลย",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองลพบุรี",
+   "rtgs": "Mueang Lopburi",
+   "province": "ลพบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองแม่ฮ่องสอน",
+   "rtgs": "Mueang Mae Hong Son",
+   "province": "แม่ฮ่องสอน",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองมหาสารคาม",
+   "rtgs": "Mueang Maha Sarakham",
+   "province": "มหาสารคาม",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองมุกดาหาร",
+   "rtgs": "Mueang Mukdahan",
+   "province": "มุกดาหาร",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองนครนายก",
+   "rtgs": "Mueang Nakhon Nayok",
+   "province": "นครนายก",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองนครปฐม",
+   "rtgs": "Mueang Nakhon Pathom",
+   "province": "นครปฐม",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองนครพนม",
+   "rtgs": "Mueang Nakhon Phanom",
+   "province": "นครพนม",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองนครราชสีมา",
+   "rtgs": "Mueang Nakhon Ratchasima",
+   "province": "นครราชสีมา",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองนครสวรรค์",
+   "rtgs": "Mueang Nakhon Sawan",
+   "province": "นครสวรรค์",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองนครศรีธรรมราช",
+   "rtgs": "Mueang Nakhon Si Thammarat",
+   "province": "นครศรีธรรมราช",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองน่าน",
+   "rtgs": "Mueang Nan",
+   "province": "น่าน",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองนราธิวาส",
+   "rtgs": "Mueang Narathiwat",
+   "province": "นราธิวาส",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองหนองคาย",
+   "rtgs": "Mueang Nong Khai",
+   "province": "หนองคาย",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองหนองบัวลำภู",
+   "rtgs": "Mueang Nongbua Lamphu",
+   "province": "หนองบัวลำภู",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองนนทบุรี",
+   "rtgs": "Mueang Nonthaburi",
+   "province": "นนทบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองปาน",
+   "rtgs": "Mueang Pan",
+   "province": "ลำปาง",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองปทุมธานี",
+   "rtgs": "Mueang Pathum Thani",
+   "province": "ปทุมธานี",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองปัตตานี",
+   "rtgs": "Mueang Pattani",
+   "province": "ปัตตานี",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองพังงา",
+   "rtgs": "Mueang Phang Nga",
+   "province": "พังงา",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองพัทลุง",
+   "rtgs": "Mueang Phatthalung",
+   "province": "พัทลุง",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองพะเยา",
+   "rtgs": "Mueang Phayao",
+   "province": "พะเยา",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองเพชรบูรณ์",
+   "rtgs": "Mueang Phetchabun",
+   "province": "เพชรบูรณ์",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองเพชรบุรี",
+   "rtgs": "Mueang Phetchaburi",
+   "province": "เพชรบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองพิจิตร",
+   "rtgs": "Mueang Phichit",
+   "province": "พิจิตร",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองพิษณุโลก",
+   "rtgs": "Mueang Phitsanulok",
+   "province": "พิษณุโลก",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองแพร่",
+   "rtgs": "Mueang Phrae",
+   "province": "แพร่",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองภูเก็ต",
+   "rtgs": "Mueang Phuket",
+   "province": "ภูเก็ต",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองปราจีนบุรี",
+   "rtgs": "Mueang Prachinburi",
+   "province": "ปราจีนบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองประจวบคีรีขันธ์",
+   "rtgs": "Mueang Prachuap Khiri Khan",
+   "province": "ประจวบคีรีขันธ์",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองระนอง",
+   "rtgs": "Mueang Ranong",
+   "province": "ระนอง",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองราชบุรี",
+   "rtgs": "Mueang Ratchaburi",
+   "province": "ราชบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองระยอง",
+   "rtgs": "Mueang Rayong",
+   "province": "ระยอง",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองร้อยเอ็ด",
+   "rtgs": "Mueang Roi Et",
+   "province": "ร้อยเอ็ด",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองสระแก้ว",
+   "rtgs": "Mueang Sa Kaeo",
+   "province": "สระแก้ว",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองสกลนคร",
+   "rtgs": "Mueang Sakon Nakhon",
+   "province": "สกลนคร",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองสมุทรปราการ",
+   "rtgs": "Mueang Samut Prakan",
+   "province": "สมุทรปราการ",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองสมุทรสาคร",
+   "rtgs": "Mueang Samut Sakhon",
+   "province": "สมุทรสาคร",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองสมุทรสงคราม",
+   "rtgs": "Mueang Samut Songkhram",
+   "province": "สมุทรสงคราม",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองสระบุรี",
+   "rtgs": "Mueang Saraburi",
+   "province": "สระบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองสตูล",
+   "rtgs": "Mueang Satun",
+   "province": "สตูล",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองสิงห์บุรี",
+   "rtgs": "Mueang Sing Buri",
+   "province": "สิงห์บุรี",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองศรีสะเกษ",
+   "rtgs": "Mueang Sisaket",
+   "province": "ศรีสะเกษ",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองสงขลา",
+   "rtgs": "Mueang Songkhla",
+   "province": "สงขลา",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองสรวง",
+   "rtgs": "Mueang Suang",
+   "province": "ร้อยเอ็ด",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองสุโขทัย",
+   "rtgs": "Mueang Sukhothai",
+   "province": "สุโขทัย",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองสุพรรณบุรี",
+   "rtgs": "Mueang Suphanburi",
+   "province": "สุพรรณบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองสุราษฎร์ธานี",
+   "rtgs": "Mueang Surat Thani",
+   "province": "สุราษฎร์ธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองสุรินทร์",
+   "rtgs": "Mueang Surin",
+   "province": "สุรินทร์",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองตาก",
+   "rtgs": "Mueang Tak",
+   "province": "ตาก",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองตรัง",
+   "rtgs": "Mueang Trang",
+   "province": "ตรัง",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองตราด",
+   "rtgs": "Mueang Trat",
+   "province": "ตราด",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองอุบลราชธานี",
+   "rtgs": "Mueang Ubon Ratchathani",
+   "province": "อุบลราชธานี",
+   "split": "test"
+  },
+  {
+   "thai": "เมืองอุดรธานี",
+   "rtgs": "Mueang Udon Thani",
+   "province": "อุดรธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองอุทัยธานี",
+   "rtgs": "Mueang Uthai Thani",
+   "province": "อุทัยธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองอุตรดิตถ์",
+   "rtgs": "Mueang Uttaradit",
+   "province": "อุตรดิตถ์",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองยะลา",
+   "rtgs": "Mueang Yala",
+   "province": "ยะลา",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองยาง",
+   "rtgs": "Mueang Yang",
+   "province": "นครราชสีมา",
+   "split": "dev"
+  },
+  {
+   "thai": "เมืองยโสธร",
+   "rtgs": "Mueang Yasothon",
+   "province": "ยโสธร",
+   "split": "test"
+  },
+  {
+   "thai": "นาบอน",
+   "rtgs": "Na Bon",
+   "province": "นครศรีธรรมราช",
+   "split": "dev"
+  },
+  {
+   "thai": "นาจะหลวย",
+   "rtgs": "Na Chaluai",
+   "province": "อุบลราชธานี",
+   "split": "test"
+  },
+  {
+   "thai": "นาเชือก",
+   "rtgs": "Na Chueak",
+   "province": "มหาสารคาม",
+   "split": "test"
+  },
+  {
+   "thai": "นาดี",
+   "rtgs": "Na Di",
+   "province": "ปราจีนบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "นาด้วง",
+   "rtgs": "Na Duang",
+   "province": "เลย",
+   "split": "test"
+  },
+  {
+   "thai": "นาดูน",
+   "rtgs": "Na Dun",
+   "province": "มหาสารคาม",
+   "split": "dev"
+  },
+  {
+   "thai": "นาแห้ว",
+   "rtgs": "Na Haeo",
+   "province": "เลย",
+   "split": "test"
+  },
+  {
+   "thai": "นาแก",
+   "rtgs": "Na Kae",
+   "province": "นครพนม",
+   "split": "dev"
+  },
+  {
+   "thai": "นาคู",
+   "rtgs": "Na Khu",
+   "province": "กาฬสินธุ์",
+   "split": "dev"
+  },
+  {
+   "thai": "นากลาง",
+   "rtgs": "Na Klang",
+   "province": "หนองบัวลำภู",
+   "split": "dev"
+  },
+  {
+   "thai": "นาหม่อม",
+   "rtgs": "Na Mom",
+   "province": "สงขลา",
+   "split": "dev"
+  },
+  {
+   "thai": "นามน",
+   "rtgs": "Na Mon",
+   "province": "กาฬสินธุ์",
+   "split": "test"
+  },
+  {
+   "thai": "นาหมื่น",
+   "rtgs": "Na Muen",
+   "province": "น่าน",
+   "split": "test"
+  },
+  {
+   "thai": "นาน้อย",
+   "rtgs": "Na Noi",
+   "province": "น่าน",
+   "split": "test"
+  },
+  {
+   "thai": "นาโพธิ์",
+   "rtgs": "Na Pho",
+   "province": "บุรีรัมย์",
+   "split": "test"
+  },
+  {
+   "thai": "นาตาล",
+   "rtgs": "Na Tan",
+   "province": "อุบลราชธานี",
+   "split": "test"
+  },
+  {
+   "thai": "นาทวี",
+   "rtgs": "Na Thawi",
+   "province": "สงขลา",
+   "split": "test"
+  },
+  {
+   "thai": "นาทม",
+   "rtgs": "Na Thom",
+   "province": "นครพนม",
+   "split": "dev"
+  },
+  {
+   "thai": "นาหว้า",
+   "rtgs": "Na Wa",
+   "province": "นครพนม",
+   "split": "dev"
+  },
+  {
+   "thai": "นาวัง",
+   "rtgs": "Na Wang",
+   "province": "หนองบัวลำภู",
+   "split": "dev"
+  },
+  {
+   "thai": "นายายอาม",
+   "rtgs": "Na Yai Am",
+   "province": "จันทบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "นาเยีย",
+   "rtgs": "Na Yia",
+   "province": "อุบลราชธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "นาโยง",
+   "rtgs": "Na Yong",
+   "province": "ตรัง",
+   "split": "test"
+  },
+  {
+   "thai": "นายูง",
+   "rtgs": "Na Yung",
+   "province": "อุดรธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "นครชัยศรี",
+   "rtgs": "Nakhon Chai Si",
+   "province": "นครปฐม",
+   "split": "test"
+  },
+  {
+   "thai": "นครหลวง",
+   "rtgs": "Nakhon Luang",
+   "province": "พระนครศรีอยุธยา",
+   "split": "test"
+  },
+  {
+   "thai": "นครไทย",
+   "rtgs": "Nakhon Thai",
+   "province": "พิษณุโลก",
+   "split": "dev"
+  },
+  {
+   "thai": "น้ำขุ่น",
+   "rtgs": "Nam Khun",
+   "province": "อุบลราชธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "น้ำเกลี้ยง",
+   "rtgs": "Nam Kliang",
+   "province": "ศรีสะเกษ",
+   "split": "dev"
+  },
+  {
+   "thai": "น้ำหนาว",
+   "rtgs": "Nam Nao",
+   "province": "เพชรบูรณ์",
+   "split": "test"
+  },
+  {
+   "thai": "น้ำปาด",
+   "rtgs": "Nam Pat",
+   "province": "อุตรดิตถ์",
+   "split": "test"
+  },
+  {
+   "thai": "น้ำพอง",
+   "rtgs": "Nam Phong",
+   "province": "ขอนแก่น",
+   "split": "dev"
+  },
+  {
+   "thai": "น้ำโสม",
+   "rtgs": "Nam Som",
+   "province": "อุดรธานี",
+   "split": "test"
+  },
+  {
+   "thai": "น้ำยืน",
+   "rtgs": "Nam Yuen",
+   "province": "อุบลราชธานี",
+   "split": "test"
+  },
+  {
+   "thai": "นางรอง",
+   "rtgs": "Nang Rong",
+   "province": "บุรีรัมย์",
+   "split": "dev"
+  },
+  {
+   "thai": "งาว",
+   "rtgs": "Ngao",
+   "province": "ลำปาง",
+   "split": "test"
+  },
+  {
+   "thai": "นิคมคำสร้อย",
+   "rtgs": "Nikhom Kham Soi",
+   "province": "มุกดาหาร",
+   "split": "dev"
+  },
+  {
+   "thai": "นิคมน้ำอูน",
+   "rtgs": "Nikhom Nam Un",
+   "province": "สกลนคร",
+   "split": "dev"
+  },
+  {
+   "thai": "นิคมพัฒนา",
+   "rtgs": "Nikhom Phatthana",
+   "province": "ระยอง",
+   "split": "test"
+  },
+  {
+   "thai": "เนินขาม",
+   "rtgs": "Noen Kham",
+   "province": "ชัยนาท",
+   "split": "dev"
+  },
+  {
+   "thai": "เนินมะปราง",
+   "rtgs": "Noen Maprang",
+   "province": "พิษณุโลก",
+   "split": "dev"
+  },
+  {
+   "thai": "เนินสง่า",
+   "rtgs": "Noen Sa-nga",
+   "province": "ชัยภูมิ",
+   "split": "dev"
+  },
+  {
+   "thai": "โนนแดง",
+   "rtgs": "Non Daeng",
+   "province": "นครราชสีมา",
+   "split": "dev"
+  },
+  {
+   "thai": "โนนดินแดง",
+   "rtgs": "Non Din Daeng",
+   "province": "บุรีรัมย์",
+   "split": "dev"
+  },
+  {
+   "thai": "โนนคูณ",
+   "rtgs": "Non Khun",
+   "province": "ศรีสะเกษ",
+   "split": "test"
+  },
+  {
+   "thai": "โนนนารายณ์",
+   "rtgs": "Non Narai",
+   "province": "สุรินทร์",
+   "split": "test"
+  },
+  {
+   "thai": "โนนสะอาด",
+   "rtgs": "Non Sa-at",
+   "province": "อุดรธานี",
+   "split": "test"
+  },
+  {
+   "thai": "โนนสัง",
+   "rtgs": "Non Sang",
+   "province": "หนองบัวลำภู",
+   "split": "dev"
+  },
+  {
+   "thai": "โนนศิลา",
+   "rtgs": "Non Sila",
+   "province": "ขอนแก่น",
+   "split": "test"
+  },
+  {
+   "thai": "โนนสูง",
+   "rtgs": "Non Sung",
+   "province": "นครราชสีมา",
+   "split": "test"
+  },
+  {
+   "thai": "โนนสุวรรณ",
+   "rtgs": "Non Suwan",
+   "province": "บุรีรัมย์",
+   "split": "dev"
+  },
+  {
+   "thai": "โนนไทย",
+   "rtgs": "Non Thai",
+   "province": "นครราชสีมา",
+   "split": "test"
+  },
+  {
+   "thai": "หนองบัว",
+   "rtgs": "Nong Bua",
+   "province": "นครสวรรค์",
+   "split": "dev"
+  },
+  {
+   "thai": "หนองบัวแดง",
+   "rtgs": "Nong Bua Daeng",
+   "province": "ชัยภูมิ",
+   "split": "dev"
+  },
+  {
+   "thai": "หนองบัวระเหว",
+   "rtgs": "Nong Bua Rawe",
+   "province": "ชัยภูมิ",
+   "split": "test"
+  },
+  {
+   "thai": "หนองบุญมาก",
+   "rtgs": "Nong Bun Mak",
+   "province": "นครราชสีมา",
+   "split": "test"
+  },
+  {
+   "thai": "หนองฉาง",
+   "rtgs": "Nong Chang",
+   "province": "อุทัยธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "หนองจิก",
+   "rtgs": "Nong Chik",
+   "province": "ปัตตานี",
+   "split": "dev"
+  },
+  {
+   "thai": "หนองโดน",
+   "rtgs": "Nong Don",
+   "province": "สระบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "หนองหาน",
+   "rtgs": "Nong Han",
+   "province": "อุดรธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "หนองฮี",
+   "rtgs": "Nong Hi",
+   "province": "ร้อยเอ็ด",
+   "split": "test"
+  },
+  {
+   "thai": "หนองหิน",
+   "rtgs": "Nong Hin",
+   "province": "เลย",
+   "split": "test"
+  },
+  {
+   "thai": "หนองหงส์",
+   "rtgs": "Nong Hong",
+   "province": "บุรีรัมย์",
+   "split": "dev"
+  },
+  {
+   "thai": "หนองแค",
+   "rtgs": "Nong Khae",
+   "province": "สระบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "หนองขาหย่าง",
+   "rtgs": "Nong Khayang",
+   "province": "อุทัยธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "หนองกี่",
+   "rtgs": "Nong Ki",
+   "province": "บุรีรัมย์",
+   "split": "test"
+  },
+  {
+   "thai": "หนองกุงศรี",
+   "rtgs": "Nong Kung Si",
+   "province": "กาฬสินธุ์",
+   "split": "dev"
+  },
+  {
+   "thai": "หนองมะโมง",
+   "rtgs": "Nong Mamong",
+   "province": "ชัยนาท",
+   "split": "test"
+  },
+  {
+   "thai": "หนองม่วง",
+   "rtgs": "Nong Muang",
+   "province": "ลพบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "หนองม่วงไข่",
+   "rtgs": "Nong Muang Khai",
+   "province": "แพร่",
+   "split": "dev"
+  },
+  {
+   "thai": "หนองนาคำ",
+   "rtgs": "Nong Na Kham",
+   "province": "ขอนแก่น",
+   "split": "dev"
+  },
+  {
+   "thai": "หนองไผ่",
+   "rtgs": "Nong Phai",
+   "province": "เพชรบูรณ์",
+   "split": "dev"
+  },
+  {
+   "thai": "หนองพอก",
+   "rtgs": "Nong Phok",
+   "province": "ร้อยเอ็ด",
+   "split": "test"
+  },
+  {
+   "thai": "หนองปรือ",
+   "rtgs": "Nong Prue",
+   "province": "กาญจนบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "หนองเรือ",
+   "rtgs": "Nong Ruea",
+   "province": "ขอนแก่น",
+   "split": "dev"
+  },
+  {
+   "thai": "หนองแสง",
+   "rtgs": "Nong Saeng",
+   "province": "อุดรธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "หนองแซง",
+   "rtgs": "Nong Saeng",
+   "province": "สระบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "หนองสองห้อง",
+   "rtgs": "Nong Song Hong",
+   "province": "ขอนแก่น",
+   "split": "test"
+  },
+  {
+   "thai": "หนองเสือ",
+   "rtgs": "Nong Suea",
+   "province": "ปทุมธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "หนองสูง",
+   "rtgs": "Nong Sung",
+   "province": "มุกดาหาร",
+   "split": "test"
+  },
+  {
+   "thai": "หนองวัวซอ",
+   "rtgs": "Nong Wua So",
+   "province": "อุดรธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "หนองหญ้าปล้อง",
+   "rtgs": "Nong Ya Plong",
+   "province": "เพชรบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "หนองหญ้าไซ",
+   "rtgs": "Nong Ya Sai",
+   "province": "สุพรรณบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "หนองใหญ่",
+   "rtgs": "Nong Yai",
+   "province": "ชลบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "นบพิตำ",
+   "rtgs": "Nopphitam",
+   "province": "นครศรีธรรมราช",
+   "split": "dev"
+  },
+  {
+   "thai": "เหนือคลอง",
+   "rtgs": "Nuea Khlong",
+   "province": "กระบี่",
+   "split": "dev"
+  },
+  {
+   "thai": "อมก๋อย",
+   "rtgs": "Omkoi",
+   "province": "เชียงใหม่",
+   "split": "dev"
+  },
+  {
+   "thai": "องครักษ์",
+   "rtgs": "Ongkharak",
+   "province": "นครนายก",
+   "split": "dev"
+  },
+  {
+   "thai": "ป่าบอน",
+   "rtgs": "Pa Bon",
+   "province": "พัทลุง",
+   "split": "test"
+  },
+  {
+   "thai": "ป่าแดด",
+   "rtgs": "Pa Daet",
+   "province": "เชียงราย",
+   "split": "test"
+  },
+  {
+   "thai": "ป่าโมก",
+   "rtgs": "Pa Mok",
+   "province": "อ่างทอง",
+   "split": "dev"
+  },
+  {
+   "thai": "ป่าพะยอม",
+   "rtgs": "Pa Phayom",
+   "province": "พัทลุง",
+   "split": "test"
+  },
+  {
+   "thai": "ป่าซาง",
+   "rtgs": "Pa Sang",
+   "province": "ลำพูน",
+   "split": "dev"
+  },
+  {
+   "thai": "ป่าติ้ว",
+   "rtgs": "Pa Tio",
+   "province": "ยโสธร",
+   "split": "dev"
+  },
+  {
+   "thai": "ปาย",
+   "rtgs": "Pai",
+   "province": "แม่ฮ่องสอน",
+   "split": "dev"
+  },
+  {
+   "thai": "ปากชม",
+   "rtgs": "Pak Chom",
+   "province": "เลย",
+   "split": "dev"
+  },
+  {
+   "thai": "ปากช่อง",
+   "rtgs": "Pak Chong",
+   "province": "นครราชสีมา",
+   "split": "test"
+  },
+  {
+   "thai": "ปากคาด",
+   "rtgs": "Pak Khat",
+   "province": "บึงกาฬ",
+   "split": "dev"
+  },
+  {
+   "thai": "ปากเกร็ด",
+   "rtgs": "Pak Kret",
+   "province": "นนทบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "ปากพนัง",
+   "rtgs": "Pak Phanang",
+   "province": "นครศรีธรรมราช",
+   "split": "test"
+  },
+  {
+   "thai": "ปากพะยูน",
+   "rtgs": "Pak Phayun",
+   "province": "พัทลุง",
+   "split": "dev"
+  },
+  {
+   "thai": "ปากพลี",
+   "rtgs": "Pak Phli",
+   "province": "นครนายก",
+   "split": "dev"
+  },
+  {
+   "thai": "ปากท่อ",
+   "rtgs": "Pak Tho",
+   "province": "ราชบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "ปักธงชัย",
+   "rtgs": "Pak Thong Chai",
+   "province": "นครราชสีมา",
+   "split": "dev"
+  },
+  {
+   "thai": "ปะคำ",
+   "rtgs": "Pakham",
+   "province": "บุรีรัมย์",
+   "split": "test"
+  },
+  {
+   "thai": "ปะเหลียน",
+   "rtgs": "Palian",
+   "province": "ตรัง",
+   "split": "dev"
+  },
+  {
+   "thai": "ปะนาเระ",
+   "rtgs": "Panare",
+   "province": "ปัตตานี",
+   "split": "test"
+  },
+  {
+   "thai": "ปางมะผ้า",
+   "rtgs": "Pang Mapha",
+   "province": "แม่ฮ่องสอน",
+   "split": "test"
+  },
+  {
+   "thai": "ปางศิลาทอง",
+   "rtgs": "Pang Sila Thong",
+   "province": "กำแพงเพชร",
+   "split": "dev"
+  },
+  {
+   "thai": "ปะทิว",
+   "rtgs": "Pathio",
+   "province": "ชุมพร",
+   "split": "dev"
+  },
+  {
+   "thai": "ปทุมรัตต์",
+   "rtgs": "Pathum Rat",
+   "province": "ร้อยเอ็ด",
+   "split": "dev"
+  },
+  {
+   "thai": "ปทุมราชวงศา",
+   "rtgs": "Pathum Ratchawongsa",
+   "province": "อำนาจเจริญ",
+   "split": "dev"
+  },
+  {
+   "thai": "ผาขาว",
+   "rtgs": "Pha Khao",
+   "province": "เลย",
+   "split": "test"
+  },
+  {
+   "thai": "ภาชี",
+   "rtgs": "Phachi",
+   "province": "พระนครศรีอยุธยา",
+   "split": "dev"
+  },
+  {
+   "thai": "ไพศาลี",
+   "rtgs": "Phaisali",
+   "province": "นครสวรรค์",
+   "split": "test"
+  },
+  {
+   "thai": "ผักไห่",
+   "rtgs": "Phak Hai",
+   "province": "พระนครศรีอยุธยา",
+   "split": "dev"
+  },
+  {
+   "thai": "ภักดีชุมพล",
+   "rtgs": "Phakdi Chumphon",
+   "province": "ชัยภูมิ",
+   "split": "dev"
+  },
+  {
+   "thai": "พาน",
+   "rtgs": "Phan",
+   "province": "เชียงราย",
+   "split": "dev"
+  },
+  {
+   "thai": "พานทอง",
+   "rtgs": "Phan Thong",
+   "province": "ชลบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "พนา",
+   "rtgs": "Phana",
+   "province": "อำนาจเจริญ",
+   "split": "dev"
+  },
+  {
+   "thai": "พนัสนิคม",
+   "rtgs": "Phanat Nikhom",
+   "province": "ชลบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "พังโคน",
+   "rtgs": "Phang Khon",
+   "province": "สกลนคร",
+   "split": "dev"
+  },
+  {
+   "thai": "พรรณนานิคม",
+   "rtgs": "Phanna Nikhom",
+   "province": "สกลนคร",
+   "split": "dev"
+  },
+  {
+   "thai": "พนม",
+   "rtgs": "Phanom",
+   "province": "สุราษฎร์ธานี",
+   "split": "test"
+  },
+  {
+   "thai": "พนมดงรัก",
+   "rtgs": "Phanom Dong Rak",
+   "province": "สุรินทร์",
+   "split": "dev"
+  },
+  {
+   "thai": "พนมไพร",
+   "rtgs": "Phanom Phrai",
+   "province": "ร้อยเอ็ด",
+   "split": "dev"
+  },
+  {
+   "thai": "พนมสารคาม",
+   "rtgs": "Phanom Sarakham",
+   "province": "ฉะเชิงเทรา",
+   "split": "dev"
+  },
+  {
+   "thai": "พนมทวน",
+   "rtgs": "Phanom Thuan",
+   "province": "กาญจนบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "พะโต๊ะ",
+   "rtgs": "Phato",
+   "province": "ชุมพร",
+   "split": "test"
+  },
+  {
+   "thai": "พัฒนานิคม",
+   "rtgs": "Phatthana Nikhom",
+   "province": "ลพบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "พญาเม็งราย",
+   "rtgs": "Phaya Mengrai",
+   "province": "เชียงราย",
+   "split": "test"
+  },
+  {
+   "thai": "พยัคฆภูมิพิสัย",
+   "rtgs": "Phayakkhaphum Phisai",
+   "province": "มหาสารคาม",
+   "split": "test"
+  },
+  {
+   "thai": "พยุห์",
+   "rtgs": "Phayu",
+   "province": "ศรีสะเกษ",
+   "split": "test"
+  },
+  {
+   "thai": "พยุหะคีรี",
+   "rtgs": "Phayuha Khiri",
+   "province": "นครสวรรค์",
+   "split": "test"
+  },
+  {
+   "thai": "เพ็ญ",
+   "rtgs": "Phen",
+   "province": "อุดรธานี",
+   "split": "test"
+  },
+  {
+   "thai": "พิบูลมังสาหาร",
+   "rtgs": "Phibun Mangsahan",
+   "province": "อุบลราชธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "พิบูลย์รักษ์",
+   "rtgs": "Phibun Rak",
+   "province": "อุดรธานี",
+   "split": "test"
+  },
+  {
+   "thai": "พิชัย",
+   "rtgs": "Phichai",
+   "province": "อุตรดิตถ์",
+   "split": "dev"
+  },
+  {
+   "thai": "พิมาย",
+   "rtgs": "Phimai",
+   "province": "นครราชสีมา",
+   "split": "dev"
+  },
+  {
+   "thai": "พิปูน",
+   "rtgs": "Phipun",
+   "province": "นครศรีธรรมราช",
+   "split": "test"
+  },
+  {
+   "thai": "พลับพลาชัย",
+   "rtgs": "Phlapphla Chai",
+   "province": "บุรีรัมย์",
+   "split": "test"
+  },
+  {
+   "thai": "โพธิ์ชัย",
+   "rtgs": "Pho Chai",
+   "province": "ร้อยเอ็ด",
+   "split": "dev"
+  },
+  {
+   "thai": "โพธิ์ประทับช้าง",
+   "rtgs": "Pho Prathap Chang",
+   "province": "พิจิตร",
+   "split": "dev"
+  },
+  {
+   "thai": "โพธิ์ไทร",
+   "rtgs": "Pho Sai",
+   "province": "อุบลราชธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "โพธิ์ศรีสุวรรณ",
+   "rtgs": "Pho Si Suwan",
+   "province": "ศรีสะเกษ",
+   "split": "dev"
+  },
+  {
+   "thai": "โพธิ์ตาก",
+   "rtgs": "Pho Tak",
+   "province": "หนองคาย",
+   "split": "dev"
+  },
+  {
+   "thai": "โพทะเล",
+   "rtgs": "Pho Thale",
+   "province": "พิจิตร",
+   "split": "dev"
+  },
+  {
+   "thai": "โพธิ์ทอง",
+   "rtgs": "Pho Thong",
+   "province": "อ่างทอง",
+   "split": "test"
+  },
+  {
+   "thai": "พล",
+   "rtgs": "Phon",
+   "province": "ขอนแก่น",
+   "split": "test"
+  },
+  {
+   "thai": "พรเจริญ",
+   "rtgs": "Phon Charoen",
+   "province": "บึงกาฬ",
+   "split": "test"
+  },
+  {
+   "thai": "โพนนาแก้ว",
+   "rtgs": "Phon Na Kaeo",
+   "province": "สกลนคร",
+   "split": "test"
+  },
+  {
+   "thai": "โพนพิสัย",
+   "rtgs": "Phon Phisai",
+   "province": "หนองคาย",
+   "split": "test"
+  },
+  {
+   "thai": "โพนทราย",
+   "rtgs": "Phon Sai",
+   "province": "ร้อยเอ็ด",
+   "split": "test"
+  },
+  {
+   "thai": "โพนสวรรค์",
+   "rtgs": "Phon Sawan",
+   "province": "นครพนม",
+   "split": "dev"
+  },
+  {
+   "thai": "โพนทอง",
+   "rtgs": "Phon Thong",
+   "province": "ร้อยเอ็ด",
+   "split": "dev"
+  },
+  {
+   "thai": "พบพระ",
+   "rtgs": "Phop Phra",
+   "province": "ตาก",
+   "split": "test"
+  },
+  {
+   "thai": "โพธาราม",
+   "rtgs": "Photharam",
+   "province": "ราชบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "พระนครศรีอยุธยา",
+   "rtgs": "Phra Nakhon Si Ayutthaya",
+   "province": "พระนครศรีอยุธยา",
+   "split": "test"
+  },
+  {
+   "thai": "พระพรหม",
+   "rtgs": "Phra Phrom",
+   "province": "นครศรีธรรมราช",
+   "split": "dev"
+  },
+  {
+   "thai": "พระพุทธบาท",
+   "rtgs": "Phra Phutthabat",
+   "province": "สระบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "พระประแดง",
+   "rtgs": "Phra Pradaeng",
+   "province": "สมุทรปราการ",
+   "split": "test"
+  },
+  {
+   "thai": "พระสมุทรเจดีย์",
+   "rtgs": "Phra Samut Chedi",
+   "province": "สมุทรปราการ",
+   "split": "test"
+  },
+  {
+   "thai": "พระทองคำ",
+   "rtgs": "Phra Thong Kham",
+   "province": "นครราชสีมา",
+   "split": "dev"
+  },
+  {
+   "thai": "พระยืน",
+   "rtgs": "Phra Yuen",
+   "province": "ขอนแก่น",
+   "split": "test"
+  },
+  {
+   "thai": "ไพรบึง",
+   "rtgs": "Phrai Bueng",
+   "province": "ศรีสะเกษ",
+   "split": "dev"
+  },
+  {
+   "thai": "พรานกระต่าย",
+   "rtgs": "Phran Kratai",
+   "province": "กำแพงเพชร",
+   "split": "dev"
+  },
+  {
+   "thai": "พร้าว",
+   "rtgs": "Phrao",
+   "province": "เชียงใหม่",
+   "split": "dev"
+  },
+  {
+   "thai": "พระแสง",
+   "rtgs": "Phrasaeng",
+   "province": "สุราษฎร์ธานี",
+   "split": "test"
+  },
+  {
+   "thai": "พรหมบุรี",
+   "rtgs": "Phrom Buri",
+   "province": "สิงห์บุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "พรหมคีรี",
+   "rtgs": "Phrom Khiri",
+   "province": "นครศรีธรรมราช",
+   "split": "test"
+  },
+  {
+   "thai": "พรหมพิราม",
+   "rtgs": "Phrom Phiram",
+   "province": "พิษณุโลก",
+   "split": "dev"
+  },
+  {
+   "thai": "ภูกามยาว",
+   "rtgs": "Phu Kamyao",
+   "province": "พะเยา",
+   "split": "test"
+  },
+  {
+   "thai": "ภูเขียว",
+   "rtgs": "Phu Khiao",
+   "province": "ชัยภูมิ",
+   "split": "dev"
+  },
+  {
+   "thai": "ภูกระดึง",
+   "rtgs": "Phu Kradueng",
+   "province": "เลย",
+   "split": "dev"
+  },
+  {
+   "thai": "ภูหลวง",
+   "rtgs": "Phu Luang",
+   "province": "เลย",
+   "split": "dev"
+  },
+  {
+   "thai": "ภูผาม่าน",
+   "rtgs": "Phu Pha Man",
+   "province": "ขอนแก่น",
+   "split": "dev"
+  },
+  {
+   "thai": "ภูพาน",
+   "rtgs": "Phu Phan",
+   "province": "สกลนคร",
+   "split": "test"
+  },
+  {
+   "thai": "ภูเพียง",
+   "rtgs": "Phu Phiang",
+   "province": "น่าน",
+   "split": "test"
+  },
+  {
+   "thai": "ภูเรือ",
+   "rtgs": "Phu Ruea",
+   "province": "เลย",
+   "split": "dev"
+  },
+  {
+   "thai": "ภูซาง",
+   "rtgs": "Phu Sang",
+   "province": "พะเยา",
+   "split": "dev"
+  },
+  {
+   "thai": "ภูสิงห์",
+   "rtgs": "Phu Sing",
+   "province": "ศรีสะเกษ",
+   "split": "test"
+  },
+  {
+   "thai": "ภูเวียง",
+   "rtgs": "Phu Wiang",
+   "province": "ขอนแก่น",
+   "split": "dev"
+  },
+  {
+   "thai": "พุนพิน",
+   "rtgs": "Phunphin",
+   "province": "สุราษฎร์ธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "พุทไธสง",
+   "rtgs": "Phutthaisong",
+   "province": "บุรีรัมย์",
+   "split": "test"
+  },
+  {
+   "thai": "พุทธมณฑล",
+   "rtgs": "Phutthamonthon",
+   "province": "นครปฐม",
+   "split": "dev"
+  },
+  {
+   "thai": "ปลาปาก",
+   "rtgs": "Pla Pak",
+   "province": "นครพนม",
+   "split": "dev"
+  },
+  {
+   "thai": "แปลงยาว",
+   "rtgs": "Plaeng Yao",
+   "province": "ฉะเชิงเทรา",
+   "split": "dev"
+  },
+  {
+   "thai": "ปลายพระยา",
+   "rtgs": "Plai Phraya",
+   "province": "กระบี่",
+   "split": "dev"
+  },
+  {
+   "thai": "ปลวกแดง",
+   "rtgs": "Pluak Daeng",
+   "province": "ระยอง",
+   "split": "test"
+  },
+  {
+   "thai": "ปง",
+   "rtgs": "Pong",
+   "province": "พะเยา",
+   "split": "test"
+  },
+  {
+   "thai": "โป่งน้ำร้อน",
+   "rtgs": "Pong Nam Ron",
+   "province": "จันทบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "ประจักษ์ศิลปาคม",
+   "rtgs": "Prachaksinlapakhom",
+   "province": "อุดรธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "ประจันตคาม",
+   "rtgs": "Prachantakham",
+   "province": "ปราจีนบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "ประโคนชัย",
+   "rtgs": "Prakhon Chai",
+   "province": "บุรีรัมย์",
+   "split": "test"
+  },
+  {
+   "thai": "ปราณบุรี",
+   "rtgs": "Pran Buri",
+   "province": "ประจวบคีรีขันธ์",
+   "split": "dev"
+  },
+  {
+   "thai": "ปรางค์กู่",
+   "rtgs": "Prang Ku",
+   "province": "ศรีสะเกษ",
+   "split": "test"
+  },
+  {
+   "thai": "ปราสาท",
+   "rtgs": "Prasat",
+   "province": "สุรินทร์",
+   "split": "dev"
+  },
+  {
+   "thai": "ประทาย",
+   "rtgs": "Prathai",
+   "province": "นครราชสีมา",
+   "split": "dev"
+  },
+  {
+   "thai": "ปัว",
+   "rtgs": "Pua",
+   "province": "น่าน",
+   "split": "dev"
+  },
+  {
+   "thai": "เปือยน้อย",
+   "rtgs": "Pueai Noi",
+   "province": "ขอนแก่น",
+   "split": "test"
+  },
+  {
+   "thai": "ระแงะ",
+   "rtgs": "Ra-ngae",
+   "province": "นราธิวาส",
+   "split": "dev"
+  },
+  {
+   "thai": "รามัน",
+   "rtgs": "Raman",
+   "province": "ยะลา",
+   "split": "dev"
+  },
+  {
+   "thai": "ระโนด",
+   "rtgs": "Ranot",
+   "province": "สงขลา",
+   "split": "dev"
+  },
+  {
+   "thai": "ราษีไศล",
+   "rtgs": "Rasi Salai",
+   "province": "ศรีสะเกษ",
+   "split": "test"
+  },
+  {
+   "thai": "ราชสาส์น",
+   "rtgs": "Ratchasan",
+   "province": "ฉะเชิงเทรา",
+   "split": "test"
+  },
+  {
+   "thai": "รัษฎา",
+   "rtgs": "Ratsada",
+   "province": "ตรัง",
+   "split": "test"
+  },
+  {
+   "thai": "รัตนบุรี",
+   "rtgs": "Rattanaburi",
+   "province": "สุรินทร์",
+   "split": "test"
+  },
+  {
+   "thai": "รัตนวาปี",
+   "rtgs": "Rattanawapi",
+   "province": "หนองคาย",
+   "split": "dev"
+  },
+  {
+   "thai": "รัตภูมิ",
+   "rtgs": "Rattaphum",
+   "province": "สงขลา",
+   "split": "dev"
+  },
+  {
+   "thai": "เรณูนคร",
+   "rtgs": "Renu Nakhon",
+   "province": "นครพนม",
+   "split": "dev"
+  },
+  {
+   "thai": "ร่อนพิบูลย์",
+   "rtgs": "Ron Phibun",
+   "province": "นครศรีธรรมราช",
+   "split": "dev"
+  },
+  {
+   "thai": "ร่องคำ",
+   "rtgs": "Rong Kham",
+   "province": "กาฬสินธุ์",
+   "split": "dev"
+  },
+  {
+   "thai": "ร้องกวาง",
+   "rtgs": "Rong Kwang",
+   "province": "แพร่",
+   "split": "test"
+  },
+  {
+   "thai": "รือเสาะ",
+   "rtgs": "Rueso",
+   "province": "นราธิวาส",
+   "split": "test"
+  },
+  {
+   "thai": "สระโบสถ์",
+   "rtgs": "Sa Bot",
+   "province": "ลพบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "สะบ้าย้อย",
+   "rtgs": "Saba Yoi",
+   "province": "สงขลา",
+   "split": "test"
+  },
+  {
+   "thai": "สะเดา",
+   "rtgs": "Sadao",
+   "province": "สงขลา",
+   "split": "test"
+  },
+  {
+   "thai": "สหัสขันธ์",
+   "rtgs": "Sahatsakhan",
+   "province": "กาฬสินธุ์",
+   "split": "test"
+  },
+  {
+   "thai": "สายบุรี",
+   "rtgs": "Sai Buri",
+   "province": "ปัตตานี",
+   "split": "dev"
+  },
+  {
+   "thai": "ทรายมูล",
+   "rtgs": "Sai Mun",
+   "province": "ยโสธร",
+   "split": "test"
+  },
+  {
+   "thai": "ไทรงาม",
+   "rtgs": "Sai Ngam",
+   "province": "กำแพงเพชร",
+   "split": "dev"
+  },
+  {
+   "thai": "ไทรน้อย",
+   "rtgs": "Sai Noi",
+   "province": "นนทบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "ทรายทองวัฒนา",
+   "rtgs": "Sai Thong Watthana",
+   "province": "กำแพงเพชร",
+   "split": "test"
+  },
+  {
+   "thai": "ไทรโยค",
+   "rtgs": "Sai Yok",
+   "province": "กาญจนบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "สากเหล็ก",
+   "rtgs": "Sak Lek",
+   "province": "พิจิตร",
+   "split": "test"
+  },
+  {
+   "thai": "สระใคร",
+   "rtgs": "Sakhrai",
+   "province": "หนองคาย",
+   "split": "test"
+  },
+  {
+   "thai": "สามชัย",
+   "rtgs": "Sam Chai",
+   "province": "กาฬสินธุ์",
+   "split": "dev"
+  },
+  {
+   "thai": "สามชุก",
+   "rtgs": "Sam Chuk",
+   "province": "สุพรรณบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "สามโคก",
+   "rtgs": "Sam Khok",
+   "province": "ปทุมธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "สามง่าม",
+   "rtgs": "Sam Ngam",
+   "province": "พิจิตร",
+   "split": "test"
+  },
+  {
+   "thai": "สามเงา",
+   "rtgs": "Sam Ngao",
+   "province": "ตาก",
+   "split": "dev"
+  },
+  {
+   "thai": "สามพราน",
+   "rtgs": "Sam Phran",
+   "province": "นครปฐม",
+   "split": "dev"
+  },
+  {
+   "thai": "สามร้อยยอด",
+   "rtgs": "Sam Roi Yot",
+   "province": "ประจวบคีรีขันธ์",
+   "split": "test"
+  },
+  {
+   "thai": "ซำสูง",
+   "rtgs": "Sam Sung",
+   "province": "ขอนแก่น",
+   "split": "dev"
+  },
+  {
+   "thai": "สามโก้",
+   "rtgs": "Samko",
+   "province": "อ่างทอง",
+   "split": "test"
+  },
+  {
+   "thai": "สะเมิง",
+   "rtgs": "Samoeng",
+   "province": "เชียงใหม่",
+   "split": "dev"
+  },
+  {
+   "thai": "สำโรง",
+   "rtgs": "Samrong",
+   "province": "อุบลราชธานี",
+   "split": "test"
+  },
+  {
+   "thai": "สำโรงทาบ",
+   "rtgs": "Samrong Thap",
+   "province": "สุรินทร์",
+   "split": "dev"
+  },
+  {
+   "thai": "สันกำแพง",
+   "rtgs": "San Kamphaeng",
+   "province": "เชียงใหม่",
+   "split": "test"
+  },
+  {
+   "thai": "สันป่าตอง",
+   "rtgs": "San Pa Tong",
+   "province": "เชียงใหม่",
+   "split": "dev"
+  },
+  {
+   "thai": "สันทราย",
+   "rtgs": "San Sai",
+   "province": "เชียงใหม่",
+   "split": "dev"
+  },
+  {
+   "thai": "สนามชัยเขต",
+   "rtgs": "Sanam Chai Khet",
+   "province": "ฉะเชิงเทรา",
+   "split": "dev"
+  },
+  {
+   "thai": "สร้างคอม",
+   "rtgs": "Sang Khom",
+   "province": "อุดรธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "สังขะ",
+   "rtgs": "Sangkha",
+   "province": "สุรินทร์",
+   "split": "test"
+  },
+  {
+   "thai": "สังขละบุรี",
+   "rtgs": "Sangkhla Buri",
+   "province": "กาญจนบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "สังคม",
+   "rtgs": "Sangkhom",
+   "province": "หนองคาย",
+   "split": "dev"
+  },
+  {
+   "thai": "สรรคบุรี",
+   "rtgs": "Sankhaburi",
+   "province": "ชัยนาท",
+   "split": "dev"
+  },
+  {
+   "thai": "สนม",
+   "rtgs": "Sanom",
+   "province": "สุรินทร์",
+   "split": "test"
+  },
+  {
+   "thai": "สันติสุข",
+   "rtgs": "Santi Suk",
+   "province": "น่าน",
+   "split": "dev"
+  },
+  {
+   "thai": "เสาไห้",
+   "rtgs": "Sao Hai",
+   "province": "สระบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "ซับใหญ่",
+   "rtgs": "Sap Yai",
+   "province": "ชัยภูมิ",
+   "split": "dev"
+  },
+  {
+   "thai": "สรรพยา",
+   "rtgs": "Sapphaya",
+   "province": "ชัยนาท",
+   "split": "dev"
+  },
+  {
+   "thai": "สารภี",
+   "rtgs": "Saraphi",
+   "province": "เชียงใหม่",
+   "split": "test"
+  },
+  {
+   "thai": "สทิงพระ",
+   "rtgs": "Sathing Phra",
+   "province": "สงขลา",
+   "split": "dev"
+  },
+  {
+   "thai": "สัตหีบ",
+   "rtgs": "Sattahip",
+   "province": "ชลบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "สตึก",
+   "rtgs": "Satuek",
+   "province": "บุรีรัมย์",
+   "split": "dev"
+  },
+  {
+   "thai": "แสวงหา",
+   "rtgs": "Sawaeng Ha",
+   "province": "อ่างทอง",
+   "split": "test"
+  },
+  {
+   "thai": "สว่างอารมณ์",
+   "rtgs": "Sawang Arom",
+   "province": "อุทัยธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "สว่างแดนดิน",
+   "rtgs": "Sawang Daen Din",
+   "province": "สกลนคร",
+   "split": "dev"
+  },
+  {
+   "thai": "สว่างวีระวงศ์",
+   "rtgs": "Sawang Wirawong",
+   "province": "อุบลราชธานี",
+   "split": "test"
+  },
+  {
+   "thai": "สวรรคโลก",
+   "rtgs": "Sawankhalok",
+   "province": "สุโขทัย",
+   "split": "test"
+  },
+  {
+   "thai": "สวี",
+   "rtgs": "Sawi",
+   "province": "ชุมพร",
+   "split": "dev"
+  },
+  {
+   "thai": "เซกา",
+   "rtgs": "Seka",
+   "province": "บึงกาฬ",
+   "split": "test"
+  },
+  {
+   "thai": "เสลภูมิ",
+   "rtgs": "Selaphum",
+   "province": "ร้อยเอ็ด",
+   "split": "test"
+  },
+  {
+   "thai": "เสนา",
+   "rtgs": "Sena",
+   "province": "พระนครศรีอยุธยา",
+   "split": "test"
+  },
+  {
+   "thai": "เสนางคนิคม",
+   "rtgs": "Senangkhanikhom",
+   "province": "อำนาจเจริญ",
+   "split": "test"
+  },
+  {
+   "thai": "ศรีบรรพต",
+   "rtgs": "Si Banphot",
+   "province": "พัทลุง",
+   "split": "dev"
+  },
+  {
+   "thai": "ศรีบุญเรือง",
+   "rtgs": "Si Bun Rueang",
+   "province": "หนองบัวลำภู",
+   "split": "dev"
+  },
+  {
+   "thai": "ศรีเชียงใหม่",
+   "rtgs": "Si Chiang Mai",
+   "province": "หนองคาย",
+   "split": "dev"
+  },
+  {
+   "thai": "สีชมพู",
+   "rtgs": "Si Chomphu",
+   "province": "ขอนแก่น",
+   "split": "dev"
+  },
+  {
+   "thai": "ศรีมหาโพธิ",
+   "rtgs": "Si Maha Phot",
+   "province": "ปราจีนบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "ศรีมโหสถ",
+   "rtgs": "Si Mahosot",
+   "province": "ปราจีนบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "ศรีเมืองใหม่",
+   "rtgs": "Si Mueang Mai",
+   "province": "อุบลราชธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "ศรีนคร",
+   "rtgs": "Si Nakhon",
+   "province": "สุโขทัย",
+   "split": "dev"
+  },
+  {
+   "thai": "ศรีณรงค์",
+   "rtgs": "Si Narong",
+   "province": "สุรินทร์",
+   "split": "dev"
+  },
+  {
+   "thai": "ศรีประจันต์",
+   "rtgs": "Si Prachan",
+   "province": "สุพรรณบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "ศรีราชา",
+   "rtgs": "Si Racha",
+   "province": "ชลบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "ศรีรัตนะ",
+   "rtgs": "Si Rattana",
+   "province": "ศรีสะเกษ",
+   "split": "test"
+  },
+  {
+   "thai": "ศรีสาคร",
+   "rtgs": "Si Sakhon",
+   "province": "นราธิวาส",
+   "split": "dev"
+  },
+  {
+   "thai": "ศรีสำโรง",
+   "rtgs": "Si Samrong",
+   "province": "สุโขทัย",
+   "split": "test"
+  },
+  {
+   "thai": "ศรีสัชนาลัย",
+   "rtgs": "Si Satchanalai",
+   "province": "สุโขทัย",
+   "split": "dev"
+  },
+  {
+   "thai": "ศรีสวัสดิ์",
+   "rtgs": "Si Sawat",
+   "province": "กาญจนบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "ศรีสมเด็จ",
+   "rtgs": "Si Somdet",
+   "province": "ร้อยเอ็ด",
+   "split": "dev"
+  },
+  {
+   "thai": "ศรีสงคราม",
+   "rtgs": "Si Songkhram",
+   "province": "นครพนม",
+   "split": "test"
+  },
+  {
+   "thai": "ศรีธาตุ",
+   "rtgs": "Si That",
+   "province": "อุดรธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "ศรีเทพ",
+   "rtgs": "Si Thep",
+   "province": "เพชรบูรณ์",
+   "split": "dev"
+  },
+  {
+   "thai": "ศรีวิไล",
+   "rtgs": "Si Wilai",
+   "province": "บึงกาฬ",
+   "split": "dev"
+  },
+  {
+   "thai": "สิชล",
+   "rtgs": "Sichon",
+   "province": "นครศรีธรรมราช",
+   "split": "test"
+  },
+  {
+   "thai": "สีดา",
+   "rtgs": "Sida",
+   "province": "นครราชสีมา",
+   "split": "test"
+  },
+  {
+   "thai": "สิเกา",
+   "rtgs": "Sikao",
+   "province": "ตรัง",
+   "split": "test"
+  },
+  {
+   "thai": "สีคิ้ว",
+   "rtgs": "Sikhio",
+   "province": "นครราชสีมา",
+   "split": "test"
+  },
+  {
+   "thai": "ศีขรภูมิ",
+   "rtgs": "Sikhoraphum",
+   "province": "สุรินทร์",
+   "split": "test"
+  },
+  {
+   "thai": "ศิลาลาด",
+   "rtgs": "Sila Lat",
+   "province": "ศรีสะเกษ",
+   "split": "dev"
+  },
+  {
+   "thai": "สิงหนคร",
+   "rtgs": "Singhanakhon",
+   "province": "สงขลา",
+   "split": "test"
+  },
+  {
+   "thai": "สิรินธร",
+   "rtgs": "Sirindhorn",
+   "province": "อุบลราชธานี",
+   "split": "test",
+   "exclude": "official spelling is not RTGS"
+  },
+  {
+   "thai": "โซ่พิสัย",
+   "rtgs": "So Phisai",
+   "province": "บึงกาฬ",
+   "split": "dev"
+  },
+  {
+   "thai": "เสริมงาม",
+   "rtgs": "Soem Ngam",
+   "province": "ลำปาง",
+   "split": "test"
+  },
+  {
+   "thai": "เสิงสาง",
+   "rtgs": "Soeng Sang",
+   "province": "นครราชสีมา",
+   "split": "test"
+  },
+  {
+   "thai": "สอยดาว",
+   "rtgs": "Soi Dao",
+   "province": "จันทบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "สมเด็จ",
+   "rtgs": "Somdet",
+   "province": "กาฬสินธุ์",
+   "split": "dev"
+  },
+  {
+   "thai": "สอง",
+   "rtgs": "Song",
+   "province": "แพร่",
+   "split": "test"
+  },
+  {
+   "thai": "ส่องดาว",
+   "rtgs": "Song Dao",
+   "province": "สกลนคร",
+   "split": "test"
+  },
+  {
+   "thai": "สองแคว",
+   "rtgs": "Song Khwae",
+   "province": "น่าน",
+   "split": "test"
+  },
+  {
+   "thai": "สองพี่น้อง",
+   "rtgs": "Song Phi Nong",
+   "province": "สุพรรณบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "สบเมย",
+   "rtgs": "Sop Moei",
+   "province": "แม่ฮ่องสอน",
+   "split": "test"
+  },
+  {
+   "thai": "สบปราบ",
+   "rtgs": "Sop Prap",
+   "province": "ลำปาง",
+   "split": "dev"
+  },
+  {
+   "thai": "ศรีนครินทร์",
+   "rtgs": "Srinagarindra",
+   "province": "พัทลุง",
+   "split": "dev",
+   "exclude": "official spelling is not RTGS"
+  },
+  {
+   "thai": "สุไหงโก-ลก",
+   "rtgs": "Su-ngai Kolok",
+   "province": "นราธิวาส",
+   "split": "dev"
+  },
+  {
+   "thai": "สุไหงปาดี",
+   "rtgs": "Su-ngai Padi",
+   "province": "นราธิวาส",
+   "split": "dev"
+  },
+  {
+   "thai": "สวนผึ้ง",
+   "rtgs": "Suan Phueng",
+   "province": "ราชบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "สุขสำราญ",
+   "rtgs": "Suk Samran",
+   "province": "ระนอง",
+   "split": "dev"
+  },
+  {
+   "thai": "สุคิริน",
+   "rtgs": "Sukhirin",
+   "province": "นราธิวาส",
+   "split": "dev"
+  },
+  {
+   "thai": "สูงเม่น",
+   "rtgs": "Sung Men",
+   "province": "แพร่",
+   "split": "test"
+  },
+  {
+   "thai": "สูงเนิน",
+   "rtgs": "Sung Noen",
+   "province": "นครราชสีมา",
+   "split": "dev"
+  },
+  {
+   "thai": "สุวรรณคูหา",
+   "rtgs": "Suwannakhuha",
+   "province": "หนองบัวลำภู",
+   "split": "test"
+  },
+  {
+   "thai": "สุวรรณภูมิ",
+   "rtgs": "Suwannaphum",
+   "province": "ร้อยเอ็ด",
+   "split": "dev"
+  },
+  {
+   "thai": "ตาพระยา",
+   "rtgs": "Ta Phraya",
+   "province": "สระแก้ว",
+   "split": "dev"
+  },
+  {
+   "thai": "ตากใบ",
+   "rtgs": "Tak Bai",
+   "province": "นราธิวาส",
+   "split": "test"
+  },
+  {
+   "thai": "ตากฟ้า",
+   "rtgs": "Tak Fa",
+   "province": "นครสวรรค์",
+   "split": "test"
+  },
+  {
+   "thai": "ตาคลี",
+   "rtgs": "Takhli",
+   "province": "นครสวรรค์",
+   "split": "test"
+  },
+  {
+   "thai": "ตะกั่วป่า",
+   "rtgs": "Takua Pa",
+   "province": "พังงา",
+   "split": "test"
+  },
+  {
+   "thai": "ตะกั่วทุ่ง",
+   "rtgs": "Takua Thung",
+   "province": "พังงา",
+   "split": "dev"
+  },
+  {
+   "thai": "ตะโหมด",
+   "rtgs": "Tamot",
+   "province": "พัทลุง",
+   "split": "test"
+  },
+  {
+   "thai": "ตาลสุม",
+   "rtgs": "Tan Sum",
+   "province": "อุบลราชธานี",
+   "split": "test"
+  },
+  {
+   "thai": "เต่างอย",
+   "rtgs": "Tao Ngoi",
+   "province": "สกลนคร",
+   "split": "test"
+  },
+  {
+   "thai": "ตะพานหิน",
+   "rtgs": "Taphan Hin",
+   "province": "พิจิตร",
+   "split": "test"
+  },
+  {
+   "thai": "ท่าบ่อ",
+   "rtgs": "Tha Bo",
+   "province": "หนองคาย",
+   "split": "dev"
+  },
+  {
+   "thai": "ท่าชนะ",
+   "rtgs": "Tha Chana",
+   "province": "สุราษฎร์ธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "ท่าช้าง",
+   "rtgs": "Tha Chang",
+   "province": "สิงห์บุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "ท่าฉาง",
+   "rtgs": "Tha Chang",
+   "province": "สุราษฎร์ธานี",
+   "split": "test"
+  },
+  {
+   "thai": "ท่าคันโท",
+   "rtgs": "Tha Khantho",
+   "province": "กาฬสินธุ์",
+   "split": "dev"
+  },
+  {
+   "thai": "ท่าลี่",
+   "rtgs": "Tha Li",
+   "province": "เลย",
+   "split": "test"
+  },
+  {
+   "thai": "ท่าหลวง",
+   "rtgs": "Tha Luang",
+   "province": "ลพบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "ท่าใหม่",
+   "rtgs": "Tha Mai",
+   "province": "จันทบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "ท่ามะกา",
+   "rtgs": "Tha Maka",
+   "province": "กาญจนบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "ท่าม่วง",
+   "rtgs": "Tha Muang",
+   "province": "กาญจนบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "ท่าแพ",
+   "rtgs": "Tha Phae",
+   "province": "สตูล",
+   "split": "test"
+  },
+  {
+   "thai": "ท่าปลา",
+   "rtgs": "Tha Pla",
+   "province": "อุตรดิตถ์",
+   "split": "test"
+  },
+  {
+   "thai": "ท่าเรือ",
+   "rtgs": "Tha Ruea",
+   "province": "พระนครศรีอยุธยา",
+   "split": "test"
+  },
+  {
+   "thai": "ท่าแซะ",
+   "rtgs": "Tha Sae",
+   "province": "ชุมพร",
+   "split": "test"
+  },
+  {
+   "thai": "ท่าศาลา",
+   "rtgs": "Tha Sala",
+   "province": "นครศรีธรรมราช",
+   "split": "dev"
+  },
+  {
+   "thai": "ท่าสองยาง",
+   "rtgs": "Tha Song Yang",
+   "province": "ตาก",
+   "split": "test"
+  },
+  {
+   "thai": "ท่าตะเกียบ",
+   "rtgs": "Tha Takiap",
+   "province": "ฉะเชิงเทรา",
+   "split": "dev"
+  },
+  {
+   "thai": "ท่าตะโก",
+   "rtgs": "Tha Tako",
+   "province": "นครสวรรค์",
+   "split": "test"
+  },
+  {
+   "thai": "ท่าตูม",
+   "rtgs": "Tha Tum",
+   "province": "สุรินทร์",
+   "split": "dev"
+  },
+  {
+   "thai": "ท่าอุเทน",
+   "rtgs": "Tha Uthen",
+   "province": "นครพนม",
+   "split": "test"
+  },
+  {
+   "thai": "ท่าวังผา",
+   "rtgs": "Tha Wang Pha",
+   "province": "น่าน",
+   "split": "dev"
+  },
+  {
+   "thai": "ท่าวุ้ง",
+   "rtgs": "Tha Wung",
+   "province": "ลพบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "ท่ายาง",
+   "rtgs": "Tha Yang",
+   "province": "เพชรบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "ไทยเจริญ",
+   "rtgs": "Thai Charoen",
+   "province": "ยโสธร",
+   "split": "test"
+  },
+  {
+   "thai": "ท้ายเหมือง",
+   "rtgs": "Thai Mueang",
+   "province": "พังงา",
+   "split": "dev"
+  },
+  {
+   "thai": "ถลาง",
+   "rtgs": "Thalang",
+   "province": "ภูเก็ต",
+   "split": "test"
+  },
+  {
+   "thai": "ถ้ำพรรณรา",
+   "rtgs": "Tham Phannara",
+   "province": "นครศรีธรรมราช",
+   "split": "test"
+  },
+  {
+   "thai": "ธารโต",
+   "rtgs": "Than To",
+   "province": "ยะลา",
+   "split": "test"
+  },
+  {
+   "thai": "ธัญบุรี",
+   "rtgs": "Thanyaburi",
+   "province": "ปทุมธานี",
+   "split": "test"
+  },
+  {
+   "thai": "ทับคล้อ",
+   "rtgs": "Thap Khlo",
+   "province": "พิจิตร",
+   "split": "test"
+  },
+  {
+   "thai": "ทับปุด",
+   "rtgs": "Thap Put",
+   "province": "พังงา",
+   "split": "test"
+  },
+  {
+   "thai": "ทับสะแก",
+   "rtgs": "Thap Sakae",
+   "province": "ประจวบคีรีขันธ์",
+   "split": "test"
+  },
+  {
+   "thai": "ทัพทัน",
+   "rtgs": "Thap Than",
+   "province": "อุทัยธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "ธาตุพนม",
+   "rtgs": "That Phanom",
+   "province": "นครพนม",
+   "split": "test"
+  },
+  {
+   "thai": "ธวัชบุรี",
+   "rtgs": "Thawat Buri",
+   "province": "ร้อยเอ็ด",
+   "split": "test"
+  },
+  {
+   "thai": "เทพสถิต",
+   "rtgs": "Thep Sathit",
+   "province": "ชัยภูมิ",
+   "split": "dev"
+  },
+  {
+   "thai": "เทพา",
+   "rtgs": "Thepha",
+   "province": "สงขลา",
+   "split": "test"
+  },
+  {
+   "thai": "เทพารักษ์",
+   "rtgs": "Thepharak",
+   "province": "นครราชสีมา",
+   "split": "dev"
+  },
+  {
+   "thai": "เถิน",
+   "rtgs": "Thoen",
+   "province": "ลำปาง",
+   "split": "dev"
+  },
+  {
+   "thai": "เทิง",
+   "rtgs": "Thoeng",
+   "province": "เชียงราย",
+   "split": "test"
+  },
+  {
+   "thai": "ทองผาภูมิ",
+   "rtgs": "Thong Pha Phum",
+   "province": "กาญจนบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "ทองแสนขัน",
+   "rtgs": "Thong Saen Khan",
+   "province": "อุตรดิตถ์",
+   "split": "dev"
+  },
+  {
+   "thai": "ทุ่งช้าง",
+   "rtgs": "Thung Chang",
+   "province": "น่าน",
+   "split": "test"
+  },
+  {
+   "thai": "ทุ่งฝน",
+   "rtgs": "Thung Fon",
+   "province": "อุดรธานี",
+   "split": "test"
+  },
+  {
+   "thai": "ทุ่งหัวช้าง",
+   "rtgs": "Thung Hua Chang",
+   "province": "ลำพูน",
+   "split": "dev"
+  },
+  {
+   "thai": "ทุ่งเขาหลวง",
+   "rtgs": "Thung Khao Luang",
+   "province": "ร้อยเอ็ด",
+   "split": "dev"
+  },
+  {
+   "thai": "ทุ่งเสลี่ยม",
+   "rtgs": "Thung Saliam",
+   "province": "สุโขทัย",
+   "split": "test"
+  },
+  {
+   "thai": "ทุ่งศรีอุดม",
+   "rtgs": "Thung Si Udom",
+   "province": "อุบลราชธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "ทุ่งสง",
+   "rtgs": "Thung Song",
+   "province": "นครศรีธรรมราช",
+   "split": "dev"
+  },
+  {
+   "thai": "ทุ่งตะโก",
+   "rtgs": "Thung Tako",
+   "province": "ชุมพร",
+   "split": "test"
+  },
+  {
+   "thai": "ทุ่งหว้า",
+   "rtgs": "Thung Wa",
+   "province": "สตูล",
+   "split": "dev"
+  },
+  {
+   "thai": "ทุ่งใหญ่",
+   "rtgs": "Thung Yai",
+   "province": "นครศรีธรรมราช",
+   "split": "dev"
+  },
+  {
+   "thai": "ทุ่งยางแดง",
+   "rtgs": "Thung Yang Daeng",
+   "province": "ปัตตานี",
+   "split": "dev"
+  },
+  {
+   "thai": "ตระการพืชผล",
+   "rtgs": "Trakan Phuet Phon",
+   "province": "อุบลราชธานี",
+   "split": "test"
+  },
+  {
+   "thai": "ตรอน",
+   "rtgs": "Tron",
+   "province": "อุตรดิตถ์",
+   "split": "test"
+  },
+  {
+   "thai": "อู่ทอง",
+   "rtgs": "U Thong",
+   "province": "สุพรรณบุรี",
+   "split": "test"
+  },
+  {
+   "thai": "อุบลรัตน์",
+   "rtgs": "Ubolratana",
+   "province": "ขอนแก่น",
+   "split": "test",
+   "exclude": "official spelling is not RTGS"
+  },
+  {
+   "thai": "อุ้มผาง",
+   "rtgs": "Umphang",
+   "province": "ตาก",
+   "split": "test"
+  },
+  {
+   "thai": "อุทัย",
+   "rtgs": "Uthai",
+   "province": "พระนครศรีอยุธยา",
+   "split": "test"
+  },
+  {
+   "thai": "อุทุมพรพิสัย",
+   "rtgs": "Uthumphon Phisai",
+   "province": "ศรีสะเกษ",
+   "split": "test"
+  },
+  {
+   "thai": "วิภาวดี",
+   "rtgs": "Vibhavadi",
+   "province": "สุราษฎร์ธานี",
+   "split": "dev",
+   "exclude": "official spelling is not RTGS"
+  },
+  {
+   "thai": "วชิรบารมี",
+   "rtgs": "Wachirabarami",
+   "province": "พิจิตร",
+   "split": "dev"
+  },
+  {
+   "thai": "แว้ง",
+   "rtgs": "Waeng",
+   "province": "นราธิวาส",
+   "split": "test"
+  },
+  {
+   "thai": "แวงน้อย",
+   "rtgs": "Waeng Noi",
+   "province": "ขอนแก่น",
+   "split": "dev"
+  },
+  {
+   "thai": "แวงใหญ่",
+   "rtgs": "Waeng Yai",
+   "province": "ขอนแก่น",
+   "split": "test"
+  },
+  {
+   "thai": "หว้านใหญ่",
+   "rtgs": "Wan Yai",
+   "province": "มุกดาหาร",
+   "split": "test"
+  },
+  {
+   "thai": "วังจันทร์",
+   "rtgs": "Wang Chan",
+   "province": "ระยอง",
+   "split": "test"
+  },
+  {
+   "thai": "วังเจ้า",
+   "rtgs": "Wang Chao",
+   "province": "ตาก",
+   "split": "dev"
+  },
+  {
+   "thai": "วังชิ้น",
+   "rtgs": "Wang Chin",
+   "province": "แพร่",
+   "split": "dev"
+  },
+  {
+   "thai": "วังหิน",
+   "rtgs": "Wang Hin",
+   "province": "ศรีสะเกษ",
+   "split": "dev"
+  },
+  {
+   "thai": "วังม่วง",
+   "rtgs": "Wang Muang",
+   "province": "สระบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "วังน้ำเขียว",
+   "rtgs": "Wang Nam Khiao",
+   "province": "นครราชสีมา",
+   "split": "test"
+  },
+  {
+   "thai": "วังน้ำเย็น",
+   "rtgs": "Wang Nam Yen",
+   "province": "สระแก้ว",
+   "split": "test"
+  },
+  {
+   "thai": "วังน้อย",
+   "rtgs": "Wang Noi",
+   "province": "พระนครศรีอยุธยา",
+   "split": "test"
+  },
+  {
+   "thai": "วังเหนือ",
+   "rtgs": "Wang Nuea",
+   "province": "ลำปาง",
+   "split": "test"
+  },
+  {
+   "thai": "วังโป่ง",
+   "rtgs": "Wang Pong",
+   "province": "เพชรบูรณ์",
+   "split": "dev"
+  },
+  {
+   "thai": "วังทรายพูน",
+   "rtgs": "Wang Sai Phun",
+   "province": "พิจิตร",
+   "split": "test"
+  },
+  {
+   "thai": "วังสามหมอ",
+   "rtgs": "Wang Sam Mo",
+   "province": "อุดรธานี",
+   "split": "dev"
+  },
+  {
+   "thai": "วังสะพุง",
+   "rtgs": "Wang Saphung",
+   "province": "เลย",
+   "split": "test"
+  },
+  {
+   "thai": "วังสมบูรณ์",
+   "rtgs": "Wang Sombun",
+   "province": "สระแก้ว",
+   "split": "dev"
+  },
+  {
+   "thai": "วังทอง",
+   "rtgs": "Wang Thong",
+   "province": "พิษณุโลก",
+   "split": "dev"
+  },
+  {
+   "thai": "วังวิเศษ",
+   "rtgs": "Wang Wiset",
+   "province": "ตรัง",
+   "split": "dev"
+  },
+  {
+   "thai": "วังยาง",
+   "rtgs": "Wang Yang",
+   "province": "นครพนม",
+   "split": "dev"
+  },
+  {
+   "thai": "วานรนิวาส",
+   "rtgs": "Wanon Niwat",
+   "province": "สกลนคร",
+   "split": "dev"
+  },
+  {
+   "thai": "วาปีปทุม",
+   "rtgs": "Wapi Pathum",
+   "province": "มหาสารคาม",
+   "split": "dev"
+  },
+  {
+   "thai": "วารินชำราบ",
+   "rtgs": "Warin Chamrap",
+   "province": "อุบลราชธานี",
+   "split": "test"
+  },
+  {
+   "thai": "วาริชภูมิ",
+   "rtgs": "Waritchaphum",
+   "province": "สกลนคร",
+   "split": "dev"
+  },
+  {
+   "thai": "วัดโบสถ์",
+   "rtgs": "Wat Bot",
+   "province": "พิษณุโลก",
+   "split": "dev"
+  },
+  {
+   "thai": "วัดเพลง",
+   "rtgs": "Wat Phleng",
+   "province": "ราชบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "วัดสิงห์",
+   "rtgs": "Wat Sing",
+   "province": "ชัยนาท",
+   "split": "dev"
+  },
+  {
+   "thai": "วัฒนานคร",
+   "rtgs": "Watthana Nakhon",
+   "province": "สระแก้ว",
+   "split": "dev"
+  },
+  {
+   "thai": "เวียงชัย",
+   "rtgs": "Wiang Chai",
+   "province": "เชียงราย",
+   "split": "dev"
+  },
+  {
+   "thai": "เวียงเชียงรุ้ง",
+   "rtgs": "Wiang Chiang Rung",
+   "province": "เชียงราย",
+   "split": "test"
+  },
+  {
+   "thai": "เวียงแหง",
+   "rtgs": "Wiang Haeng",
+   "province": "เชียงใหม่",
+   "split": "dev"
+  },
+  {
+   "thai": "เวียงแก่น",
+   "rtgs": "Wiang Kaen",
+   "province": "เชียงราย",
+   "split": "dev"
+  },
+  {
+   "thai": "เวียงเก่า",
+   "rtgs": "Wiang Kao",
+   "province": "ขอนแก่น",
+   "split": "dev"
+  },
+  {
+   "thai": "เวียงหนองล่อง",
+   "rtgs": "Wiang Nong Long",
+   "province": "ลำพูน",
+   "split": "test"
+  },
+  {
+   "thai": "เวียงป่าเป้า",
+   "rtgs": "Wiang Pa Pao",
+   "province": "เชียงราย",
+   "split": "test"
+  },
+  {
+   "thai": "เวียงสา",
+   "rtgs": "Wiang Sa",
+   "province": "น่าน",
+   "split": "dev"
+  },
+  {
+   "thai": "เวียงสระ",
+   "rtgs": "Wiang Sa",
+   "province": "สุราษฎร์ธานี",
+   "split": "test"
+  },
+  {
+   "thai": "วิเชียรบุรี",
+   "rtgs": "Wichian Buri",
+   "province": "เพชรบูรณ์",
+   "split": "test"
+  },
+  {
+   "thai": "วิหารแดง",
+   "rtgs": "Wihan Daeng",
+   "province": "สระบุรี",
+   "split": "dev"
+  },
+  {
+   "thai": "วิเศษชัยชาญ",
+   "rtgs": "Wiset Chai Chan",
+   "province": "อ่างทอง",
+   "split": "dev"
+  },
+  {
+   "thai": "ยะหา",
+   "rtgs": "Yaha",
+   "province": "ยะลา",
+   "split": "test"
+  },
+  {
+   "thai": "ย่านตาขาว",
+   "rtgs": "Yan Ta Khao",
+   "province": "ตรัง",
+   "split": "test"
+  },
+  {
+   "thai": "ยางชุมน้อย",
+   "rtgs": "Yang Chum Noi",
+   "province": "ศรีสะเกษ",
+   "split": "dev"
+  },
+  {
+   "thai": "ยางสีสุราช",
+   "rtgs": "Yang Sisurat",
+   "province": "มหาสารคาม",
+   "split": "dev"
+  },
+  {
+   "thai": "ยางตลาด",
+   "rtgs": "Yang Talat",
+   "province": "กาฬสินธุ์",
+   "split": "test"
+  },
+  {
+   "thai": "ยะรัง",
+   "rtgs": "Yarang",
+   "province": "ปัตตานี",
+   "split": "test"
+  },
+  {
+   "thai": "ยะหริ่ง",
+   "rtgs": "Yaring",
+   "province": "ปัตตานี",
+   "split": "test"
+  },
+  {
+   "thai": "ยี่งอ",
+   "rtgs": "Yi-ngo",
+   "province": "นราธิวาส",
+   "split": "test"
+  }
+ ]
+}

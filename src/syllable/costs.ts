@@ -53,6 +53,8 @@ export const COST = {
   leadingConsonantSonorant: 8,
   /** A built-in dictionary word inside a longer word (เดือน|จรัส), on top of its syllables. Slightly preferred. */
   inWordDictionary: -3,
+  /** A karan silencing two consonants after a final (ศาสตร์ sat); see withTail. */
+  twoSilentKaran: 12,
   /** ฤ / ฦ syllables. */
   ruLu: 2,
   /** One letter transcribed alone because nothing else parses. */

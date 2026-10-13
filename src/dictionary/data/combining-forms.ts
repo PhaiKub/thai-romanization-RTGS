@@ -49,6 +49,8 @@ export const PREFIX_FORMS: Readonly<Record<string, string>> = {
   อรรถ: 'at-tha',
   ภิรมย: 'phi-rom-ya',
   // compound stems in ordinary vocabulary
+  พุทธ: 'phut-tha',
+  กาญจน: 'kan-cha-na',
   ราช: 'rat-cha',
   เอก: 'ek-ka',
   ธรรม: 'tham-ma',
