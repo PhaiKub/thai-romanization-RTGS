@@ -1,8 +1,8 @@
 name: Release
 
-# Publishes to npm with trusted publishing (OIDC): no npm token is stored anywhere, and npm attaches
-# provenance that links the package to this workflow run. Requires a Trusted Publisher on npmjs.com
-# (package settings → Trusted Publisher → GitHub Actions, workflow file: release.yml).
+# Stages the package on npm with trusted publishing (OIDC): no npm token is stored anywhere. The trusted
+# publisher on npmjs.com (Trusted Publisher → GitHub Actions, workflow file: release.yml) is allowed to
+# stage only, so a release goes public after a maintainer runs `npm stage approve` with 2FA.
 #
 # To release: bump "version" in package.json and VERSION in src/index.ts, add a CHANGELOG section,
 # commit, then push a matching tag:  git tag -a v0.1.2 -m "thai-rtgs 0.1.2" && git push origin v0.1.2
@@ -55,13 +55,38 @@ jobs:
 
       - run: npm ci
 
-      # prepublishOnly runs typecheck, tests and build before publishing. A dry run does the same and packs
-      # without contacting the registry (npm publish --dry-run fails for a version that is already published).
-      - name: Publish to npm
-        run: |
-          if [ "${DRY_RUN}" = "true" ]; then npm run prepublishOnly && npm pack --dry-run; else npm publish; fi
+      # Typecheck, tests and build (the same checks npm publish would run).
+      - run: npm run prepublishOnly
 
-      - name: GitHub Release from the CHANGELOG
+      - name: Pack (dry run)
+        if: env.DRY_RUN == 'true'
+        run: npm pack --dry-run
+
+      # The trusted publisher may only stage: the version reaches npm after a maintainer approves it
+      # with 2FA (npm stage approve). Staging needs no token.
+      - name: Stage on npm
+        if: env.DRY_RUN != 'true'
+        run: npm stage publish
+
+      - name: How to approve
+        if: env.DRY_RUN != 'true'
+        run: |
+          version=$(node -p "require('./package.json').version")
+          {
+            echo "## thai-rtgs ${version} is staged on npm"
+            echo
+            echo "It is not public yet. On your machine (logged in to npm):"
+            echo
+            echo '```bash'
+            echo "npm stage list thai-rtgs"
+            echo "npm stage approve <stage-id>"
+            echo '```'
+            echo
+            echo "Then publish the draft GitHub Release for v${version}."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # A draft, because the version is not on npm until it is approved.
+      - name: Draft GitHub Release from the CHANGELOG
         if: env.DRY_RUN != 'true'
         env:
           GH_TOKEN: ${{ github.token }}
@@ -72,5 +97,5 @@ jobs:
           if gh release view "v${version}" >/dev/null 2>&1; then
             echo "Release v${version} already exists"
           else
-            gh release create "v${version}" --title "thai-rtgs ${version}" --notes-file notes.md --verify-tag
+            gh release create "v${version}" --draft --title "thai-rtgs ${version}" --notes-file notes.md --verify-tag
           fi

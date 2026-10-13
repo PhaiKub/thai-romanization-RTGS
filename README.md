@@ -126,7 +126,7 @@ npm run build       # dist/ (ESM + CJS + .d.ts)
 
 ### ออก version ใหม่
 
-publish ขึ้น npm อัตโนมัติด้วย [`.github/workflows/release.yml`](.github/workflows/release.yml) ผ่าน npm trusted publishing จึงไม่ต้องใช้ npm token และหน้า npm จะแสดง provenance ว่าแพ็กเกจ build มาจาก commit ไหน
+[`.github/workflows/release.yml`](.github/workflows/release.yml) ส่งแพ็กเกจขึ้น npm ด้วย npm trusted publishing จึงไม่ต้องใช้ npm token แต่ trusted publisher ได้สิทธิ์แค่ **stage** เท่านั้น version ใหม่จะยังไม่เป็นสาธารณะจนกว่า maintainer จะกดอนุมัติด้วย 2FA
 
 1. แก้ `version` ใน `package.json` และ `VERSION` ใน `src/index.ts` ให้ตรงกัน
 2. เพิ่มหัวข้อ `## x.y.z — วันที่` ใน `CHANGELOG.md`
@@ -140,7 +140,20 @@ git tag -a v0.1.2 -m "thai-rtgs 0.1.2"
 git push origin v0.1.2
 ```
 
-workflow จะตรวจว่า tag ตรงกับ version จากนั้นรัน typecheck, test และ build ก่อน publish แล้วสร้าง GitHub Release จาก CHANGELOG ให้ ถ้าอยากลองโดยไม่ publish จริง ให้กด "Run workflow" ในหน้า Actions ซึ่งจะเป็น dry-run เสมอ เพราะ publish ได้จากการ push tag เท่านั้น
+4. workflow จะตรวจว่า tag ตรงกับ version และ CHANGELOG มีหัวข้อของ version นั้น รัน typecheck, test และ build แล้ว `npm stage publish` จากนั้นสร้าง GitHub Release แบบ draft จาก CHANGELOG
+5. อนุมัติที่เครื่องตัวเอง (ต้อง login npm และยืนยัน 2FA):
+
+```bash
+npm stage list thai-rtgs
+```
+
+```bash
+npm stage approve <stage-id>
+```
+
+6. กด publish draft Release ของ version นั้นใน GitHub
+
+ถ้าอยากลองโดยไม่ส่งขึ้น npm จริง ให้กด "Run workflow" ในหน้า Actions ซึ่งจะเป็น dry-run เสมอ เพราะส่งขึ้น npm ได้จากการ push tag เท่านั้น
 
 ## ข้อจำกัด
 
