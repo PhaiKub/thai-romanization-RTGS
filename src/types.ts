@@ -37,6 +37,11 @@ export interface RomanizeOptions {
   dictionary?: Record<string, string>;
   /** Word segmentation strategy. Default `intl`. */
   segmenter?: SegmenterOption;
+  /**
+   * Read a name after a title (นาย, นาง, นางสาว, ดร., …) as whole words: the given name joined to the title
+   * and the surname after one space (นางสาววิชุดา ใจดี). Names are capitalized in `sentence` case. Default `true`.
+   */
+  detectNames?: boolean;
 }
 
 export type ResolvedOptions = Required<Omit<RomanizeOptions, 'dictionary'>> & {
@@ -94,6 +99,8 @@ export interface WordResult {
   confidence: Confidence;
   /** For dictionary words the syllables carry only `roman` (and `thai` when it is the whole word). */
   syllables: SyllableResult[];
+  /** Part of a personal name found after a title (see `detectNames`). */
+  name?: boolean;
 }
 
 export type TokenType = 'thai' | 'latin' | 'number' | 'space' | 'punct' | 'mai-yamok' | 'paiyannoi' | 'etc';

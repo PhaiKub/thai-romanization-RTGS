@@ -17,6 +17,7 @@ import { segmentThai } from './segment/segmenter';
 import { COST } from './syllable/costs';
 import { parseWithCost, syllabify as parseWord } from './syllable/parse';
 import { thaiDigitToArabic } from './text/chars';
+import { NameTracker } from './names';
 import { normalizeThai } from './text/normalize';
 import { tokenize } from './text/tokenize';
 
@@ -114,14 +115,26 @@ export class Romanizer {
       return c;
     };
 
+    const segment = (run: string) => segmentThai(run, opts.segmenter, stack, wordCost);
+    const names = opts.detectNames ? new NameTracker() : undefined;
+
     for (const raw of tokenize(normalized)) {
       let output = '';
       let words: WordResult[] | undefined;
+      if (names) {
+        if (raw.type === 'space') names.space(raw.text);
+        else if (raw.type === 'punct') names.punct(raw.text);
+        else if (raw.type !== 'thai') names.other();
+      }
       switch (raw.type) {
         case 'thai': {
-          words = segmentThai(raw.text, opts.segmenter, stack, wordCost).map((w) => {
-            const word = this.word(w, stack, opts, warnings);
-            return { ...word, roman: cased(word.roman) };
+          const parts = names?.thai(raw.text, segment) ?? segment(raw.text).map((text) => ({ text, name: false }));
+          words = parts.map(({ text, name }) => {
+            const word = this.word(text, stack, opts, warnings);
+            if (!name) return { ...word, roman: cased(word.roman) };
+            // A name is a proper noun: capitalized in sentence case.
+            const roman = opts.case === 'sentence' ? capitalize(cased(word.roman)) : cased(word.roman);
+            return { ...word, roman, name: true };
           });
           output = words.map((w) => w.roman).filter(Boolean).join(opts.wordSeparator);
           lastWord = words.length ? (words[words.length - 1] as WordResult).roman : lastWord;

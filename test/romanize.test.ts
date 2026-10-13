@@ -177,6 +177,19 @@ describe('compound and name readings', () => {
     expect(romanizeName('นางสาววิชุดา ใจดี')).toBe('Nangsao Wichuda Chaidi');
     expect(romanizeName('ภัทรกมล', { case: 'upper' })).toBe('PHATTHARAKAMON');
   });
+  it('reads a name after a title in running text as whole words', () => {
+    expect(romanize('นางสาววิชุดา ใจดี เป็นนักเรียน')).toBe('nangsao wichuda chaidi pen nakrian');
+    expect(romanize('นายธนกฤต สุขสวัสดิ์ ไปโรงเรียน', { case: 'sentence' })).toBe('Nai Thanakrit Suksawat pai rongrian');
+    expect(romanize('เด็กหญิงจินนา มีสวัสดิ์ ชอบอ่านหนังสือ')).toBe('dekying chinna misawat chop an nangsue');
+    expect(romanize('ดร. ภัทรกมล ใจดี บรรยาย')).toBe('don. phattharakamon chaidi banyai');
+    expect(romanize('นาย สมชาย ใจดี')).toBe('nai somchai chaidi');
+    expect(romanize('นางสาววิชุดา ใจดี', { detectNames: false })).toBe('nangsao wi chu da chaidi');
+  });
+  it('does not take words that start like a title for names', () => {
+    expect(romanize('นายกรัฐมนตรีไปประชุม')).toBe('nayokratthamontri pai prachum');
+    expect(romanize('นางพยาบาลใจดี')).toBe('nang phayaban chaidi');
+    expect(romanize('ฉันกินข้าว ที่ร้านอาหาร')).toBe('chan kin khao thi ran ahan');
+  });
   it('rejoins fragments the word segmenter cuts off, but not real words', () => {
     expect(romanize('ชนิดา')).toBe('chanida');
     expect(romanize('เด็กๆ เล่นกันที่สนามหลวง')).toBe('dek dek len kan thi sanam luang');

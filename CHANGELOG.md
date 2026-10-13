@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.2 — 2026-10-13
+
+- Names in running text: after a title (นาย, นาง, นางสาว, เด็กชาย, เด็กหญิง, ดร., น.ส., …) the given name and the surname are each read as one word, and capitalized in `sentence` case. `นางสาววิชุดา ใจดี` gives `nangsao wichuda chaidi` instead of `nangsao wi chu da chaidi`. Words that only start like a title (นายก, นางพยาบาล) are left alone. New option `detectNames` (default `true`)
+- `WordResult.name` marks words read as part of a name
+- Full English README; the Thai README moved to `README.th.md`
+- Internal: the syllable candidate generator is split into smaller modules (codas, ฤ/ฦ, combining forms, อักษรนำ); output is unchanged
+- Releases are staged on npm from GitHub Actions with trusted publishing and approved with 2FA
+
 ## 0.1.1 — 2026-10-13
 
 - Held-out benchmark: the 878 official RTGS district names, split once into `dev` and `test` halves. `test` accuracy is 92.1% (91.9% before the fixes below); a regression test keeps it from dropping

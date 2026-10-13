@@ -11,6 +11,7 @@ export const DEFAULT_OPTIONS: Readonly<ResolvedOptions> = Object.freeze({
   keepNonThai: true,
   useBuiltinDictionary: true,
   segmenter: 'intl',
+  detectNames: true,
   dictionary: undefined,
 });
 

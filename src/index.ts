@@ -11,7 +11,7 @@ export { isThai } from './text/chars';
 export { hasIntlSegmenter } from './segment/segmenter';
 export type * from './types';
 
-export const VERSION = '0.1.1';
+export const VERSION = '0.1.2';
 
 let shared: Romanizer | undefined;
 function defaultRomanizer(): Romanizer {
