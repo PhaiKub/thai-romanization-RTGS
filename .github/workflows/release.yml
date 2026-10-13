@@ -13,7 +13,7 @@ on:
   workflow_dispatch:
     inputs:
       dry-run:
-        description: Run every step but publish with --dry-run and skip the GitHub Release
+        description: Run the checks and pack the package, but do not publish or create a GitHub Release
         type: boolean
         default: true
 
@@ -58,10 +58,11 @@ jobs:
 
       - run: npm ci
 
-      # prepublishOnly runs typecheck, tests and build before publishing.
+      # prepublishOnly runs typecheck, tests and build before publishing. A dry run does the same and packs
+      # without contacting the registry (npm publish --dry-run fails for a version that is already published).
       - name: Publish to npm
         run: |
-          if [ "${DRY_RUN}" = "true" ]; then npm publish --dry-run; else npm publish; fi
+          if [ "${DRY_RUN}" = "true" ]; then npm run prepublishOnly && npm pack --dry-run; else npm publish; fi
 
       - name: GitHub Release from the CHANGELOG
         if: env.DRY_RUN != 'true'
