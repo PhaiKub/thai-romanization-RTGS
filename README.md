@@ -140,7 +140,7 @@ git tag -a v0.1.2 -m "thai-rtgs 0.1.2"
 git push origin v0.1.2
 ```
 
-workflow จะตรวจว่า tag ตรงกับ version จากนั้นรัน typecheck, test และ build ก่อน publish แล้วสร้าง GitHub Release จาก CHANGELOG ให้ ถ้าอยากลองโดยไม่ publish จริง ให้กด "Run workflow" ในหน้า Actions ซึ่งค่าเริ่มต้นเป็น dry-run
+workflow จะตรวจว่า tag ตรงกับ version จากนั้นรัน typecheck, test และ build ก่อน publish แล้วสร้าง GitHub Release จาก CHANGELOG ให้ ถ้าอยากลองโดยไม่ publish จริง ให้กด "Run workflow" ในหน้า Actions ซึ่งจะเป็น dry-run เสมอ เพราะ publish ได้จากการ push tag เท่านั้น
 
 ## ข้อจำกัด
 
