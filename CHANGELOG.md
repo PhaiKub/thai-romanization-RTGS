@@ -1,29 +1,38 @@
-# Changelog
+# บันทึกการเปลี่ยนแปลง
+
+## ยังไม่ออก version
+
+- README และบันทึกการเปลี่ยนแปลงเป็นภาษาไทยเป็นหลัก: `README.md` เป็นภาษาไทย ส่วนฉบับภาษาอังกฤษย้ายไปที่ `README.en.md`
 
 ## 0.1.2 — 2026-10-13
 
-- Names in running text: after a title (นาย, นาง, นางสาว, เด็กชาย, เด็กหญิง, ดร., น.ส., …) the given name and the surname are each read as one word, and capitalized in `sentence` case. `นางสาววิชุดา ใจดี` gives `nangsao wichuda chaidi` instead of `nangsao wi chu da chaidi`. Words that only start like a title (นายก, นางพยาบาล) are left alone. New option `detectNames` (default `true`)
-- `WordResult.name` marks words read as part of a name
-- Full English README; the Thai README moved to `README.th.md`
-- Internal: the syllable candidate generator is split into smaller modules (codas, ฤ/ฦ, combining forms, อักษรนำ); output is unchanged
-- Releases are staged on npm from GitHub Actions with trusted publishing and approved with 2FA
+- **ชื่อคนในประโยค:** หลังคำนำหน้า (นาย, นาง, นางสาว, เด็กชาย, เด็กหญิง, ดร., น.ส., …) อ่านชื่อและนามสกุลแต่ละส่วนเป็นคำเดียว และขึ้นต้นตัวใหญ่เมื่อใช้ `sentence`
+  - `นางสาววิชุดา ใจดี` ได้ `nangsao wichuda chaidi` แทน `nangsao wi chu da chaidi`
+  - คำที่แค่ขึ้นต้นเหมือนคำนำหน้า (นายก, นางพยาบาล) ไม่ถูกนับเป็นชื่อ
+  - เพิ่มตัวเลือก `detectNames` (ค่าเริ่มต้น `true`)
+- `WordResult.name` บอกว่าคำนั้นอ่านเป็นส่วนหนึ่งของชื่อ
+- README ภาษาอังกฤษฉบับเต็ม
+- **ภายใน:** แยกตัวสร้างพยางค์ออกเป็นไฟล์ย่อย (ตัวสะกด, ฤ/ฦ, combining forms, อักษรนำ) ผลลัพธ์เหมือนเดิมทุกคำ
+- **การออก version:** ส่งขึ้น npm แบบ stage จาก GitHub Actions ด้วย trusted publishing แล้วอนุมัติด้วย 2FA
 
 ## 0.1.1 — 2026-10-13
 
-- Held-out benchmark: the 878 official RTGS district names, split once into `dev` and `test` halves. `test` accuracy is 92.1% (91.9% before the fixes below); a regression test keeps it from dropping
-- Compound place names read part by part: นคร, ปทุม, นิคม, สาคร, พนม, ชมพู, ชนะ, อารมณ์, รมย์ are matched inside longer words (ศรีนคร Si Nakhon, วาปีปทุม Wapi Pathum)
-- Combining forms พุทธ (phut-tha) and กาญจน (kan-cha-na)
-- A karan over two consonants after a final (ศาสตร์) no longer wins over reading the first consonant as a new syllable (มโนรมย์ manorom)
-- npm keywords trimmed to thai, rtgs, romanization
+- **Benchmark ที่เป็นกลาง:** ชื่ออำเภอ 878 อำเภอที่ถอดเป็น RTGS แบบทางการ แบ่งถาวรเป็นสองครึ่ง `dev` และ `test`
+  - ชุด `test` ได้ 92.1% (ก่อนแก้ด้านล่างได้ 91.9%)
+  - มีเทสต์กันไม่ให้ความแม่นยำลดลง
+- **ชื่อสถานที่ที่เป็นคำประสม:** อ่านทีละส่วน โดยจับคู่ นคร, ปทุม, นิคม, สาคร, พนม, ชมพู, ชนะ, อารมณ์, รมย์ ภายในคำที่ยาวกว่าได้ (ศรีนคร Si Nakhon, วาปีปทุม Wapi Pathum)
+- **combining forms ใหม่:** พุทธ (phut-tha) และ กาญจน (kan-cha-na)
+- **การันต์บนพยัญชนะสองตัว:** การันต์ที่ทำให้พยัญชนะสองตัวหลังตัวสะกดไม่ออกเสียง (ศาสตร์) ไม่ชนะการอ่านพยัญชนะตัวแรกเป็นพยางค์ใหม่อีกต่อไป (มโนรมย์ manorom)
+- keywords บน npm เหลือ thai, rtgs, romanization
 
 ## 0.1.0 — 2026-10-06
 
-First release.
+version แรก
 
-- `romanize`, `romanizeName`, `analyze`, `syllabify` and `createRomanizer` for Thai → RTGS (Royal Institute, 1999)
-- Rule-based syllable parser: clusters, leading ห/อ, อักษรนำ, ร หัน, karan, silent ร and final vowels, inferred a/o vowels, ฤ/ฦ
-- Pali/Sanskrit combining forms for names and compounds (ธนกฤต thanakrit, ภัทรกมล phattharakamon)
-- Built-in dictionary: 77 provinces, 50 Bangkok districts, irregular words, common given names and name parts; user and per-call dictionaries
-- Word segmentation with `Intl.Segmenter`, with dictionary-only and custom segmenter options
-- Options for letter case, word and syllable separators, ambiguity hyphens, Thai digits, ๆ and ฯ
-- ESM + CommonJS builds with TypeScript types; no runtime dependencies
+- **ฟังก์ชัน:** `romanize`, `romanizeName`, `analyze`, `syllabify` และ `createRomanizer` สำหรับถอดอักษรไทยเป็น RTGS (ราชบัณฑิตยสถาน พ.ศ. 2542)
+- **ตัวแยกพยางค์ตามกฎ:** อักษรควบ, ห นำ/อ นำ, อักษรนำ, ร หัน, การันต์, ร และสระท้ายที่ไม่ออกเสียง, สระ a/o ที่ไม่เขียนรูป, ฤ/ฦ
+- **combining forms ของคำบาลี-สันสกฤต:** สำหรับชื่อคนและคำประสม (ธนกฤต thanakrit, ภัทรกมล phattharakamon)
+- **พจนานุกรมในตัว:** 77 จังหวัด, 50 เขตของกรุงเทพฯ, คำที่อ่านไม่ตรงกฎ, ชื่อจริงและส่วนประกอบของนามสกุลที่พบบ่อย และรองรับพจนานุกรมของผู้ใช้และพจนานุกรมเฉพาะการเรียกแต่ละครั้ง
+- **ตัดคำ:** ใช้ `Intl.Segmenter` มีตัวเลือกตัดคำด้วยพจนานุกรมอย่างเดียวหรือใช้ฟังก์ชันของผู้ใช้
+- **ตัวเลือก:** ตัวพิมพ์เล็ก/ใหญ่, ตัวคั่นคำและพยางค์, ยัติภังค์เมื่ออ่านกำกวม, เลขไทย, ๆ และ ฯ
+- **รูปแบบแพ็กเกจ:** ESM + CommonJS พร้อม types ของ TypeScript และไม่มี dependency ตอนใช้งาน

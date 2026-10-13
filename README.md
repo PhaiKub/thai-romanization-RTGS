@@ -1,8 +1,8 @@
-# thai-rtgs
+# thai-rtgs — ถอดอักษรไทยเป็นอักษรโรมันแบบ RTGS
 
-**English** · [ภาษาไทย](README.th.md)
+**ภาษาไทย** · [English](README.en.md)
 
-Romanize Thai script with the **Royal Thai General System of Transcription (RTGS)**, the official system of the Royal Institute of Thailand (1999). A TypeScript library with no dependencies that runs in Node.js and browsers (ESM + CommonJS + type definitions).
+ระบบถอดอักษรไทยเป็นอักษรโรมันตาม **Royal Thai General System of Transcription (RTGS)** หรือหลักเกณฑ์การถอดอักษรไทยเป็นอักษรโรมันแบบถ่ายเสียงของราชบัณฑิตยสถาน (พ.ศ. 2542) เป็น library ภาษา TypeScript ไม่มี dependency ใช้ได้ทั้ง Node และเบราว์เซอร์ (ESM + CJS + type definitions)
 
 ```ts
 import { romanize } from 'thai-rtgs';
@@ -12,74 +12,83 @@ romanize('สวัสดีครับ ยินดีต้อนรับส
 romanize('ถนน', { syllableSeparator: '-' });      // 'tha-non'
 ```
 
+## ทำงานอย่างไร
+
+1. **Normalize** — แก้รูปแบบการพิมพ์ที่ต่างกัน (`ํา`→`ำ`, `เเ`→`แ`, วรรณยุกต์ที่พิมพ์ก่อนสระ, อักขระที่มองไม่เห็น)
+2. **Tokenize** — แยกข้อความไทย อังกฤษ ตัวเลข เครื่องหมาย `ๆ` `ฯ` และ `ฯลฯ`
+3. **ตัดคำ** — ใช้ `Intl.Segmenter('th')` แล้วรวม segment ที่ต่อกันเป็นคำในพจนานุกรม (เช่น กรุงเทพมหานคร)
+4. **พจนานุกรม** — มีชื่อ 77 จังหวัด, 50 เขตของกรุงเทพฯ, คำที่อ่านไม่ตรงกฎ (ราชการ, ผลไม้, ประวัติศาสตร์, ก็, …) และชื่อคน/ส่วนประกอบของนามสกุล (สกุล, ตระกูล, สวัสดิ์, …) คำในพจนานุกรมในตัวยังถูกจับคู่ภายในคำที่ยาวกว่าได้ด้วย (มี|สวัสดิ์ → misawat) ผู้ใช้เพิ่มหรือแก้คำเองได้
+5. **แยกพยางค์ตามกฎ** — สำหรับคำที่ไม่มีในพจนานุกรม หาวิธีแบ่งพยางค์ที่ "ต้นทุนต่ำสุด" (dynamic programming) จาก template ของสระ พยัญชนะต้น ควบกล้ำ ห นำ ตัวสะกด การันต์ และ ร หัน สระที่ไม่ได้เขียนรูป (ถนน → tha-non) มีต้นทุน จึงถูกเลือกเฉพาะเมื่อตัวสะกดบังคับให้ต้องมี นอกจากนี้ยังรู้จัก **combining forms** ของคำบาลี-สันสกฤตที่อ่านมีพยางค์เชื่อมเมื่อมีส่วนอื่นตามมา (ธน|กฤต → thanakrit, ภัทร|กมล → phattharakamon) และอักษรนำที่เขียนสระหน้าไว้ก่อน (เจริญ → charoen, เสนอ → sanoe)
+6. **จัดรูปแบบ** — ต่อพยางค์และคำ ใส่ยัติภังค์ (`-`) เมื่ออ่านกำกวม (สะอาด → sa-at) และจัดตัวพิมพ์เล็ก/ใหญ่
+
+รายละเอียดกฎทั้งหมดอยู่ใน [docs/rtgs-rules.md](docs/rtgs-rules.md)
+
+## ความแม่นยำ
+
+### Benchmark ที่เป็นกลาง (ตัวเลขหลัก)
+
+ชุดทดสอบนี้คือชื่ออำเภอทั้ง 878 อำเภอที่ถอดเป็น RTGS แบบทางการ จาก [Wikipedia](https://en.wikipedia.org/wiki/List_of_districts_of_Thailand) ไม่นับ 6 ชื่อพระราชทานที่ไม่ได้สะกดแบบ RTGS (เช่น Sirindhorn) ชื่อทั้งหมดถูกแบ่งเป็นสองครึ่งแบบถาวรด้วย hash ของชื่อ:
+
+| ชุด | ใช้ทำอะไร | ผล |
+|---|---|---|
+| test | ไม่เคยเปิดดู และไม่ใช้ปรับกฎ | **399/433 (92.1%)** |
+| dev | ใช้หาคำที่ผิดเพื่อแก้กฎ | 419/439 (95.4%) |
+
+- **วิธีเทียบ:** ดูเฉพาะตัวอักษร ไม่สนเว้นวรรค ยัติภังค์ และตัวพิมพ์เล็ก/ใหญ่
+- **ก่อนแก้กฎจาก dev:** ชุด test ได้ 91.9%
+- **ที่ยังผิดอยู่:** ส่วนใหญ่เป็นคำประสมบาลี-สันสกฤตที่มีพยางค์เชื่อม เช่น รัตภูมิ → Rattaphum, องครักษ์ → Ongkharak
+- **สร้างข้อมูลใหม่:** `node scripts/build-district-benchmark.mjs`
+- **กันถอยหลัง:** มีเทสต์ที่จะล้มถ้าความแม่นยำลดต่ำกว่าระดับปัจจุบัน
+
+### ชุดทดสอบระหว่างพัฒนา
+
+`npm run eval` วัดผลกับชุดทดสอบใน [test/fixtures/golden.ts](test/fixtures/golden.ts):
+
+| ชุดทดสอบ | ผล |
+|---|---|
+| คำทั่วไป อ่านด้วยกฎล้วน (ปิดพจนานุกรม) | 225/225 |
+| คำศัพท์ประจำวันที่ไม่ได้ใช้ระหว่างปรับกฎ (เปิดพจนานุกรม) | 190/190 |
+| ชื่อจริงคนไทย (ชื่อจริงอย่างเดียว ไม่รวมนามสกุล) | 124/124 |
+| คำที่ต้องใช้พจนานุกรม | 25/25 |
+| จังหวัด (Title case) | 28/28 |
+| ประโยค | 8/8 |
+
+ชุดเหล่านี้คือคำที่ใช้ปรับกฎเอง จึงได้ 100% และไม่ได้บอกความแม่นยำจริง ผลก่อนปรับคือ: ชุดคำศัพท์ประจำวันได้ 184/190 (96.8%) และชุดชื่อจริงได้ 106/124 (85%) คำที่ผิดเกือบทั้งหมดเป็นคำบาลี-สันสกฤตที่มีพยางค์เชื่อม (เอกสาร ek-ka-san, ธนกฤต tha-na-krit) ซึ่งกฎอย่างเดียวคาดไม่ได้
+
+ทดลองเพิ่มเติมกับรายชื่อจริงของนักเรียนราว 1,900 ชื่อและ 2,400 นามสกุล (ข้อมูลไม่ได้เก็บไว้ใน repo) สุ่มตรวจ 120 รายการที่ไม่ได้ใช้ปรับกฎ ได้ชื่อจริงถูกประมาณ 80% และนามสกุลถูกประมาณ 93% จากนั้นแก้กฎและเพิ่มส่วนประกอบชื่อที่พบบ่อยเข้าไปแล้ว ชื่อและนามสกุลที่ไม่มีในชุดทดสอบอาจยังผิดได้ ให้ตรวจผลที่มี `confidence: "medium"` และเพิ่มคำผ่าน `dictionary`
+
+## Library
+
 ```bash
 npm install thai-rtgs
 ```
 
-## Why it is not a lookup table
-
-Thai is written without spaces between words, and many vowels are not written at all: ถนน is read *tha-non*, with an *a* and an *o* that appear nowhere in the spelling. Words borrowed from Pali and Sanskrit add linking syllables that the spelling does not show either: ราชบุรี is *rat-cha-bu-ri*, not *rat-bu-ri*. `thai-rtgs` handles this in layers:
-
-1. **Normalize** common typing variants (`ํา` → `ำ`, `เเ` → `แ`, tone marks typed before vowels, invisible characters).
-2. **Tokenize** into Thai, Latin, numbers and punctuation, with `ๆ`, `ฯ` and `ฯลฯ` handled separately.
-3. **Segment words** with `Intl.Segmenter('th')`. Segments are rejoined when they form a dictionary word (กรุงเทพมหานคร), or when the segmenter cut an unknown word into fragments. After a title such as นาย or นางสาว, a person's name is read as whole words.
-4. **Dictionary**: the 77 provinces, the 50 Bangkok districts, irregular words (ก็, ราชการ, ผลไม้, ประวัติศาสตร์, …), common given names and the parts Thai surnames are built from. Dictionary words are also recognised inside longer words (มี|สวัสดิ์ → *misawat*). You can add or override entries.
-5. **Syllable parser** for everything else. It enumerates every way the letters can form Thai syllables (initial consonants and clusters, written and unwritten vowels, finals, silent letters marked with ์, ร หัน, leading ห/อ, ฤ/ฦ). It then picks the reading with the lowest cost: written vowels are free, and every inferred sound costs something. It also knows **combining forms**, Pali/Sanskrit stems that take a linking syllable before another part (ธน|กฤต → *thanakrit*, ภัทร|กมล → *phattharakamon*).
-6. **Format** syllables and words, with a hyphen where RTGS needs one to avoid ambiguity (สะอาด → *sa-at*), and the letter case you ask for.
-
-The rules are documented (in Thai) in [docs/rtgs-rules.md](docs/rtgs-rules.md).
-
-## Accuracy
-
-### Held-out benchmark
-
-The benchmark is the **878 Thai districts (amphoe)** with their official RTGS names, from [Wikipedia](https://en.wikipedia.org/wiki/List_of_districts_of_Thailand). Six royal names whose official spelling is not RTGS (such as *Sirindhorn*) are excluded. The list is split once, by a hash of each name, into two halves:
-
-| Half | Used for | Accuracy |
-|---|---|---|
-| test | never inspected, never used to tune the rules | **399/433 (92.1%)** |
-| dev | finding error patterns to fix | 419/439 (95.4%) |
-
-- **How it is scored:** letters only; spaces, hyphens and letter case are ignored.
-- **Before any tuning on dev:** the test half scored 91.9%.
-- **What still fails:** mostly Pali/Sanskrit compounds with a linking syllable that the spelling does not show (รัตภูมิ *Rattaphum*, องครักษ์ *Ongkharak*).
-- **Rebuilding the data:** `node scripts/build-district-benchmark.mjs`.
-- **Regression guard:** a test fails if either half drops below its current accuracy.
-
-### Development fixtures
-
-`npm run eval` also scores the fixtures in [test/fixtures/golden.ts](test/fixtures/golden.ts): everyday words, rule-only words, given names, provinces and sentences. They all score 100%, but the rules were tuned on them, so they guard against regressions rather than measure accuracy. Before tuning, the everyday words scored 96.8% and the given names 85%.
-
-Names are the hardest case. On a sample of real Thai first names and surnames that had not been used for tuning, about 80% of first names and 93% of surnames were right. The rules and the name dictionary have been improved since. Check words with `confidence: 'medium'`, and add the ones you need through `dictionary`.
-
-## Usage
-
 ```ts
 import { romanize, romanizeName, analyze, syllabify, createRomanizer } from 'thai-rtgs';
 
-// Options
+// ตัวเลือก
 romanize('สะอาด');                                   // 'sa-at'
 romanize('สะอาด', { hyphenateAmbiguous: false });    // 'saat'
 romanize('เด็กๆ เล่นกัน', { case: 'sentence' });     // 'Dek dek len kan'
 romanize('วันที่ ๑๒ มกราคม ๒๕๖๗');                    // 'wan thi 12 mokkarakhom 2567'
 romanize('ฉันชอบ iPhone 15', { keepNonThai: false }); // 'chan chop'
 
-// Personal names: each space-separated part is one word, a leading title is split off, title case
+// ชื่อคน: อ่านแต่ละส่วนที่คั่นด้วยเว้นวรรคเป็นหนึ่งคำ แยกคำนำหน้าออก และขึ้นต้นตัวใหญ่
 romanizeName('นางสาวภัทรกมล สุขสวัสดิ์'); // 'Nangsao Phattharakamon Suksawat'
 
-// A name after a title in running text (นาย, นาง, นางสาว, เด็กชาย, เด็กหญิง, ดร., น.ส., …)
+// ชื่อหลังคำนำหน้าในประโยค (นาย นาง นางสาว เด็กชาย เด็กหญิง ดร. น.ส. …) อ่านชื่อและนามสกุลเป็นคำเดียว
 romanize('นางสาววิชุดา ใจดี เป็นนักเรียน', { case: 'sentence' }); // 'Nangsao Wichuda Chaidi pen nakrian'
 
-// Extra words for one call ("-" separates syllables, a space separates words)
+// คำเฉพาะสำหรับการเรียกครั้งเดียว (- คั่นพยางค์ เว้นวรรคคั่นคำ)
 romanize('สมชาย ใจดี', { case: 'title', dictionary: { สมชาย: 'som-chai', ใจดี: 'chai-di' } }); // 'Somchai Chaidi'
 
-// An instance with its own defaults and dictionary
+// instance ที่มีพจนานุกรมและค่าตั้งต้นของตัวเอง
 const rtgs = createRomanizer({ case: 'title' });
 rtgs.addWord('ภัทรา', 'phat-tha-ra');
-rtgs.romanize('ภัทรา');      // 'Phatthara'
-rtgs.removeWord('ราชบุรี'); // hides a built-in entry, for this instance only
+rtgs.romanize('ภัทรา');   // 'Phatthara'
+rtgs.removeWord('ราชบุรี'); // ซ่อนคำในพจนานุกรมในตัว (เฉพาะ instance นี้)
 
-// Word-by-word and syllable-by-syllable detail
+// รายละเอียดทีละคำ/พยางค์
 analyze('ถนนราชบุรี').tokens[0].words;
 // [{ thai: 'ถนน', roman: 'thanon', source: 'rules', confidence: 'medium', syllables: [...] },
 //  { thai: 'ราชบุรี', roman: 'ratchaburi', source: 'dictionary', confidence: 'dictionary', ... }]
@@ -92,68 +101,54 @@ syllabify('เปลี่ยน');
 
 ### API
 
-| Function | Returns |
+| ฟังก์ชัน | คืนค่า |
 |---|---|
-| `romanize(text, options?)` | RTGS string; non-Thai text is kept unless `keepNonThai: false` |
-| `romanizeName(name, options?)` | A personal name, each part read as one word, title case by default |
-| `analyze(text, options?)` | Every token, word and syllable, with how each was read, plus `warnings` |
-| `syllabify(word)` | The syllables of one word, read by rule only |
-| `createRomanizer(options?)` | A `Romanizer` with its own defaults and dictionary: `.romanize`, `.romanizeName`, `.analyze`, `.addWord`, `.addWords`, `.removeWord`, `.lookup` |
-| `normalizeThai(text)`, `isThai(text)` | Helpers |
-| `RTGS_TABLES`, `getBuiltinDictionary()`, `Dictionary` | The consonant/vowel tables and the dictionaries, for reference or extension |
+| `romanize(text, options?)` | ข้อความ RTGS ข้อความภาษาอื่นคงไว้ ยกเว้นตั้ง `keepNonThai: false` |
+| `romanizeName(name, options?)` | ชื่อคน อ่านแต่ละส่วนเป็นหนึ่งคำ ขึ้นต้นตัวใหญ่เป็นค่าเริ่มต้น |
+| `analyze(text, options?)` | ทุก token ทุกคำ ทุกพยางค์ พร้อมวิธีที่อ่าน และ `warnings` |
+| `syllabify(word)` | พยางค์ของคำเดียว อ่านตามกฎอย่างเดียว |
+| `createRomanizer(options?)` | `Romanizer` ที่มีค่าตั้งต้นและพจนานุกรมของตัวเอง: `.romanize`, `.romanizeName`, `.analyze`, `.addWord`, `.addWords`, `.removeWord`, `.lookup` |
+| `normalizeThai(text)`, `isThai(text)` | ฟังก์ชันช่วย |
+| `RTGS_TABLES`, `getBuiltinDictionary()`, `Dictionary` | ตารางพยัญชนะ/สระ และพจนานุกรม สำหรับอ้างอิงหรือต่อยอด |
 
-### Options (`RomanizeOptions`)
+### ตัวเลือก (`RomanizeOptions`)
 
-| Option | Values | Default | Effect |
+| ตัวเลือก | ค่า | ค่าเริ่มต้น | ความหมาย |
 |---|---|---|---|
-| `case` | `lower` `upper` `title` `sentence` | `lower` | `title` capitalizes every word, as RTGS does for proper names |
-| `wordSeparator` | string | `' '` | Between Thai words |
-| `syllableSeparator` | string | `''` | Between syllables, e.g. `'-'` |
-| `hyphenateAmbiguous` | boolean | `true` | Hyphen where syllables would read ambiguously (*sa-at*, *sa-nga*) |
-| `thaiDigits` | `arabic` `keep` | `arabic` | Thai digits ๐–๙ |
-| `maiYamok` | `repeat` `keep` `drop` | `repeat` | The repetition sign `ๆ` |
-| `paiyannoi` | `drop` `keep` | `drop` | The abbreviation sign `ฯ` (`ฯลฯ` becomes `etc.`) |
-| `keepNonThai` | boolean | `true` | Keep Latin text, numbers and punctuation |
-| `useBuiltinDictionary` | boolean | `true` | Use the built-in dictionary |
-| `dictionary` | `Record<string, string>` | — | Extra entries for this call |
-| `segmenter` | `intl` `dictionary` `none` or a function | `intl` | Word segmentation (falls back to `dictionary` without `Intl.Segmenter`) |
-| `detectNames` | boolean | `true` | Read a name after a title as whole words: the given name joined to the title and the surname after one space. Names are capitalized in `sentence` case |
+| `case` | `lower` `upper` `title` `sentence` | `lower` | ตัวพิมพ์ `title` ขึ้นต้นตัวใหญ่ทุกคำ เหมาะกับชื่อเฉพาะ |
+| `wordSeparator` | string | `' '` | ตัวคั่นระหว่างคำไทย |
+| `syllableSeparator` | string | `''` | ตัวคั่นพยางค์ เช่น `'-'` |
+| `hyphenateAmbiguous` | boolean | `true` | ใส่ `-` เมื่อพยางค์ต่อกันแล้วอ่านกำกวม (sa-at, sa-nga) |
+| `thaiDigits` | `arabic` `keep` | `arabic` | เลขไทย ๐-๙ |
+| `maiYamok` | `repeat` `keep` `drop` | `repeat` | ไม้ยมก `ๆ` |
+| `paiyannoi` | `drop` `keep` | `drop` | ไปยาลน้อย `ฯ` (`ฯลฯ` → `etc.`) |
+| `keepNonThai` | boolean | `true` | เก็บข้อความภาษาอื่น ตัวเลข และเครื่องหมาย |
+| `useBuiltinDictionary` | boolean | `true` | ใช้พจนานุกรมในตัว |
+| `dictionary` | `Record<string, string>` | — | คำเพิ่มเติมสำหรับการเรียกครั้งนั้น |
+| `segmenter` | `intl` `dictionary` `none` หรือ function | `intl` | วิธีตัดคำ (ถ้าไม่มี `Intl.Segmenter` จะใช้ `dictionary`) |
+| `detectNames` | boolean | `true` | อ่านชื่อที่ตามหลังคำนำหน้าเป็นคำเดียว: ชื่อที่ติดกับคำนำหน้า และนามสกุลหลังเว้นวรรคหนึ่งช่อง ชื่อขึ้นต้นตัวใหญ่เมื่อใช้ `sentence` |
 
-Each word in `analyze()` has a `confidence`:
+ค่า `confidence` ของแต่ละคำ: `dictionary` (จากพจนานุกรม), `high` (สระเขียนรูปครบ), `medium` (มีสระที่ไม่เขียนรูป ควรตรวจถ้าเป็นชื่อเฉพาะ), `low` (มีอักษรที่แยกพยางค์ไม่ได้ และมี warning `unparsed`)
 
-- `dictionary`: from a dictionary entry
-- `high`: every vowel is written
-- `medium`: a vowel was inferred; usually right, but worth a look for names
-- `low`: part of the word did not fit any syllable, and an `unparsed` warning is added
-
-## Limitations
-
-- **One-way only:** RTGS does not record tones or vowel length, so it cannot be converted back to Thai.
-- **Linking syllables, names and loanwords:** Pali/Sanskrit linking syllables (ราชบุรี *rat-cha-bu-ri*, ผลไม้ *phon-la-mai*), personal names and loanwords depend on the dictionary. Add what the rules miss with `dictionary` or `addWord`.
-- **Names without a title:** a name in running text is recognised only after a title. Without one, `Intl.Segmenter`, which does not know names, may split it into several words: the letters are right, but with spaces in between. When you know the text is a name, use `romanizeName()`.
-- **Abbreviated titles:** ดร. and น.ส. are transcribed letter by letter (*don.*, *na.sa.*), since RTGS has no standard abbreviations.
-- **Segmentation varies by runtime:** `Intl.Segmenter` depends on the runtime's ICU version, so results can differ slightly. Compounds that ICU keeps whole (รถไฟฟ้า) come out as one word (*rotfaifa*).
-- **Official spellings of place names:** provinces and districts follow the Royal Institute's spelling (*Chon Buri*, *Buri Ram*), which can differ from common usage (*Chonburi*, *Buriram*). Override them with `dictionary` if needed.
-
-## Development
+## พัฒนา
 
 ```bash
 npm install
 npm test            # vitest
 npm run typecheck
-npm run eval        # accuracy report; add -- --dev to list dev-half misses
-npm run build       # dist/ (ESM + CommonJS + .d.ts)
+npm run eval        # รายงานความแม่นยำ
+npm run build       # dist/ (ESM + CJS + .d.ts)
 ```
 
-The package supports Node.js 18 and later; development needs Node.js 22 or later.
+รองรับ Node.js 18 ขึ้นไป (การพัฒนาใช้ Node 22 ขึ้นไป)
 
-### Releasing
+### ออก version ใหม่
 
-[`.github/workflows/release.yml`](.github/workflows/release.yml) uploads the package to npm with **trusted publishing**, so no npm token is stored anywhere. The trusted publisher may only **stage** a version: it becomes public after a maintainer approves it with 2FA.
+[`.github/workflows/release.yml`](.github/workflows/release.yml) ส่งแพ็กเกจขึ้น npm ด้วย npm trusted publishing จึงไม่ต้องใช้ npm token แต่ trusted publisher ได้สิทธิ์แค่ **stage** เท่านั้น version ใหม่จะยังไม่เป็นสาธารณะจนกว่า maintainer จะกดอนุมัติด้วย 2FA
 
-1. Bump `version` in `package.json` and `VERSION` in `src/index.ts`.
-2. Add a `## x.y.z — date` section to `CHANGELOG.md`.
-3. Commit, then push a matching tag:
+1. แก้ `version` ใน `package.json` และ `VERSION` ใน `src/index.ts` ให้ตรงกัน
+2. เพิ่มหัวข้อ `## x.y.z — วันที่` ใน `CHANGELOG.md`
+3. commit แล้ว push tag:
 
 ```bash
 git tag -a v0.1.2 -m "thai-rtgs 0.1.2"
@@ -163,8 +158,8 @@ git tag -a v0.1.2 -m "thai-rtgs 0.1.2"
 git push origin v0.1.2
 ```
 
-4. The workflow checks that the tag matches the version and that the CHANGELOG has a section for it. It then runs typecheck, tests and build, runs `npm stage publish`, and drafts a GitHub Release from the CHANGELOG.
-5. Approve on your machine (logged in to npm, with 2FA):
+4. workflow จะตรวจว่า tag ตรงกับ version และ CHANGELOG มีหัวข้อของ version นั้น รัน typecheck, test และ build แล้ว `npm stage publish` จากนั้นสร้าง GitHub Release แบบ draft จาก CHANGELOG
+5. อนุมัติที่เครื่องตัวเอง (ต้อง login npm และยืนยัน 2FA):
 
 ```bash
 npm stage list thai-rtgs
@@ -174,10 +169,16 @@ npm stage list thai-rtgs
 npm stage approve <stage-id>
 ```
 
-6. Publish the draft GitHub Release.
+6. กด publish draft Release ของ version นั้นใน GitHub
 
-Running the workflow by hand ("Run workflow" on the Actions page) is always a dry run; only a pushed tag uploads to npm.
+ถ้าอยากลองโดยไม่ส่งขึ้น npm จริง ให้กด "Run workflow" ในหน้า Actions ซึ่งจะเป็น dry-run เสมอ เพราะส่งขึ้น npm ได้จากการ push tag เท่านั้น
 
-## License
+## ข้อจำกัด
 
-[MIT](LICENSE)
+- RTGS ไม่มีวรรณยุกต์และความยาวสระ จึงแปลงกลับเป็นอักษรไทยไม่ได้
+- คำบาลี-สันสกฤตที่มีพยางค์เชื่อม (ราชบุรี rat-cha-bu-ri, ผลไม้ phon-la-mai) ชื่อคน และคำทับศัพท์ ต้องพึ่งพจนานุกรม คำที่กฎอ่านผิดให้เพิ่มผ่าน `dictionary` หรือ `addWord`
+- ชื่อคนในประโยคจะรู้ได้เฉพาะเมื่อมีคำนำหน้า (นาย นาง นางสาว ดร. …) ถ้าไม่มีคำนำหน้า `Intl.Segmenter` ซึ่งไม่รู้จักชื่อ อาจตัดชื่อเป็นหลายคำ (ได้ตัวอักษรถูกแต่มีเว้นวรรคแทรก) ถ้ารู้อยู่แล้วว่าข้อความเป็นชื่อ ให้ใช้ `romanizeName()`
+- คำนำหน้าแบบย่อ (ดร. น.ส.) ถอดตามตัวอักษร (`don.`, `na.sa.`) เพราะ RTGS ไม่มีรูปย่อมาตรฐาน
+- ผลการตัดคำของ `Intl.Segmenter` ขึ้นกับเวอร์ชัน ICU ของ runtime อาจต่างกันเล็กน้อย คำประสมที่ ICU ไม่แยก (เช่น รถไฟฟ้า) จะออกมาติดกัน (`rotfaifa`)
+- ชื่อจังหวัดและเขตเขียนตามแบบราชบัณฑิตยสถาน (เช่น Chon Buri, Buri Ram) ซึ่งอาจต่างจากตัวสะกดที่ใช้กันทั่วไป (Chonburi, Buriram) แก้ได้ผ่าน `dictionary`
+
