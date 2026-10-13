@@ -122,7 +122,25 @@ npm run eval        # รายงานความแม่นยำ
 npm run build       # dist/ (ESM + CJS + .d.ts)
 ```
 
-รองรับ Node.js 18 ขึ้นไป (การพัฒนาใช้ Node 20 ขึ้นไป)
+รองรับ Node.js 18 ขึ้นไป (การพัฒนาใช้ Node 22 ขึ้นไป)
+
+### ออก version ใหม่
+
+publish ขึ้น npm อัตโนมัติด้วย [`.github/workflows/release.yml`](.github/workflows/release.yml) ผ่าน npm trusted publishing จึงไม่ต้องใช้ npm token และหน้า npm จะแสดง provenance ว่าแพ็กเกจ build มาจาก commit ไหน
+
+1. แก้ `version` ใน `package.json` และ `VERSION` ใน `src/index.ts` ให้ตรงกัน
+2. เพิ่มหัวข้อ `## x.y.z — วันที่` ใน `CHANGELOG.md`
+3. commit แล้ว push tag:
+
+```bash
+git tag -a v0.1.2 -m "thai-rtgs 0.1.2"
+```
+
+```bash
+git push origin v0.1.2
+```
+
+workflow จะตรวจว่า tag ตรงกับ version จากนั้นรัน typecheck, test และ build ก่อน publish แล้วสร้าง GitHub Release จาก CHANGELOG ให้ ถ้าอยากลองโดยไม่ publish จริง ให้กด "Run workflow" ในหน้า Actions ซึ่งค่าเริ่มต้นเป็น dry-run
 
 ## ข้อจำกัด
 

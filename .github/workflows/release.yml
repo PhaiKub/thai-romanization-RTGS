@@ -1,0 +1,78 @@
+name: Release
+
+# Publishes to npm with trusted publishing (OIDC): no npm token is stored anywhere, and npm attaches
+# provenance that links the package to this workflow run. Requires a Trusted Publisher on npmjs.com
+# (package settings → Trusted Publisher → GitHub Actions, workflow file: release.yml).
+#
+# To release: bump "version" in package.json and VERSION in src/index.ts, add a CHANGELOG section,
+# commit, then push a matching tag:  git tag -a v0.1.2 -m "thai-rtgs 0.1.2" && git push origin v0.1.2
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      dry-run:
+        description: Run every step but publish with --dry-run and skip the GitHub Release
+        type: boolean
+        default: true
+
+permissions:
+  contents: write # create the GitHub Release
+  id-token: write # npm trusted publishing (OIDC)
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry-run }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+          cache: npm
+
+      - name: Use npm 11.5.1 or later (required for trusted publishing)
+        run: npm install -g npm@^11.5.1 && npm --version
+
+      - name: Tag matches package.json version
+        if: github.event_name == 'push'
+        run: |
+          version=$(node -p "require('./package.json').version")
+          if [ "${GITHUB_REF_NAME}" != "v${version}" ]; then
+            echo "::error::Tag ${GITHUB_REF_NAME} does not match package.json version ${version}"
+            exit 1
+          fi
+
+      - name: CHANGELOG has a section for this version
+        run: |
+          version=$(node -p "require('./package.json').version")
+          grep -q "^## ${version} " CHANGELOG.md || { echo "::error::CHANGELOG.md has no '## ${version}' section"; exit 1; }
+
+      - run: npm ci
+
+      # prepublishOnly runs typecheck, tests and build before publishing.
+      - name: Publish to npm
+        run: |
+          if [ "${DRY_RUN}" = "true" ]; then npm publish --dry-run; else npm publish; fi
+
+      - name: GitHub Release from the CHANGELOG
+        if: env.DRY_RUN != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          version=$(node -p "require('./package.json').version")
+          awk -v v="$version" '$0 ~ "^## " v " " {f=1; next} /^## /{f=0} f' CHANGELOG.md > notes.md
+          printf '\n**npm:** [`thai-rtgs@%s`](https://www.npmjs.com/package/thai-rtgs/v/%s)\n' "$version" "$version" >> notes.md
+          if gh release view "v${version}" >/dev/null 2>&1; then
+            echo "Release v${version} already exists"
+          else
+            gh release create "v${version}" --title "thai-rtgs ${version}" --notes-file notes.md --verify-tag
+          fi
